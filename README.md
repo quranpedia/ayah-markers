@@ -61,7 +61,6 @@ python3 -m http.server 8000   # then open localhost:8000/demo/
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/standardize_svgs.py      # standardized SVGs
 .venv/bin/python scripts/build_selected_font.py   # OTF, TTF, font map
-.venv/bin/python -m pytest -q
 ```
 
 ## Licensing

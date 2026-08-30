@@ -6,11 +6,7 @@
     "fill-3",
     "ink-base",
     "ink-1",
-    "ink-2",
-    "ink-3",
-    "mark-1",
-    "mark-2",
-    "mark-3"
+    "ink-2"
   ],
   "markers": [
     {
@@ -23,11 +19,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -40,11 +32,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -57,11 +45,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -74,11 +58,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -91,11 +71,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -108,11 +84,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -125,11 +97,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -142,11 +110,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -159,11 +123,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -176,11 +136,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -193,11 +149,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -210,11 +162,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -227,11 +175,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -244,11 +188,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -261,11 +201,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -278,11 +214,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -295,11 +227,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -312,11 +240,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -329,11 +253,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -346,11 +266,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -363,11 +279,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -380,11 +292,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -397,11 +305,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -414,11 +318,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -431,11 +331,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -448,11 +344,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -465,11 +357,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -482,11 +370,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -499,11 +383,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -516,11 +396,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -533,11 +409,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -550,11 +422,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -567,11 +435,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -584,11 +448,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -601,11 +461,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -618,11 +474,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -635,11 +487,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -652,11 +500,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -669,11 +513,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -686,11 +526,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -703,11 +539,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -720,11 +552,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -737,11 +565,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -754,11 +578,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -771,11 +591,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -788,11 +604,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     },
     {
@@ -805,11 +617,7 @@
         "fill-3": false,
         "ink-base": true,
         "ink-1": false,
-        "ink-2": false,
-        "ink-3": false,
-        "mark-1": false,
-        "mark-2": false,
-        "mark-3": false
+        "ink-2": false
       }
     }
   ]

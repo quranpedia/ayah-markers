@@ -7,10 +7,9 @@ Each reviewed marker can expose only the classes it actually uses. This keeps a 
 | `fill-base` | Main interior or generated base fill. |
 | `fill-1`, `fill-2`, `fill-3` | Additional filled regions, from largest to most decorative. |
 | `ink-base` | Primary outline or dominant dark shape. |
-| `ink-1`, `ink-2`, `ink-3` | Secondary outline/detail levels. |
-| `mark-1`, `mark-2`, `mark-3` | Dots, numerals, or small accent marks. |
+| `ink-1`, `ink-2` | Secondary outline and detail levels, including dots and small accent marks. |
 
-The variables are `--fill-base`, `--fill-1`, through to `--mark-3`. The demo shows only variables with visible geometry in the selected marker.
+The variables are `--fill-base`, `--fill-1`, `--fill-2`, `--fill-3`, `--ink-base`, `--ink-1`, and `--ink-2`. The demo shows only the variables with visible geometry in the selected marker.
 
 ## Annotation data
 

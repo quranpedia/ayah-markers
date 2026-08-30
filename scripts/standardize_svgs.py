@@ -10,8 +10,8 @@ from fontTools.pens.boundsPen import BoundsPen
 from fontTools.svgLib.path import parse_path
 
 ROOT = Path(__file__).resolve().parents[1]
-PARTS = ("fill-base", "fill-1", "fill-2", "fill-3", "ink-base", "ink-1", "ink-2", "ink-3", "mark-1", "mark-2", "mark-3")
-LEGACY_TO_CLASS = {"frame": "fill-base", "center": "fill-1", "main-ink": "ink-base", "ornament": "ink-1", "dots": "mark-1"}
+PARTS = ("fill-base", "fill-1", "fill-2", "fill-3", "ink-base", "ink-1", "ink-2")
+LEGACY_TO_CLASS = {"frame": "fill-base", "center": "fill-1", "main-ink": "ink-base", "ornament": "ink-1", "dots": "ink-2"}
 SVG_NS = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG_NS)
 
