@@ -110,8 +110,8 @@ def main():
         all_paths = [element.attrib.get("d", "") for element in root.findall(f"{{{SVG_NS}}}path")]
         # Keep the original compound paths intact by default.  Splitting a
         # compound path can turn its counters into filled shapes (notably
-        # 019-regular's ornament).  The annotation tool supplies the precise
-        # per-contour classes when a marker has been reviewed; unreviewed SVGs
+        # 019-regular's ornament).  Reviewed data supplies precise per-contour
+        # classes; unreviewed SVGs
         # remain an accurate, single-colour ink layer.
         layers = {"ink-base": all_paths}
         svg = ET.Element(f"{{{SVG_NS}}}svg", {"viewBox": root.attrib["viewBox"], "class": "ayah-marker", "data-marker": marker["id"]})
