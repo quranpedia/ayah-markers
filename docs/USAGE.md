@@ -34,4 +34,4 @@ The variables are `--fill-base`, `--fill-1`, through to `--mark-3`. The demo sho
 
 ## Weight families
 
-Markers sharing the numeric prefix are a design family, such as `015-regular-black`, `015-thin`, and `015-light`. The annotator presents one representative design and synchronizes its annotations to all available weights. The demo also falls back to an annotated sibling when a weight has no explicit review record.
+Markers sharing the numeric prefix are a design family, such as `015-regular-black`, `015-thin`, and `015-light`. The demo falls back to an annotated sibling when a weight has no explicit review record.
