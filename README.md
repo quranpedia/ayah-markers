@@ -59,8 +59,18 @@ python3 -m http.server 8000   # then open localhost:8000/demo/
 
 ```sh
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python scripts/standardize_svgs.py      # standardized SVGs
 .venv/bin/python scripts/build_selected_font.py   # OTF, TTF, font map
+```
+
+## Layout
+
+```text
+markers/          source SVG outlines
+annotations.json  layer assignments per marker
+collection.json   order, sizes, and source attribution
+demo/             the customizer
+dist/             OTF, TTF, font map
+scripts/          collection and font build tools
 ```
 
 ## Licensing

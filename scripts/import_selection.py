@@ -12,7 +12,7 @@ def main(selection_path: str, source_manifest_path: str) -> None:
     selection = json.loads(Path(selection_path).read_text(encoding="utf-8"))
     source_manifest = json.loads(Path(source_manifest_path).read_text(encoding="utf-8"))
     by_id = {marker["id"]: marker for marker in source_manifest["markers"]}
-    output = ROOT / "assets/markers"; output.mkdir(parents=True, exist_ok=True)
+    output = ROOT / "markers"; output.mkdir(parents=True, exist_ok=True)
     markers = []
     for index, selected in enumerate(selection["selected"]):
         source = by_id[selected["id"]]

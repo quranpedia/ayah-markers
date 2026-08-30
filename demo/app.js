@@ -32,11 +32,10 @@ function select(familyIndex, variantIndex = 0) { selectedFamily = familyIndex; s
 function render() { const family = currentFamily(), variant = currentVariant(); canvas.innerHTML = svgCache[variant.index]; renderWeights(); renderColorControls(variant.record); const layers = availableParts(variant.record); status.textContent = `${variant.record.id} · ${layers.length ? layers.join(', ') : 'no assigned layers'}`; document.querySelectorAll('.marker-card').forEach(card => card.setAttribute('aria-pressed', +card.dataset.family === selectedFamily)); }
 const weights = document.querySelector('#weights');
 let families = [], selectedFamily = 0, selectedVariant = 0;
-Promise.all([fetch('../assets/standardized/manifest.json?v=collection-47-1').then(r => r.json()), fetch('../collection.json?v=collection-47-1').then(r => r.json()), fetch('../annotations.json?v=collection-47-1').then(r => r.json())]).then(async ([standardized, collection, fileAnnotations]) => {
+Promise.all([fetch('../collection.json?v=collection-47-2').then(r => r.json()), fetch('../annotations.json?v=collection-47-2').then(r => r.json())]).then(async ([collection, fileAnnotations]) => {
   annotations = mergedAnnotations(fileAnnotations);
-  records = standardized.markers;
-  const originals = new Map(collection.markers.map(marker => [marker.id, marker.file]));
-  svgCache = await Promise.all(records.map(async record => { const annotation = familyAnnotation(record); if (hasAssignments(annotation)) return annotatedSvg(await fetch(`../${originals.get(record.id)}?v=source-safe-1`).then(r => r.text()), annotation); return fetch(`../${record.file}?v=source-safe-1`).then(r => r.text()); }));
+  records = collection.markers;
+  svgCache = await Promise.all(records.map(async record => { const raw = await fetch(`../${record.file}?v=source-safe-1`).then(r => r.text()); const annotation = familyAnnotation(record); return hasAssignments(annotation) ? annotatedSvg(raw, annotation) : raw; }));
   families = buildFamilies();
   document.querySelector('#marker-count').textContent = `${families.length} designs · ${records.length} weights`;
   const gallery = document.querySelector('#gallery');
