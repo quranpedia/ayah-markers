@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>A carefully selected collection of Qur’anic end-of-ayah marks.</strong><br>
-  Source-preserving SVGs · themed layers · OTF and TTF fonts
+  20 designs · 47 weights · layered SVGs you recolour from CSS · OTF and TTF fonts
 </p>
 
 <p align="center">
@@ -14,7 +14,9 @@
 
 ---
 
-`۝` **Ayah Markers** is a practical library of 47 distinct end-of-ayah designs, collected from Arabic-script Google Fonts and fonts.quran.ws. Each marker is available as a source SVG, a safe standardized SVG wrapper, and a glyph in the included Private Use Area font.
+`۝` **Ayah Markers** is a practical library of **20 end-of-ayah designs in 47 weights**, collected from Arabic-script Google Fonts and fonts.quran.ws. Every marker ships three ways: a source SVG, a safe standardized SVG wrapper, and a glyph in the included Private Use Area font.
+
+The markers are not flat icons. Each one is split into named layers — base fill, inner fills, ink outlines, ornament marks — so a single SVG can be recoloured to match any mushaf, app, or print palette from CSS alone.
 
 > Gulzar is intentionally excluded. Source metadata remains in `collection.json` for every marker.
 
@@ -22,8 +24,9 @@
 
 | | |
 | --- | --- |
-| **47 curated markers** | Carefully chosen shapes, with related weights retained. |
-| **Interactive demo** | Preview every marker, tune its available layers, and copy CSS. |
+| **20 designs, 47 weights** | Curated shapes, from Thin through Black where the source family provides them. |
+| **Interactive demo** | Browse by design, switch weight, recolour live, copy the CSS. |
+| **Layered SVGs** | Fills render beneath ink, with interiors correctly cut out — no flat silhouettes. |
 | **SVG colour contract** | A consistent set of fill, ink, and mark variables. |
 | **OpenType + TrueType** | `AyahMarkers.otf` keeps cubic curves; `AyahMarkers.ttf` maximizes compatibility. |
 | **PUA font map** | A generated, stable mapping from U+E000 to U+E02E. |
@@ -42,7 +45,7 @@ Open [localhost:8000/demo](http://localhost:8000/demo/).
 
 ## Use the SVGs
 
-Open the demo, choose a marker, set its colors, then use **Copy CSS**. It produces only the variables that marker actually supports:
+Open the demo, pick a design, choose its weight, set the colours, then hit **Copy CSS**. You get only the variables that marker actually supports — nothing to trim:
 
 ```css
 /* 001-regular */
@@ -54,7 +57,7 @@ Open the demo, choose a marker, set its colors, then use **Copy CSS**. It produc
 }
 ```
 
-The default palette is Qur’an-inspired: parchment base fills, deep teal ink, and antique gold details. See [the full SVG contract](docs/USAGE.md) for every available class.
+The default palette is Qur’an-inspired: parchment base fills, deep teal ink, and antique gold details. Drop the SVG in your page, set the variables, and the marker restyles itself — no re-export. See [the full SVG contract](docs/USAGE.md) for every available class.
 
 ## Use the font
 
