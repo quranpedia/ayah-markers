@@ -5,7 +5,7 @@ A practical collection of Arabic end-of-ayah marks (`۝`, U+06DD) prepared as:
 - 47 selected, source-preserving SVG markers;
 - themed SVGs with a small, consistent colour contract;
 - a Private Use Area TrueType font; and
-- a browser demo and annotation tool for reviewing the visual parts.
+- a browser demo for previewing and theming the visual parts.
 
 The collection is assembled from Arabic-script Google Fonts and fonts.quran.ws. Gulzar is intentionally excluded.
 
@@ -22,7 +22,6 @@ python3 -m http.server 8000
 Then open:
 
 - [Demo](http://localhost:8000/demo/) — choose and theme a marker.
-- [Annotator](http://localhost:8000/annotate/) — review visible source parts and export annotation JSON.
 
 ## Use an SVG
 
@@ -73,7 +72,6 @@ python3 scripts/build_selected_font.py
 | `collection.json` | The marker inventory, sources, dimensions, and font order. |
 | `dist/` | Generated font and PUA mapping. |
 | `demo/` | Interactive theme preview. |
-| `annotate/` | Local review/annotation utility. |
 | `scripts/` | Collection, standardization, and font-build utilities. |
 
 ## Maintain the collection
@@ -89,7 +87,7 @@ python3 scripts/build_selected_font.py
 python3 -m pytest -q
 ```
 
-When using the annotator, download the complete JSON after review and replace `annotations.json`. The demo also reads temporary annotation changes from browser local storage while you work.
+`annotations.json` stores the reviewed part assignments used by the demo.
 
 ## Licensing and attribution
 
