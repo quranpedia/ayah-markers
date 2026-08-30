@@ -1,5 +1,5 @@
 const parts = ['fill-base','fill-1','fill-2','fill-3','ink-base','ink-1','ink-2','ink-3','mark-1','mark-2','mark-3'];
-const renderOrder = ['ink-base','ink-1','ink-2','ink-3','fill-base','fill-1','fill-2','fill-3','mark-1','mark-2','mark-3'];
+const renderOrder = ['fill-base','fill-1','fill-2','fill-3','ink-base','ink-1','ink-2','ink-3','mark-1','mark-2','mark-3'];
 const colors = document.querySelector('#colors'), canvas = document.querySelector('#canvas'), status = document.querySelector('#status');
 let records = [], svgCache = [], selectedIndex = 0, annotations = {markers:{}};
 const defaultTheme = Object.fromEntries(parts.map(part => [part, getComputedStyle(document.documentElement).getPropertyValue(`--${part}`).trim()]));
