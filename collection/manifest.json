@@ -1,0 +1,1859 @@
+{
+  "character": "۝",
+  "codepoint": "U+06DD",
+  "excluded": [
+    "Gulzar"
+  ],
+  "sources": {
+    "google_fonts": "script=Arab",
+    "quran_fonts": "https://fonts.quran.ws/fonts/"
+  },
+  "variants_examined": 250,
+  "groups": [
+    {
+      "id": "001",
+      "source": "Google Fonts",
+      "family": "Alkalami",
+      "members": [
+        "001-regular"
+      ]
+    },
+    {
+      "id": "002",
+      "source": "Google Fonts",
+      "family": "Amiri",
+      "members": [
+        "002-bold",
+        "002-regular"
+      ]
+    },
+    {
+      "id": "003",
+      "source": "Google Fonts",
+      "family": "Estedad",
+      "members": [
+        "003-black",
+        "003-bold",
+        "003-extrabold",
+        "003-extralight",
+        "003-light",
+        "003-medium",
+        "003-regular",
+        "003-semibold",
+        "003-thin"
+      ]
+    },
+    {
+      "id": "004",
+      "source": "Google Fonts",
+      "family": "Harmattan",
+      "members": [
+        "004-bold",
+        "004-medium",
+        "004-regular",
+        "004-semibold"
+      ]
+    },
+    {
+      "id": "005",
+      "source": "Google Fonts",
+      "family": "IBM Plex Sans Arabic",
+      "members": [
+        "005-bold",
+        "005-extralight",
+        "005-light",
+        "005-medium",
+        "005-regular",
+        "005-semibold",
+        "005-thin"
+      ]
+    },
+    {
+      "id": "006",
+      "source": "Google Fonts",
+      "family": "Jomhuria",
+      "members": [
+        "006-regular"
+      ]
+    },
+    {
+      "id": "007",
+      "source": "Google Fonts",
+      "family": "Katibeh",
+      "members": [
+        "007-regular"
+      ]
+    },
+    {
+      "id": "008",
+      "source": "Google Fonts",
+      "family": "Kufam",
+      "members": [
+        "008-black",
+        "008-bold",
+        "008-extrabold",
+        "008-medium",
+        "008-regular",
+        "008-semibold"
+      ]
+    },
+    {
+      "id": "009",
+      "source": "Google Fonts",
+      "family": "Lateef",
+      "members": [
+        "009-extralight",
+        "009-light",
+        "009-regular-extrabold"
+      ]
+    },
+    {
+      "id": "010",
+      "source": "Google Fonts",
+      "family": "Mada",
+      "members": [
+        "010-black",
+        "010-bold",
+        "010-extrabold",
+        "010-extralight",
+        "010-light",
+        "010-medium",
+        "010-regular",
+        "010-semibold"
+      ]
+    },
+    {
+      "id": "011",
+      "source": "Google Fonts",
+      "family": "Mirza",
+      "members": [
+        "011-bold",
+        "011-medium",
+        "011-regular",
+        "011-semibold"
+      ]
+    },
+    {
+      "id": "012",
+      "source": "Google Fonts",
+      "family": "Noto Kufi Arabic",
+      "members": [
+        "012-extralight-semibold",
+        "012-light-medium",
+        "012-regular",
+        "012-thin-black"
+      ]
+    },
+    {
+      "id": "013",
+      "source": "Google Fonts",
+      "family": "Noto Naskh Arabic",
+      "members": [
+        "013-regular-bold"
+      ]
+    },
+    {
+      "id": "014",
+      "source": "Google Fonts",
+      "family": "Noto Nastaliq Urdu",
+      "members": [
+        "014-regular-bold"
+      ]
+    },
+    {
+      "id": "015",
+      "source": "Google Fonts",
+      "family": "Noto Sans Arabic",
+      "members": [
+        "015-extralight",
+        "015-light",
+        "015-regular-black",
+        "015-thin"
+      ]
+    },
+    {
+      "id": "016",
+      "source": "Google Fonts",
+      "family": "Ruwudu",
+      "members": [
+        "016-regular-bold"
+      ]
+    },
+    {
+      "id": "017",
+      "source": "Google Fonts",
+      "family": "Scheherazade New",
+      "members": [
+        "017-bold",
+        "017-medium",
+        "017-regular",
+        "017-semibold"
+      ]
+    },
+    {
+      "id": "018",
+      "source": "Google Fonts",
+      "family": "Vazirmatn",
+      "members": [
+        "018-black",
+        "018-bold",
+        "018-extrabold",
+        "018-extralight",
+        "018-light",
+        "018-medium",
+        "018-regular",
+        "018-semibold",
+        "018-thin"
+      ]
+    },
+    {
+      "id": "019",
+      "source": "fonts.quran.ws",
+      "family": "DigitalKhatt",
+      "members": [
+        "019-regular"
+      ]
+    },
+    {
+      "id": "020",
+      "source": "fonts.quran.ws",
+      "family": "DigitalKhattIndoPak",
+      "members": [
+        "020-regular"
+      ]
+    },
+    {
+      "id": "021",
+      "source": "fonts.quran.ws",
+      "family": "DigitalKhattV1",
+      "members": [
+        "021-regular"
+      ]
+    },
+    {
+      "id": "022",
+      "source": "fonts.quran.ws",
+      "family": "HafsNastaleeq",
+      "members": [
+        "022-regular"
+      ]
+    },
+    {
+      "id": "023",
+      "source": "fonts.quran.ws",
+      "family": "IndopakNastaleeq",
+      "members": [
+        "023-regular"
+      ]
+    },
+    {
+      "id": "024",
+      "source": "fonts.quran.ws",
+      "family": "UthmanicBazzi",
+      "members": [
+        "024-regular"
+      ]
+    },
+    {
+      "id": "025",
+      "source": "fonts.quran.ws",
+      "family": "UthmanicQaloun",
+      "members": [
+        "025-regular"
+      ]
+    },
+    {
+      "id": "026",
+      "source": "fonts.quran.ws",
+      "family": "UthmanicWarsh",
+      "members": [
+        "026-regular"
+      ]
+    },
+    {
+      "id": "027",
+      "source": "fonts.quran.ws",
+      "family": "meQuran",
+      "members": [
+        "027-regular"
+      ]
+    }
+  ],
+  "markers": [
+    {
+      "file": "svg/marker-001-00e4b5ab73.svg",
+      "hash": "00e4b5ab73904d0ccdb71d0eb649409689c10b1b8cd06e6411ea5dead3c4f9cd",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "400",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklWgzCRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-regular"
+    },
+    {
+      "file": "svg/marker-002-0235b06c22.svg",
+      "hash": "0235b06c22df94e0ccb4d7a156e00e3a7ac16932822f7f6a84e335e2343de323",
+      "width": 1276,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "400",
+          "width": 1276,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFnOkEky0eiNxw.woff2"
+        }
+      ],
+      "id": "010-regular"
+    },
+    {
+      "file": "svg/marker-003-0329227ac8.svg",
+      "hash": "0329227ac8ce54f133eb490fe2bff471ade72e3d2e188b9a2c137847537c84f4",
+      "width": 1370,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "400",
+          "width": 1370,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyGyfuXqAJQI.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "500",
+          "width": 1370,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCf-myfuXqAJQI.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "600",
+          "width": 1370,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfFmufuXqAJQI.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "700",
+          "width": 1370,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfL2ufuXqAJQI.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "800",
+          "width": 1370,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfSGufuXqAJQI.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "900",
+          "width": 1370,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfYWufuXqAJQI.woff2"
+        }
+      ],
+      "id": "015-regular-black"
+    },
+    {
+      "file": "svg/marker-004-0687c15d59.svg",
+      "hash": "0687c15d5992f7cbad6fb4c1ecc307fbef3742a92c99d443a6edcb14e2ab03a7",
+      "width": 690,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "DigitalKhattIndoPak",
+          "variant": "regular",
+          "width": 690,
+          "upem": 1000,
+          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-indopak.otf"
+        },
+        {
+          "source": "fonts.quran.ws",
+          "family": "Indopak",
+          "variant": "regular",
+          "width": 690,
+          "upem": 1000,
+          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-indopak.otf"
+        }
+      ],
+      "id": "020-regular"
+    },
+    {
+      "file": "svg/marker-005-06f7fb9bab.svg",
+      "hash": "06f7fb9babbfbf5269e40d43b3c8f6607080f76adf78d94ba19021ef9f7e1069",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "100",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6J6ghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-thin"
+    },
+    {
+      "file": "svg/marker-006-0b1e630988.svg",
+      "hash": "0b1e630988e1ec19839879a5286f5e1327f26af848477ab2123b7fafae47346d",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "300",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklTYzCRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-light"
+    },
+    {
+      "file": "svg/marker-007-0c99a3574e.svg",
+      "hash": "0c99a3574eb4991a655abc048e242737a6319962c84b2e5e1bfb4e60cfa6280d",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "900",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklcE0CRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-black"
+    },
+    {
+      "file": "svg/marker-008-10ae67bf0e.svg",
+      "hash": "10ae67bf0ee9c88a22e590e6fec6438f50f6101b8dc252d0c13fc67513f5fbf5",
+      "width": 1410,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "100",
+          "width": 1410,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyG2fuXqAJQI.woff2"
+        }
+      ],
+      "id": "015-thin"
+    },
+    {
+      "file": "svg/marker-009-1331bdf07f.svg",
+      "hash": "1331bdf07f535099169f351f02cb2b656f8482194be80a7dcf8c2446d1842194",
+      "width": 1292,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "700",
+          "width": 1292,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFkpl0ky0eiNxw.woff2"
+        }
+      ],
+      "id": "010-bold"
+    },
+    {
+      "file": "svg/marker-010-1662155dc6.svg",
+      "hash": "1662155dc6789ab5d172037ca3a2465a4ee0c8c7ad33d5cb673bfb9f00a97fbc",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "700",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklY80CRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-bold"
+    },
+    {
+      "file": "svg/marker-011-1a1224e77c.svg",
+      "hash": "1a1224e77c2eb5b6fdbb4e17551257039c6780bd09ae36e3c7a2806d10b01adc",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "800",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX96IaghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-extrabold"
+    },
+    {
+      "file": "svg/marker-012-1a2a1033f3.svg",
+      "hash": "1a2a1033f343f822c33cfbcb39648fd8b71ae551d3cb48669c5f41cbb28526d5",
+      "width": 1250,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Ruwudu",
+          "variant": "400",
+          "width": 1250,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ruwudu/v4/syky-y1tj6UzRKf9lwqSxtM.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Ruwudu",
+          "variant": "500",
+          "width": 1250,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ruwudu/v4/sykx-y1tj6UzRKf1YSmH_PLAnlQ.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Ruwudu",
+          "variant": "600",
+          "width": 1250,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ruwudu/v4/sykx-y1tj6UzRKf1TS6H_PLAnlQ.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Ruwudu",
+          "variant": "700",
+          "width": 1250,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ruwudu/v4/sykx-y1tj6UzRKf1KS-H_PLAnlQ.woff2"
+        }
+      ],
+      "id": "016-regular-bold"
+    },
+    {
+      "file": "svg/marker-013-1f0278662a.svg",
+      "hash": "1f0278662a5b3a14031a2a2c80af78c0fdf0d801cc5b5613ae230390ab3d59b5",
+      "width": 1250,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Alkalami",
+          "variant": "400",
+          "width": 1250,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/alkalami/v8/zOL_4pfDmqRL95WXi6eJycF8ug.woff2"
+        }
+      ],
+      "id": "001-regular"
+    },
+    {
+      "file": "svg/marker-014-254d69b0d0.svg",
+      "hash": "254d69b0d079b42b5449e1623e4aee8338d821b45988a74ab3ee295c94478879",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "200",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh7v37bNlrWWfw.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "600",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh6x2LbNlrWWfw.woff2"
+        }
+      ],
+      "id": "012-extralight-semibold"
+    },
+    {
+      "file": "svg/marker-015-2ae3efae0c.svg",
+      "hash": "2ae3efae0c7ffc16f8e406e6ccb8865e17a54e3dea78617bc3ba4311c70a3c21",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "500",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_IJqghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-medium"
+    },
+    {
+      "file": "svg/marker-016-2c01c7c0c3.svg",
+      "hash": "2c01c7c0c34a527ebfae87f52ae1490df0a6fc4fdf1f70cc54ddd32aea6c5c78",
+      "width": 2003,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "500",
+          "width": 2003,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM_dFLlQI-bKn.woff2"
+        }
+      ],
+      "id": "017-medium"
+    },
+    {
+      "file": "svg/marker-017-2cb786a5dc.svg",
+      "hash": "2cb786a5dcbcf20abc7bdd846603c721fd5551f7d8e190ff906ee76720651c48",
+      "width": 4071,
+      "upem": 3000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Jomhuria",
+          "variant": "400",
+          "width": 4071,
+          "upem": 3000,
+          "source_url": "https://fonts.gstatic.com/s/jomhuria/v23/Dxxp8j-TMXf-llKur1b3OuCrCw.woff2"
+        }
+      ],
+      "id": "006-regular"
+    },
+    {
+      "file": "svg/marker-018-2f097d313d.svg",
+      "hash": "2f097d313db0a9cf3becc200cc69c0d266c8518f199114aa095d98c3a24fdac7",
+      "width": 1595,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "UthmanicQaloun",
+          "variant": "regular",
+          "width": 1595,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-qaloun-v21.ttf"
+        }
+      ],
+      "id": "025-regular"
+    },
+    {
+      "file": "svg/marker-019-2ffa000b2b.svg",
+      "hash": "2ffa000b2b74fb2029626c2fbc82dd0cfdd18e01296c441c2b5997f5afb59204",
+      "width": 1724,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "400",
+          "width": 1724,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qt_-PK-V2t_8.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "500",
+          "width": 1724,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qu3-PK-V2t_8.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "600",
+          "width": 1724,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3QgH5PK-V2t_8.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "700",
+          "width": 1724,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qjj5PK-V2t_8.woff2"
+        }
+      ],
+      "id": "014-regular-bold"
+    },
+    {
+      "file": "svg/marker-020-3142f001d5.svg",
+      "hash": "3142f001d5bd22edd0d56621cd8355646a295a55607cc5d5a244a53443ad5306",
+      "width": 1148,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "300",
+          "width": 1148,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOW_uCRXMR5Kw.woff2"
+        }
+      ],
+      "id": "005-light"
+    },
+    {
+      "file": "svg/marker-021-31a8d61f6f.svg",
+      "hash": "31a8d61f6f69d9117414af1ebb0e5ca24b67b7d3295caae2b1856e4daeaa1504",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "300",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh4x37bNlrWWfw.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "500",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh5d37bNlrWWfw.woff2"
+        }
+      ],
+      "id": "012-light-medium"
+    },
+    {
+      "file": "svg/marker-022-3a1570449a.svg",
+      "hash": "3a1570449a0e579208752509c1463d6cc1118b99dee9cc37d5229038c41caf5f",
+      "width": 978,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mirza",
+          "variant": "700",
+          "width": 978,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mirza/v19/co3FmWlikiN5EtJhB9O6k6bxog.woff2"
+        }
+      ],
+      "id": "011-bold"
+    },
+    {
+      "file": "svg/marker-023-3b73b3f26c.svg",
+      "hash": "3b73b3f26c5a679f7ef2f25a87b4ee8ce90f4b5b52fb312903ea785772d76441",
+      "width": 1258,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "200",
+          "width": 1258,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlOkEky0eiNxw.woff2"
+        }
+      ],
+      "id": "010-extralight"
+    },
+    {
+      "file": "svg/marker-024-3c926e4376.svg",
+      "hash": "3c926e437661f86b71f2df26b38d979fe1148a7cb7a6586e53740fc540f14193",
+      "width": 1295,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "800",
+          "width": 1295,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlOl0ky0eiNxw.woff2"
+        }
+      ],
+      "id": "010-extrabold"
+    },
+    {
+      "file": "svg/marker-025-43e30288f2.svg",
+      "hash": "43e30288f22aaf4cedc5ef5a0fb795886186d24e3d5a091ee23702e72dbd6aca",
+      "width": 2019,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Harmattan",
+          "variant": "700",
+          "width": 2019,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/harmattan/v24/gokpH6L2DkFvVvRp9Xpr92-3mtxFm6Q.woff2"
+        }
+      ],
+      "id": "004-bold"
+    },
+    {
+      "file": "svg/marker-026-459fc21a54.svg",
+      "hash": "459fc21a54b2d21c96fba045e3d20f4e8e06c2642985a0f3971e6ce69bac26cb",
+      "width": 2019,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Harmattan",
+          "variant": "500",
+          "width": 2019,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/harmattan/v24/gokpH6L2DkFvVvRp9Xprv2m3mtxFm6Q.woff2"
+        }
+      ],
+      "id": "004-medium"
+    },
+    {
+      "file": "svg/marker-027-4765f3e66f.svg",
+      "hash": "4765f3e66f605f3c833fb935ea11dfc406b7c9584373b5887f7d6b551873f42d",
+      "width": 1984,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "400",
+          "width": 1984,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaZrFhTvxVnHDvUkUiHg8jprP4DOwFmO24p.woff2"
+        }
+      ],
+      "id": "017-regular"
+    },
+    {
+      "file": "svg/marker-028-49920ed39e.svg",
+      "hash": "49920ed39eeb4fd7f0c5d7b04a412a7335e072d625bc99bc4a3e16f179c4d932",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "200",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX96JqghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-extralight"
+    },
+    {
+      "file": "svg/marker-029-5a18e1aab2.svg",
+      "hash": "5a18e1aab24550116e8b0471d5b2ab4580e9615362c964a2d48f5fca3ca5067e",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "900",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX9TIaghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-black"
+    },
+    {
+      "file": "svg/marker-030-5ce49ec1aa.svg",
+      "hash": "5ce49ec1aa11368d821091b3eaf157edacc6eec7effd1e045e02bce32db5c1fe",
+      "width": 929,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mirza",
+          "variant": "500",
+          "width": 929,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mirza/v19/co3FmWlikiN5EtIpAdO6k6bxog.woff2"
+        }
+      ],
+      "id": "011-medium"
+    },
+    {
+      "file": "svg/marker-031-62c8392b19.svg",
+      "hash": "62c8392b19e868d0001906a026eaa318cf437374d56046a483317aecaec45305",
+      "width": 1399,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "IndopakNastaleeq",
+          "variant": "regular",
+          "width": 1399,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/indopak-nastaleeq.ttf"
+        }
+      ],
+      "id": "023-regular"
+    },
+    {
+      "file": "svg/marker-032-6d3f7b3c90.svg",
+      "hash": "6d3f7b3c901a4b45c8935e012a96a569be03c3607a0409bfa4a6f8570f17a4a5",
+      "width": 1595,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "UthmanicBazzi",
+          "variant": "regular",
+          "width": 1595,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-bazzi-v20.ttf"
+        },
+        {
+          "source": "fonts.quran.ws",
+          "family": "UthmanicDouri",
+          "variant": "regular",
+          "width": 1595,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-douri-v20.ttf"
+        },
+        {
+          "source": "fonts.quran.ws",
+          "family": "UthmanicQunbul",
+          "variant": "regular",
+          "width": 1595,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-qunbul-v20.ttf"
+        },
+        {
+          "source": "fonts.quran.ws",
+          "family": "UthmanicShuba",
+          "variant": "regular",
+          "width": 1595,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-shuba-v20.ttf"
+        },
+        {
+          "source": "fonts.quran.ws",
+          "family": "UthmanicSousi",
+          "variant": "regular",
+          "width": 1595,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-sousi-v20.ttf"
+        }
+      ],
+      "id": "024-regular"
+    },
+    {
+      "file": "svg/marker-033-6f5b68c275.svg",
+      "hash": "6f5b68c27526560c46a6abe0790abe1b0a435c190a7a95ac5a0d53217e7be727",
+      "width": 1120,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "700",
+          "width": 1120,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOG-eCRXMR5Kw.woff2"
+        }
+      ],
+      "id": "005-bold"
+    },
+    {
+      "file": "svg/marker-034-742448bbe1.svg",
+      "hash": "742448bbe1a3b53e2cc36b928b71af2ee90bf47091c6eebc9b24523c3a1b8f72",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "300",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX-kJqghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-light"
+    },
+    {
+      "file": "svg/marker-035-78b92fecbe.svg",
+      "hash": "78b92fecbe7d3981d4967f1960dde92913ecf4f081fa96955e29a457bfb16d87",
+      "width": 3420,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "meQuran",
+          "variant": "regular",
+          "width": 3420,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/me-quran.ttf"
+        }
+      ],
+      "id": "027-regular"
+    },
+    {
+      "file": "svg/marker-036-7b05944eec.svg",
+      "hash": "7b05944eec0fc4e2a39462c7c1eb1dcf99a121d42567b60cadfbdb82263d786f",
+      "width": 1263,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "300",
+          "width": 1263,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFmQkEky0eiNxw.woff2"
+        }
+      ],
+      "id": "010-light"
+    },
+    {
+      "file": "svg/marker-037-7f8546f906.svg",
+      "hash": "7f8546f906706ef3503f31e95356f49a6f7ebb45e49c9bd54dfaaa4904e48cf8",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "800",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRkleg0CRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-extrabold"
+    },
+    {
+      "file": "svg/marker-038-7fec956ec7.svg",
+      "hash": "7fec956ec762e16bfab61dabba1954d2a27834424de418e60fee2e24d148424b",
+      "width": 2023,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "600",
+          "width": 2023,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM9tCLlQI-bKn.woff2"
+        }
+      ],
+      "id": "017-semibold"
+    },
+    {
+      "file": "svg/marker-039-820b18b5c0.svg",
+      "hash": "820b18b5c0f7b98dc1dff56b16876c714a688b897699b64bea3294aa689e579b",
+      "width": 1279,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Amiri",
+          "variant": "700",
+          "width": 1279,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2"
+        }
+      ],
+      "id": "002-bold"
+    },
+    {
+      "file": "svg/marker-040-84aafcfe73.svg",
+      "hash": "84aafcfe73d0f89ccde6a4a4020e30dca214411cc6eb0038151fb59234990217",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "500",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklVozCRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-medium"
+    },
+    {
+      "file": "svg/marker-041-85a6b37d04.svg",
+      "hash": "85a6b37d048f475829174043eda0b01e52b4b46f0c1f9a7f7b5542696aba531f",
+      "width": 1131,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "500",
+          "width": 1131,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPO_-CRXMR5Kw.woff2"
+        }
+      ],
+      "id": "005-medium"
+    },
+    {
+      "file": "svg/marker-042-880d4a6781.svg",
+      "hash": "880d4a678197b2aed1af7776a10f818539bd378f024f74403a64097121383f93",
+      "width": 1844,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Lateef",
+          "variant": "200",
+          "width": 1844,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/lateef/v35/hESz6XVnNCxEvkb0bjyQbK7axnQ.woff2"
+        }
+      ],
+      "id": "009-extralight"
+    },
+    {
+      "file": "svg/marker-043-88f9e10cd6.svg",
+      "hash": "88f9e10cd6a83c5e02d12309e94e6ee3f33d3538630a1bd93318abebe92c82a5",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "600",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX8kIaghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-semibold"
+    },
+    {
+      "file": "svg/marker-044-92a8c862c1.svg",
+      "hash": "92a8c862c1a83b4a636d6795ad8059f62fb967cdc1e3f96d3b285d0bb7a4ae9b",
+      "width": 1160,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "400",
+          "width": 1160,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3lqkLqwqILvI.woff2"
+        }
+      ],
+      "id": "008-regular"
+    },
+    {
+      "file": "svg/marker-045-93962baf35.svg",
+      "hash": "93962baf3597d12adc50deeb69dcc5e73fad01702cfd9059db445a3242bfb28e",
+      "width": 1260,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "400",
+          "width": 1260,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc5Urqcyx_M.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "500",
+          "width": 1260,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwj85Urqcyx_M.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "600",
+          "width": 1260,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwY8lUrqcyx_M.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "700",
+          "width": 1260,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwWslUrqcyx_M.woff2"
+        }
+      ],
+      "id": "013-regular-bold"
+    },
+    {
+      "file": "svg/marker-046-95b87aa091.svg",
+      "hash": "95b87aa0915b213b4137c929ec3702d1fa12d11c3ed3b91bc76ea8c98d6172ef",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "100",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklWgyCRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-thin"
+    },
+    {
+      "file": "svg/marker-047-9b7d656b11.svg",
+      "hash": "9b7d656b11ba06215b5a34fb88e72adef641d93c326a2ee12c93d5d2d58e691c",
+      "width": 1140,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "900",
+          "width": 1140,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3P64LqwqILvI.woff2"
+        }
+      ],
+      "id": "008-black"
+    },
+    {
+      "file": "svg/marker-048-9ced2ec8c9.svg",
+      "hash": "9ced2ec8c9b412b8669a54cc0905e22f4b4622b8eafe6a9aeafa8a9d47b4c458",
+      "width": 2042,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "700",
+          "width": 2042,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM79DLlQI-bKn.woff2"
+        }
+      ],
+      "id": "017-bold"
+    },
+    {
+      "file": "svg/marker-049-9d87993d8e.svg",
+      "hash": "9d87993d8e6fce7963ffdb40f2770f3551a5c2fd6e5039cc38a865ca5ba7945d",
+      "width": 1140,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "400",
+          "width": 1140,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ys43PWrfQ.woff2"
+        }
+      ],
+      "id": "005-regular"
+    },
+    {
+      "file": "svg/marker-050-a0524c83e9.svg",
+      "hash": "a0524c83e95186ee807b24806f1e71c06a9014d372e96d96608da7e5b58e8e6f",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "100",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh5v3rbNlrWWfw.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "700",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh6I2LbNlrWWfw.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "800",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh7v2LbNlrWWfw.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "900",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh7G2LbNlrWWfw.woff2"
+        }
+      ],
+      "id": "012-thin-black"
+    },
+    {
+      "file": "svg/marker-051-a397a4df61.svg",
+      "hash": "a397a4df615b3360d850307cc2103637e859d3ee370ed5722f823825b1727c19",
+      "width": 1844,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Lateef",
+          "variant": "300",
+          "width": 1844,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/lateef/v35/hESz6XVnNCxEvkb0Cj-QbK7axnQ.woff2"
+        }
+      ],
+      "id": "009-light"
+    },
+    {
+      "file": "svg/marker-052-a492189cb1.svg",
+      "hash": "a492189cb1d1667752e5fbcc9dc2323adf893ae3cd6b9e054f762271dc3d8217",
+      "width": 1160,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "100",
+          "width": 1160,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2"
+        }
+      ],
+      "id": "005-thin"
+    },
+    {
+      "file": "svg/marker-053-ae000cb2f1.svg",
+      "hash": "ae000cb2f1cf035f3789a2c78ea16653b9867b7870765dd9a4efac1b21af5efe",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Kufi Arabic",
+          "variant": "400",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notokufiarabic/v27/CSRp4ydQnPyaDxEXLFF6LZVLKrodhu8t57o1kDc5Wh5v37bNlrWWfw.woff2"
+        }
+      ],
+      "id": "012-regular"
+    },
+    {
+      "file": "svg/marker-054-b4a37cacce.svg",
+      "hash": "b4a37cacced8f0e19d8a6b32326685f1a56eb862b916216ffcfb13226fab41ab",
+      "width": 1552,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "HafsNastaleeq",
+          "variant": "regular",
+          "width": 1552,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/hafs-nastaleeq.otf"
+        }
+      ],
+      "id": "022-regular"
+    },
+    {
+      "file": "svg/marker-055-baec66fd53.svg",
+      "hash": "baec66fd5300d73dcccd783249f204ee8ec1089cdb52dfbe9921c4a88be10dcc",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "200",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklegzCRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-extralight"
+    },
+    {
+      "file": "svg/marker-056-c4f11a0b0b.svg",
+      "hash": "c4f11a0b0b23707237f4278ca3d1e9c8bbd2c99475b048c962eb2e3f384f871b",
+      "width": 953,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mirza",
+          "variant": "600",
+          "width": 953,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mirza/v19/co3FmWlikiN5EtIFBtO6k6bxog.woff2"
+        }
+      ],
+      "id": "011-semibold"
+    },
+    {
+      "file": "svg/marker-057-c619785c41.svg",
+      "hash": "c619785c41c44332184321bd8f74b043dded9099faf254d82c41807414323d4c",
+      "width": 864,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "DigitalKhatt",
+          "variant": "regular",
+          "width": 864,
+          "upem": 1000,
+          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-v2.woff2"
+        }
+      ],
+      "id": "019-regular"
+    },
+    {
+      "file": "svg/marker-058-c9c765391b.svg",
+      "hash": "c9c765391b70a5bbe15a3ea40393c860499e7fcb197d87631be374155712e438",
+      "width": 904,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mirza",
+          "variant": "400",
+          "width": 904,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mirza/v19/co3ImWlikiN5EtrfIsaAsg.woff2"
+        }
+      ],
+      "id": "011-regular"
+    },
+    {
+      "file": "svg/marker-059-cc04c5fff5.svg",
+      "hash": "cc04c5fff523d31746e622f5430200f621e0f336618e40b21076d859927ab635",
+      "width": 1143,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "800",
+          "width": 1143,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3Fq4LqwqILvI.woff2"
+        }
+      ],
+      "id": "008-extrabold"
+    },
+    {
+      "file": "svg/marker-060-ce2532b4de.svg",
+      "hash": "ce2532b4decdb86555cc1ab88de7d35d0dfe1623eb742e4f97b6c1194627eecd",
+      "width": 1298,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "900",
+          "width": 1298,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlnl0ky0eiNxw.woff2"
+        }
+      ],
+      "id": "010-black"
+    },
+    {
+      "file": "svg/marker-061-cf00bf3b10.svg",
+      "hash": "cf00bf3b10cfc1ff6705624dca4915ea127a97ab2d2d449df16c4c768c438ab2",
+      "width": 1126,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "600",
+          "width": 1126,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPi-OCRXMR5Kw.woff2"
+        }
+      ],
+      "id": "005-semibold"
+    },
+    {
+      "file": "svg/marker-062-cff7a557e0.svg",
+      "hash": "cff7a557e0457a72c34f620864d2ddd64d6e29d6ff3c66b94e36a46b84549979",
+      "width": 1047,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Katibeh",
+          "variant": "400",
+          "width": 1047,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/katibeh/v22/ZGjXol5MQJog4bxDWC9bVQNd.woff2"
+        }
+      ],
+      "id": "007-regular"
+    },
+    {
+      "file": "svg/marker-063-d00efb8890.svg",
+      "hash": "d00efb88907a32fad70141d117b11ddfb242ae9b61bfdded2dc9d7318b8acc96",
+      "width": 1155,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "200",
+          "width": 1155,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2"
+        }
+      ],
+      "id": "005-extralight"
+    },
+    {
+      "file": "svg/marker-064-d034648bb2.svg",
+      "hash": "d034648bb26fd8bfd022c4022c38186710f233c32abc74126a88bc5a995a1636",
+      "width": 1390,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "300",
+          "width": 1390,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCflmyfuXqAJQI.woff2"
+        }
+      ],
+      "id": "015-light"
+    },
+    {
+      "file": "svg/marker-065-d536195a1c.svg",
+      "hash": "d536195a1c7d6bc8f2ef183a01e5687bc017231af2461cc602a7aa9958ef5e7e",
+      "width": 1173,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "DigitalKhattV1",
+          "variant": "regular",
+          "width": 1173,
+          "upem": 1000,
+          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-v1.otf"
+        }
+      ],
+      "id": "021-regular"
+    },
+    {
+      "file": "svg/marker-066-dc9be490d9.svg",
+      "hash": "dc9be490d9acbf6bbdfbdd9405117f2720cf4816e7a2f87ff0729f892c655be0",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "400",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6JqghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-regular"
+    },
+    {
+      "file": "svg/marker-067-dcd2053335.svg",
+      "hash": "dcd2053335ab9604c4df8877dbac279a8456b3b1a4ab091247b8474025a0b0a0",
+      "width": 1152,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "600",
+          "width": 1152,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3SK4LqwqILvI.woff2"
+        }
+      ],
+      "id": "008-semibold"
+    },
+    {
+      "file": "svg/marker-068-de03979a36.svg",
+      "hash": "de03979a366d46ec27a614fc72562c644f7f99e42350e543207d2f1d31720898",
+      "width": 1402,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "200",
+          "width": 1402,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfSGyfuXqAJQI.woff2"
+        }
+      ],
+      "id": "015-extralight"
+    },
+    {
+      "file": "svg/marker-069-e08fdc96d8.svg",
+      "hash": "e08fdc96d87f3b4f613adcd67ca90f3d83fa14d1811c9bad0f4e7c1c3d6154e3",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "700",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX8dIaghUhuQaA.woff2"
+        }
+      ],
+      "id": "003-bold"
+    },
+    {
+      "file": "svg/marker-070-e5e09a2045.svg",
+      "hash": "e5e09a204508407a62a214013917019e9238075974ae5e366ab3954caa3071bc",
+      "width": 1157,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "500",
+          "width": 1157,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3pKkLqwqILvI.woff2"
+        }
+      ],
+      "id": "008-medium"
+    },
+    {
+      "file": "svg/marker-071-e72f82921c.svg",
+      "hash": "e72f82921c3f24809be94f614ba935926eff4b626b6a5c8865fee46e4fd4625f",
+      "width": 2472,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Vazirmatn",
+          "variant": "600",
+          "width": 2472,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/vazirmatn/v16/Dxx78j6PP2D_kU2muijPEe1n2vVbfJRklbY0CRWT7lDF.woff2"
+        }
+      ],
+      "id": "018-semibold"
+    },
+    {
+      "file": "svg/marker-072-e8a1fbf298.svg",
+      "hash": "e8a1fbf298044f60f0bb3842681f75e9346a3735212c584d56658949f40084c8",
+      "width": 1595,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "UthmanicWarsh",
+          "variant": "regular",
+          "width": 1595,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-warsh-v21.ttf"
+        }
+      ],
+      "id": "026-regular"
+    },
+    {
+      "file": "svg/marker-073-ebdfb45557.svg",
+      "hash": "ebdfb45557609edff048c6d1be0adff137ed7b84eeff611f89057ab865ae8c44",
+      "width": 2019,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Harmattan",
+          "variant": "600",
+          "width": 2019,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/harmattan/v24/gokpH6L2DkFvVvRp9Xprk263mtxFm6Q.woff2"
+        }
+      ],
+      "id": "004-semibold"
+    },
+    {
+      "file": "svg/marker-074-ed73d1bf39.svg",
+      "hash": "ed73d1bf392fc9a5fd312812a766dd1a42b153df879cfade7d2eb85ee3ccea33",
+      "width": 1146,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "700",
+          "width": 1146,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3ca4LqwqILvI.woff2"
+        }
+      ],
+      "id": "008-bold"
+    },
+    {
+      "file": "svg/marker-075-f26e7da3cb.svg",
+      "hash": "f26e7da3cb06e5d12c3b02e5536bcee9ce3a578fd7780517f8f73f3f66fdd0f1",
+      "width": 1279,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Amiri",
+          "variant": "400",
+          "width": 1279,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7aRnpd8CGxBHpUrtLMA7w.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Amiri Quran",
+          "variant": "400",
+          "width": 1279,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/amiriquran/v19/_Xmo-Hk0rD6DbUL4_vH8Zp5v5i2ssg.woff2"
+        }
+      ],
+      "id": "002-regular"
+    },
+    {
+      "file": "svg/marker-076-f5c8d729e3.svg",
+      "hash": "f5c8d729e3d8bab6981e89127a4548e6eb7a93c51c21681bed269ebe6e537332",
+      "width": 1844,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Lateef",
+          "variant": "400",
+          "width": 1844,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/lateef/v35/hESw6XVnNCxEvkb8pB2FVo8.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Lateef",
+          "variant": "500",
+          "width": 1844,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/lateef/v35/hESz6XVnNCxEvkb0Uj6QbK7axnQ.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Lateef",
+          "variant": "600",
+          "width": 1844,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/lateef/v35/hESz6XVnNCxEvkb0fjmQbK7axnQ.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Lateef",
+          "variant": "700",
+          "width": 1844,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/lateef/v35/hESz6XVnNCxEvkb0GjiQbK7axnQ.woff2"
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Lateef",
+          "variant": "800",
+          "width": 1844,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/lateef/v35/hESz6XVnNCxEvkb0BjuQbK7axnQ.woff2"
+        }
+      ],
+      "id": "009-regular-extrabold"
+    },
+    {
+      "file": "svg/marker-077-f63049c87f.svg",
+      "hash": "f63049c87fa05bc19909fbd169c5124294bbdfdf7f160ffcbc82e3b3250a7f38",
+      "width": 1284,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "600",
+          "width": 1284,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFkQl0ky0eiNxw.woff2"
+        }
+      ],
+      "id": "010-semibold"
+    },
+    {
+      "file": "svg/marker-078-f86a7164f7.svg",
+      "hash": "f86a7164f7894d839fe5f174028d3138c67df5b9d75af5f3d6ef08e7df07169f",
+      "width": 2019,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Harmattan",
+          "variant": "400",
+          "width": 2019,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/harmattan/v24/goksH6L2DkFvVvRp9XpjSUqioP0.woff2"
+        }
+      ],
+      "id": "004-regular"
+    },
+    {
+      "file": "svg/marker-079-f8d2141a83.svg",
+      "hash": "f8d2141a830698952d979f1c3d6cdb2b60664757a6dd836117fc35346e99592b",
+      "width": 1280,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "500",
+          "width": 1280,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFn8kEky0eiNxw.woff2"
+        }
+      ],
+      "id": "010-medium"
+    }
+  ]
+}

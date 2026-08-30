@@ -1,0 +1,1797 @@
+{
+  "version": 1,
+  "componentIdFormat": "path-{pathIndex}-contour-{contourIndex}",
+  "markers": {
+    "015-regular-black": {
+      "parts": {
+        "fill-1": [
+          "path-0-contour-13",
+          "path-0-contour-11",
+          "path-0-contour-9",
+          "path-0-contour-7"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [
+          "path-0-contour-5",
+          "path-0-contour-4"
+        ],
+        "ink-2": [
+          "path-0-contour-12",
+          "path-0-contour-10",
+          "path-0-contour-8",
+          "path-0-contour-6"
+        ],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [
+          "path-0-contour-0",
+          "path-0-contour-1",
+          "path-0-contour-2",
+          "path-0-contour-3"
+        ],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "generatedFills": {
+        "fill-base": [
+          {
+            "type": "ellipse",
+            "cx": "685",
+            "cy": "257",
+            "rx": "500",
+            "ry": "500"
+          }
+        ]
+      }
+    },
+    "020-regular": {
+      "parts": {
+        "fill-1": [
+          "path-0-contour-4",
+          "path-0-contour-5",
+          "path-0-contour-6",
+          "path-0-contour-7",
+          "path-0-contour-8",
+          "path-0-contour-9",
+          "path-0-contour-10",
+          "path-0-contour-11",
+          "path-0-contour-12",
+          "path-0-contour-13",
+          "path-0-contour-3",
+          "path-0-contour-0"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "ink-base": [
+          "path-0-contour-1"
+        ],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "003-thin": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-1"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "015-thin": {
+      "parts": {
+        "fill-1": [
+          "path-0-contour-13",
+          "path-0-contour-11",
+          "path-0-contour-9",
+          "path-0-contour-7"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [
+          "path-0-contour-5",
+          "path-0-contour-4"
+        ],
+        "ink-2": [
+          "path-0-contour-12",
+          "path-0-contour-10",
+          "path-0-contour-8",
+          "path-0-contour-6"
+        ],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [
+          "path-0-contour-0",
+          "path-0-contour-1",
+          "path-0-contour-2",
+          "path-0-contour-3"
+        ],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "generatedFills": {
+        "fill-base": [
+          {
+            "type": "ellipse",
+            "cx": "685",
+            "cy": "257",
+            "rx": "500",
+            "ry": "500"
+          }
+        ]
+      }
+    },
+    "010-bold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-5",
+          "path-0-contour-3"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [
+          "path-0-contour-6",
+          "path-0-contour-7",
+          "path-0-contour-9",
+          "path-0-contour-8"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "003-extrabold": {
+      "parts": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "001-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-11"
+        ],
+        "fill-1": [
+          "path-0-contour-6",
+          "path-0-contour-15"
+        ],
+        "fill-2": [
+          "path-0-contour-13",
+          "path-0-contour-1",
+          "path-0-contour-8",
+          "path-0-contour-21",
+          "path-0-contour-14",
+          "path-0-contour-18",
+          "path-0-contour-7",
+          "path-0-contour-3"
+        ],
+        "fill-3": [
+          "path-0-contour-4",
+          "path-0-contour-5",
+          "path-0-contour-2",
+          "path-0-contour-9",
+          "path-0-contour-16",
+          "path-0-contour-17",
+          "path-0-contour-12",
+          "path-0-contour-19",
+          "path-0-contour-20",
+          "path-0-contour-10",
+          "path-0-contour-22",
+          "path-0-contour-23"
+        ],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "003-medium": {
+      "parts": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "017-medium": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [
+          "path-0-contour-3",
+          "path-0-contour-1"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-8",
+          "path-0-contour-5"
+        ],
+        "ink-2": [
+          "path-0-contour-4",
+          "path-0-contour-6",
+          "path-0-contour-9",
+          "path-0-contour-7"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "006-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-0"
+        ],
+        "fill-1": [
+          "path-0-contour-1",
+          "path-0-contour-2"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-3"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "025-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "014-regular-bold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-3"
+        ],
+        "fill-2": [
+          "path-0-contour-7",
+          "path-0-contour-4",
+          "path-0-contour-8"
+        ],
+        "fill-3": [
+          "path-0-contour-5",
+          "path-0-contour-6"
+        ],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-2"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "005-light": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-1",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "010-extralight": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-5",
+          "path-0-contour-3"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [
+          "path-0-contour-6",
+          "path-0-contour-7",
+          "path-0-contour-9",
+          "path-0-contour-8"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "017-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [
+          "path-0-contour-3",
+          "path-0-contour-1"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-8",
+          "path-0-contour-5"
+        ],
+        "ink-2": [
+          "path-0-contour-4",
+          "path-0-contour-6",
+          "path-0-contour-9",
+          "path-0-contour-7"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "003-extralight": {
+      "parts": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "003-black": {
+      "parts": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "011-medium": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-3",
+          "path-0-contour-2"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "023-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-0"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-1"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "024-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-2",
+          "path-0-contour-4",
+          "path-0-contour-5",
+          "path-0-contour-3"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "005-bold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-1",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "003-light": {
+      "parts": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "010-light": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-5",
+          "path-0-contour-3"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [
+          "path-0-contour-6",
+          "path-0-contour-7",
+          "path-0-contour-9",
+          "path-0-contour-8"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "017-semibold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [
+          "path-0-contour-3",
+          "path-0-contour-1"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-8",
+          "path-0-contour-5"
+        ],
+        "ink-2": [
+          "path-0-contour-4",
+          "path-0-contour-6",
+          "path-0-contour-9",
+          "path-0-contour-7"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "002-bold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-3",
+          "path-0-contour-2"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-6",
+          "path-0-contour-7",
+          "path-0-contour-5",
+          "path-0-contour-4"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "005-medium": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-1",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "003-semibold": {
+      "parts": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "008-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-2",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "013-regular-bold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-4"
+        ],
+        "fill-1": [
+          "path-0-contour-1",
+          "path-0-contour-3",
+          "path-0-contour-5",
+          "path-0-contour-7"
+        ],
+        "fill-2": [
+          "path-0-contour-2",
+          "path-0-contour-6"
+        ],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "017-bold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [
+          "path-0-contour-3",
+          "path-0-contour-1"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-8",
+          "path-0-contour-5"
+        ],
+        "ink-2": [
+          "path-0-contour-4",
+          "path-0-contour-6",
+          "path-0-contour-9",
+          "path-0-contour-7"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "005-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-1",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "005-thin": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-1",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "022-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-4"
+        ],
+        "fill-1": [
+          "path-0-contour-1",
+          "path-0-contour-2",
+          "path-0-contour-5",
+          "path-0-contour-0"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-3"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "010-black": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-5",
+          "path-0-contour-3"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [
+          "path-0-contour-6",
+          "path-0-contour-7",
+          "path-0-contour-9",
+          "path-0-contour-8"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "005-semibold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-1",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "007-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-3",
+          "path-0-contour-2"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "005-extralight": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-1",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "015-light": {
+      "parts": {
+        "fill-1": [
+          "path-0-contour-13",
+          "path-0-contour-11",
+          "path-0-contour-9",
+          "path-0-contour-7"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [
+          "path-0-contour-5",
+          "path-0-contour-4"
+        ],
+        "ink-2": [
+          "path-0-contour-12",
+          "path-0-contour-10",
+          "path-0-contour-8",
+          "path-0-contour-6"
+        ],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [
+          "path-0-contour-0",
+          "path-0-contour-1",
+          "path-0-contour-2",
+          "path-0-contour-3"
+        ],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "generatedFills": {
+        "fill-base": [
+          {
+            "type": "ellipse",
+            "cx": "685",
+            "cy": "257",
+            "rx": "500",
+            "ry": "500"
+          }
+        ]
+      }
+    },
+    "021-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-2"
+        ],
+        "fill-1": [
+          "path-0-contour-1"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "003-regular": {
+      "parts": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "015-extralight": {
+      "parts": {
+        "fill-1": [
+          "path-0-contour-13",
+          "path-0-contour-11",
+          "path-0-contour-9",
+          "path-0-contour-7"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [
+          "path-0-contour-5",
+          "path-0-contour-4"
+        ],
+        "ink-2": [
+          "path-0-contour-12",
+          "path-0-contour-10",
+          "path-0-contour-8",
+          "path-0-contour-6"
+        ],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [
+          "path-0-contour-0",
+          "path-0-contour-1",
+          "path-0-contour-2",
+          "path-0-contour-3"
+        ],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "fill-base": [],
+        "ink-base": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "generatedFills": {
+        "fill-base": [
+          {
+            "type": "ellipse",
+            "cx": "685",
+            "cy": "257",
+            "rx": "500",
+            "ry": "500"
+          }
+        ]
+      }
+    },
+    "003-bold": {
+      "parts": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "008-medium": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-2",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "026-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-4"
+        ],
+        "fill-2": [
+          "path-0-contour-2",
+          "path-0-contour-3"
+        ],
+        "fill-3": [
+          "path-0-contour-6"
+        ],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-5"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "008-bold": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-2",
+          "path-0-contour-3"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "002-regular": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-3",
+          "path-0-contour-2"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [
+          "path-0-contour-6",
+          "path-0-contour-7",
+          "path-0-contour-5",
+          "path-0-contour-4"
+        ],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    },
+    "010-medium": {
+      "parts": {
+        "fill-base": [
+          "path-0-contour-1"
+        ],
+        "fill-1": [
+          "path-0-contour-5",
+          "path-0-contour-3"
+        ],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [
+          "path-0-contour-0"
+        ],
+        "ink-1": [],
+        "ink-2": [
+          "path-0-contour-6",
+          "path-0-contour-7",
+          "path-0-contour-9",
+          "path-0-contour-8"
+        ],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      },
+      "interiorFills": {
+        "fill-base": [],
+        "fill-1": [],
+        "fill-2": [],
+        "fill-3": [],
+        "ink-base": [],
+        "ink-1": [],
+        "ink-2": [],
+        "ink-3": [],
+        "mark-1": [],
+        "mark-2": [],
+        "mark-3": []
+      }
+    }
+  }
+}

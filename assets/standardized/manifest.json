@@ -1,0 +1,816 @@
+{
+  "parts": [
+    "fill-base",
+    "fill-1",
+    "fill-2",
+    "fill-3",
+    "ink-base",
+    "ink-1",
+    "ink-2",
+    "ink-3",
+    "mark-1",
+    "mark-2",
+    "mark-3"
+  ],
+  "markers": [
+    {
+      "id": "015-regular-black",
+      "file": "assets/standardized/015-regular-black.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "020-regular",
+      "file": "assets/standardized/020-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-thin",
+      "file": "assets/standardized/003-thin.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "015-thin",
+      "file": "assets/standardized/015-thin.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "010-bold",
+      "file": "assets/standardized/010-bold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-extrabold",
+      "file": "assets/standardized/003-extrabold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "001-regular",
+      "file": "assets/standardized/001-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-medium",
+      "file": "assets/standardized/003-medium.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "017-medium",
+      "file": "assets/standardized/017-medium.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "006-regular",
+      "file": "assets/standardized/006-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "025-regular",
+      "file": "assets/standardized/025-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "014-regular-bold",
+      "file": "assets/standardized/014-regular-bold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "005-light",
+      "file": "assets/standardized/005-light.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "010-extralight",
+      "file": "assets/standardized/010-extralight.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "017-regular",
+      "file": "assets/standardized/017-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-extralight",
+      "file": "assets/standardized/003-extralight.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-black",
+      "file": "assets/standardized/003-black.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "011-medium",
+      "file": "assets/standardized/011-medium.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "023-regular",
+      "file": "assets/standardized/023-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "024-regular",
+      "file": "assets/standardized/024-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "005-bold",
+      "file": "assets/standardized/005-bold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-light",
+      "file": "assets/standardized/003-light.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "010-light",
+      "file": "assets/standardized/010-light.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "017-semibold",
+      "file": "assets/standardized/017-semibold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "002-bold",
+      "file": "assets/standardized/002-bold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "005-medium",
+      "file": "assets/standardized/005-medium.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-semibold",
+      "file": "assets/standardized/003-semibold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "008-regular",
+      "file": "assets/standardized/008-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "013-regular-bold",
+      "file": "assets/standardized/013-regular-bold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "017-bold",
+      "file": "assets/standardized/017-bold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "005-regular",
+      "file": "assets/standardized/005-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "005-thin",
+      "file": "assets/standardized/005-thin.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "022-regular",
+      "file": "assets/standardized/022-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "010-black",
+      "file": "assets/standardized/010-black.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "005-semibold",
+      "file": "assets/standardized/005-semibold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "007-regular",
+      "file": "assets/standardized/007-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "005-extralight",
+      "file": "assets/standardized/005-extralight.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "015-light",
+      "file": "assets/standardized/015-light.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "021-regular",
+      "file": "assets/standardized/021-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-regular",
+      "file": "assets/standardized/003-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "015-extralight",
+      "file": "assets/standardized/015-extralight.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "003-bold",
+      "file": "assets/standardized/003-bold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "008-medium",
+      "file": "assets/standardized/008-medium.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "026-regular",
+      "file": "assets/standardized/026-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "008-bold",
+      "file": "assets/standardized/008-bold.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "002-regular",
+      "file": "assets/standardized/002-regular.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    },
+    {
+      "id": "010-medium",
+      "file": "assets/standardized/010-medium.svg",
+      "parts": {
+        "fill-base": false,
+        "fill-1": false,
+        "fill-2": false,
+        "fill-3": false,
+        "ink-base": true,
+        "ink-1": false,
+        "ink-2": false,
+        "ink-3": false,
+        "mark-1": false,
+        "mark-2": false,
+        "mark-3": false
+      }
+    }
+  ]
+}

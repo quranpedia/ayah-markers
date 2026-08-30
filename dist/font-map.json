@@ -1,0 +1,244 @@
+{
+  "fonts": [
+    "AyahMarkers.ttf",
+    "AyahMarkers.otf"
+  ],
+  "unicode_range": "U+E000\u2013U+E02E",
+  "glyphs": [
+    {
+      "marker": "015-regular-black",
+      "codepoint": "U+E000",
+      "character": "\ue000"
+    },
+    {
+      "marker": "020-regular",
+      "codepoint": "U+E001",
+      "character": "\ue001"
+    },
+    {
+      "marker": "003-thin",
+      "codepoint": "U+E002",
+      "character": "\ue002"
+    },
+    {
+      "marker": "015-thin",
+      "codepoint": "U+E003",
+      "character": "\ue003"
+    },
+    {
+      "marker": "010-bold",
+      "codepoint": "U+E004",
+      "character": "\ue004"
+    },
+    {
+      "marker": "003-extrabold",
+      "codepoint": "U+E005",
+      "character": "\ue005"
+    },
+    {
+      "marker": "001-regular",
+      "codepoint": "U+E006",
+      "character": "\ue006"
+    },
+    {
+      "marker": "003-medium",
+      "codepoint": "U+E007",
+      "character": "\ue007"
+    },
+    {
+      "marker": "017-medium",
+      "codepoint": "U+E008",
+      "character": "\ue008"
+    },
+    {
+      "marker": "006-regular",
+      "codepoint": "U+E009",
+      "character": "\ue009"
+    },
+    {
+      "marker": "025-regular",
+      "codepoint": "U+E00A",
+      "character": "\ue00a"
+    },
+    {
+      "marker": "014-regular-bold",
+      "codepoint": "U+E00B",
+      "character": "\ue00b"
+    },
+    {
+      "marker": "005-light",
+      "codepoint": "U+E00C",
+      "character": "\ue00c"
+    },
+    {
+      "marker": "010-extralight",
+      "codepoint": "U+E00D",
+      "character": "\ue00d"
+    },
+    {
+      "marker": "017-regular",
+      "codepoint": "U+E00E",
+      "character": "\ue00e"
+    },
+    {
+      "marker": "003-extralight",
+      "codepoint": "U+E00F",
+      "character": "\ue00f"
+    },
+    {
+      "marker": "003-black",
+      "codepoint": "U+E010",
+      "character": "\ue010"
+    },
+    {
+      "marker": "011-medium",
+      "codepoint": "U+E011",
+      "character": "\ue011"
+    },
+    {
+      "marker": "023-regular",
+      "codepoint": "U+E012",
+      "character": "\ue012"
+    },
+    {
+      "marker": "024-regular",
+      "codepoint": "U+E013",
+      "character": "\ue013"
+    },
+    {
+      "marker": "005-bold",
+      "codepoint": "U+E014",
+      "character": "\ue014"
+    },
+    {
+      "marker": "003-light",
+      "codepoint": "U+E015",
+      "character": "\ue015"
+    },
+    {
+      "marker": "010-light",
+      "codepoint": "U+E016",
+      "character": "\ue016"
+    },
+    {
+      "marker": "017-semibold",
+      "codepoint": "U+E017",
+      "character": "\ue017"
+    },
+    {
+      "marker": "002-bold",
+      "codepoint": "U+E018",
+      "character": "\ue018"
+    },
+    {
+      "marker": "005-medium",
+      "codepoint": "U+E019",
+      "character": "\ue019"
+    },
+    {
+      "marker": "003-semibold",
+      "codepoint": "U+E01A",
+      "character": "\ue01a"
+    },
+    {
+      "marker": "008-regular",
+      "codepoint": "U+E01B",
+      "character": "\ue01b"
+    },
+    {
+      "marker": "013-regular-bold",
+      "codepoint": "U+E01C",
+      "character": "\ue01c"
+    },
+    {
+      "marker": "017-bold",
+      "codepoint": "U+E01D",
+      "character": "\ue01d"
+    },
+    {
+      "marker": "005-regular",
+      "codepoint": "U+E01E",
+      "character": "\ue01e"
+    },
+    {
+      "marker": "005-thin",
+      "codepoint": "U+E01F",
+      "character": "\ue01f"
+    },
+    {
+      "marker": "022-regular",
+      "codepoint": "U+E020",
+      "character": "\ue020"
+    },
+    {
+      "marker": "010-black",
+      "codepoint": "U+E021",
+      "character": "\ue021"
+    },
+    {
+      "marker": "005-semibold",
+      "codepoint": "U+E022",
+      "character": "\ue022"
+    },
+    {
+      "marker": "007-regular",
+      "codepoint": "U+E023",
+      "character": "\ue023"
+    },
+    {
+      "marker": "005-extralight",
+      "codepoint": "U+E024",
+      "character": "\ue024"
+    },
+    {
+      "marker": "015-light",
+      "codepoint": "U+E025",
+      "character": "\ue025"
+    },
+    {
+      "marker": "021-regular",
+      "codepoint": "U+E026",
+      "character": "\ue026"
+    },
+    {
+      "marker": "003-regular",
+      "codepoint": "U+E027",
+      "character": "\ue027"
+    },
+    {
+      "marker": "015-extralight",
+      "codepoint": "U+E028",
+      "character": "\ue028"
+    },
+    {
+      "marker": "003-bold",
+      "codepoint": "U+E029",
+      "character": "\ue029"
+    },
+    {
+      "marker": "008-medium",
+      "codepoint": "U+E02A",
+      "character": "\ue02a"
+    },
+    {
+      "marker": "026-regular",
+      "codepoint": "U+E02B",
+      "character": "\ue02b"
+    },
+    {
+      "marker": "008-bold",
+      "codepoint": "U+E02C",
+      "character": "\ue02c"
+    },
+    {
+      "marker": "002-regular",
+      "codepoint": "U+E02D",
+      "character": "\ue02d"
+    },
+    {
+      "marker": "010-medium",
+      "codepoint": "U+E02E",
+      "character": "\ue02e"
+    }
+  ]
+}
