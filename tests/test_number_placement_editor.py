@@ -73,5 +73,5 @@ def test_placement_editor_can_apply_contour_alignment_to_every_digit_count():
     assert 'data-apply-all-digits' in module.PLACEMENT_EDITOR
 
 
-def test_placement_actions_use_a_two_column_grid():
-    assert ".placement-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));" in module.CARD_CSS
+def test_marker_contact_sheet_uses_two_cards_per_row():
+    assert ".grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));" in module.CARD_CSS
