@@ -220,7 +220,7 @@ Two contact sheets render the result:
 
 > **Note on orientation.** The files in `markers/` are the fonts' U+06DD outlines
 > with the y axis *not* flipped, so they render vertically mirrored relative to
-> the source font — `014`'s flourish is above the disc in Noto Nastaliq Urdu and
+> the source font — `011`'s flourish is above the disc in Noto Nastaliq Urdu and
 > below it in the SVG. That is a pre-existing property of the artwork and nothing
 > here changes it; the `number` boxes are in the SVG's own space, so they land
 > correctly on the marker as shipped.
@@ -280,23 +280,23 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 | <img src="markers/001-regular.svg" width="52" alt="Marker 001"> | **001** | [Regular](markers/001-regular.svg) |
 | <img src="markers/002-regular.svg" width="52" alt="Marker 002"> | **002** | [Regular](markers/002-regular.svg) · [Bold](markers/002-bold.svg) |
 | <img src="markers/003-regular.svg" width="52" alt="Marker 003"> | **003** | [Thin](markers/003-thin.svg) · [ExtraLight](markers/003-extralight.svg) · [Light](markers/003-light.svg) · [Regular](markers/003-regular.svg) · [Medium](markers/003-medium.svg) · [SemiBold](markers/003-semibold.svg) · [Bold](markers/003-bold.svg) · [ExtraBold](markers/003-extrabold.svg) · [Black](markers/003-black.svg) |
-| <img src="markers/004-regular.svg" width="52" alt="Marker 005"> | **005** | [Thin](markers/004-thin.svg) · [ExtraLight](markers/004-extralight.svg) · [Light](markers/004-light.svg) · [Regular](markers/004-regular.svg) · [Medium](markers/004-medium.svg) · [SemiBold](markers/004-semibold.svg) · [Bold](markers/004-bold.svg) |
-| <img src="markers/004-regular.svg" width="52" alt="Marker 006"> | **006** | [Regular](markers/004-regular.svg) |
-| <img src="markers/005-regular.svg" width="52" alt="Marker 007"> | **007** | [Regular](markers/005-regular.svg) |
-| <img src="markers/006-regular.svg" width="52" alt="Marker 008"> | **008** | [Regular](markers/006-regular.svg) · [Medium](markers/007-medium.svg) · [Bold](markers/007-bold.svg) |
-| <img src="markers/007-medium.svg" width="52" alt="Marker 010"> | **010** | [ExtraLight](markers/008-extralight.svg) · [Light](markers/008-light.svg) · [Medium](markers/007-medium.svg) · [Bold](markers/007-bold.svg) · [Black](markers/008-black.svg) |
-| <img src="markers/009-medium.svg" width="52" alt="Marker 011"> | **011** | [Medium](markers/009-medium.svg) |
-| <img src="markers/010-regular-bold.svg" width="52" alt="Marker 013"> | **013** | [Regular Bold](markers/010-regular-bold.svg) |
-| <img src="markers/011-regular-bold.svg" width="52" alt="Marker 014"> | **014** | [Regular Bold](markers/011-regular-bold.svg) |
-| <img src="markers/012-light.svg" width="52" alt="Marker 015"> | **015** | [Thin](markers/012-thin.svg) · [ExtraLight](markers/012-extralight.svg) · [Light](markers/012-light.svg) · [Regular Black](markers/012-regular-black.svg) |
-| <img src="markers/013-regular.svg" width="52" alt="Marker 017"> | **017** | [Regular](markers/013-regular.svg) · [Medium](markers/013-medium.svg) · [SemiBold](markers/013-semibold.svg) · [Bold](markers/013-bold.svg) |
-| <img src="markers/014-regular.svg" width="52" alt="Marker 020"> | **020** | [Regular](markers/014-regular.svg) |
-| <img src="markers/015-regular.svg" width="52" alt="Marker 021"> | **021** | [Regular](markers/015-regular.svg) |
-| <img src="markers/016-regular.svg" width="52" alt="Marker 022"> | **022** | [Regular](markers/016-regular.svg) |
-| <img src="markers/013-regular.svg" width="52" alt="Marker 023"> | **023** | [Regular](markers/013-regular.svg) |
-| <img src="markers/018-regular.svg" width="52" alt="Marker 024"> | **024** | [Regular](markers/018-regular.svg) |
-| <img src="markers/019-regular.svg" width="52" alt="Marker 025"> | **025** | [Regular](markers/019-regular.svg) |
-| <img src="markers/014-regular.svg" width="52" alt="Marker 026"> | **026** | [Regular](markers/014-regular.svg) |
+| <img src="markers/004-regular.svg" width="52" alt="Marker 004"> | **004** | [Thin](markers/004-thin.svg) · [ExtraLight](markers/004-extralight.svg) · [Light](markers/004-light.svg) · [Regular](markers/004-regular.svg) · [Medium](markers/004-medium.svg) · [SemiBold](markers/004-semibold.svg) · [Bold](markers/004-bold.svg) |
+| <img src="markers/005-regular.svg" width="52" alt="Marker 005"> | **005** | [Regular](markers/005-regular.svg) |
+| <img src="markers/006-regular.svg" width="52" alt="Marker 006"> | **006** | [Regular](markers/006-regular.svg) |
+| <img src="markers/007-regular.svg" width="52" alt="Marker 007"> | **007** | [Regular](markers/007-regular.svg) · [Medium](markers/007-medium.svg) · [Bold](markers/007-bold.svg) |
+| <img src="markers/008-medium.svg" width="52" alt="Marker 008"> | **008** | [ExtraLight](markers/008-extralight.svg) · [Light](markers/008-light.svg) · [Medium](markers/008-medium.svg) · [Bold](markers/008-bold.svg) · [Black](markers/008-black.svg) |
+| <img src="markers/009-medium.svg" width="52" alt="Marker 009"> | **009** | [Medium](markers/009-medium.svg) |
+| <img src="markers/010-regular-bold.svg" width="52" alt="Marker 010"> | **010** | [Regular Bold](markers/010-regular-bold.svg) |
+| <img src="markers/011-regular-bold.svg" width="52" alt="Marker 011"> | **011** | [Regular Bold](markers/011-regular-bold.svg) |
+| <img src="markers/012-light.svg" width="52" alt="Marker 012"> | **012** | [Thin](markers/012-thin.svg) · [ExtraLight](markers/012-extralight.svg) · [Light](markers/012-light.svg) · [Regular Black](markers/012-regular-black.svg) |
+| <img src="markers/013-regular.svg" width="52" alt="Marker 013"> | **013** | [Regular](markers/013-regular.svg) · [Medium](markers/013-medium.svg) · [SemiBold](markers/013-semibold.svg) · [Bold](markers/013-bold.svg) |
+| <img src="markers/014-regular.svg" width="52" alt="Marker 014"> | **014** | [Regular](markers/014-regular.svg) |
+| <img src="markers/015-regular.svg" width="52" alt="Marker 015"> | **015** | [Regular](markers/015-regular.svg) |
+| <img src="markers/016-regular.svg" width="52" alt="Marker 016"> | **016** | [Regular](markers/016-regular.svg) |
+| <img src="markers/017-regular.svg" width="52" alt="Marker 017"> | **017** | [Regular](markers/017-regular.svg) |
+| <img src="markers/018-regular.svg" width="52" alt="Marker 018"> | **018** | [Regular](markers/018-regular.svg) |
+| <img src="markers/019-regular.svg" width="52" alt="Marker 019"> | **019** | [Regular](markers/019-regular.svg) |
+| <img src="markers/020-regular.svg" width="52" alt="Marker 020"> | **020** | [Regular](markers/020-regular.svg) |
 
 Each file is a plain SVG — open it, or use the [demo](https://quranpedia.github.io/ayah-markers/demo/) to colour it first.
 
