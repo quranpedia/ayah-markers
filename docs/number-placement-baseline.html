@@ -3,13 +3,13 @@
 body { font: 14px/1.4 system-ui, sans-serif; margin: 24px; background: #fbfaf7; color: #1a1a1a; }
 h1 { font-size: 20px; margin: 0 0 4px; }
 p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
-.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 760px; }
-.card { border: 1px solid #ddd8cc; border-radius: 8px; background: #fff; padding: 10px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; max-width: 1200px; }
+.card { border: 1px solid #ddd8cc; border-radius: 10px; background: #fff; padding: 16px; }
 .card.flagged { border-color: #c0392b; box-shadow: inset 0 0 0 2px #f6d6d1; }
-.row { display: flex; gap: 6px; justify-content: center; }
-.row svg { width: 64px; height: 64px; }
-.id { font: 600 12px ui-monospace, monospace; margin-top: 8px; word-break: break-all; }
-.meta { font-size: 11px; color: #666; }
+.row { display: flex; gap: 12px; justify-content: center; }
+.row svg { width: 100%; max-width: 150px; height: auto; aspect-ratio: 1; }
+.id { font: 600 13px ui-monospace, monospace; margin-top: 12px; word-break: break-all; }
+.meta { font-size: 12px; color: #666; }
 .tag { display: inline-block; font-size: 10px; padding: 1px 5px; border-radius: 3px; }
 .tag.font { background: #d8f0e0; color: #14532d; }
 .tag.derived { background: #fdeecb; color: #6b4b06; }
@@ -17,7 +17,7 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 .flag { color: #c0392b; font-size: 11px; margin-top: 4px; }
 .legend { margin: 12px 0 18px; font-size: 12px; }
 .num { font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Amiri", "Scheherazade New", serif; }
-.placement-preview { cursor: crosshair; touch-action: none; }
+.placement-preview { cursor: pointer; touch-action: manipulation; }
 .placement-preview:focus-visible { outline: 3px solid #0b7771; outline-offset: 3px; }
 .placement-target { fill: #c0392b; stroke: #fff; stroke-width: 10; pointer-events: none; }
 .placement-selection { fill: #d6ad4344; stroke: #ad7b16; stroke-width: 18; pointer-events: none; }

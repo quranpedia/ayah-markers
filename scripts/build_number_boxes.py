@@ -66,6 +66,11 @@ def build():
     exceptions = json.load(open(os.path.join(ROOT, "scripts", "number_exceptions.json"))) \
         if os.path.exists(os.path.join(ROOT, "scripts", "number_exceptions.json")) else {}
 
+    # centres placed by hand on docs/number-placement.html, exported from the
+    # sheet's own store: they move the box, they never resize it
+    placement_path = os.path.join(ROOT, "scripts", "number_placement.json")
+    placement = json.load(open(placement_path)) if os.path.exists(placement_path) else {}
+
     stats = {"font": 0, "derived": 0, "mixed": 0}
     for m in coll["markers"]:
         mid = m["id"]
@@ -105,6 +110,10 @@ def build():
                     # rejected for this digit count -- say why, in the data
                     if any(x.get("enclosed") for x in f["boxes"].values()):
                         d["fallback_reason"] = b["reason"]
+            hand = (placement.get(mid) or {}).get(str(n))
+            if hand:
+                d = {**d, "cx": round(float(hand["cx"]), 1),
+                     "cy": round(float(hand["cy"]), 1), "placement": "manual"}
             digits[str(n)] = d
 
         source = "font-shaping" if used_font == 3 else ("derived" if used_font == 0 else "mixed")
@@ -146,13 +155,13 @@ CARD_CSS = """
 body { font: 14px/1.4 system-ui, sans-serif; margin: 24px; background: #fbfaf7; color: #1a1a1a; }
 h1 { font-size: 20px; margin: 0 0 4px; }
 p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
-.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 760px; }
-.card { border: 1px solid #ddd8cc; border-radius: 8px; background: #fff; padding: 10px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; max-width: 1200px; }
+.card { border: 1px solid #ddd8cc; border-radius: 10px; background: #fff; padding: 16px; }
 .card.flagged { border-color: #c0392b; box-shadow: inset 0 0 0 2px #f6d6d1; }
-.row { display: flex; gap: 6px; justify-content: center; }
-.row svg { width: 64px; height: 64px; }
-.id { font: 600 12px ui-monospace, monospace; margin-top: 8px; word-break: break-all; }
-.meta { font-size: 11px; color: #666; }
+.row { display: flex; gap: 12px; justify-content: center; }
+.row svg { width: 100%; max-width: 150px; height: auto; aspect-ratio: 1; }
+.id { font: 600 13px ui-monospace, monospace; margin-top: 12px; word-break: break-all; }
+.meta { font-size: 12px; color: #666; }
 .tag { display: inline-block; font-size: 10px; padding: 1px 5px; border-radius: 3px; }
 .tag.font { background: #d8f0e0; color: #14532d; }
 .tag.derived { background: #fdeecb; color: #6b4b06; }
@@ -160,7 +169,7 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 .flag { color: #c0392b; font-size: 11px; margin-top: 4px; }
 .legend { margin: 12px 0 18px; font-size: 12px; }
 .num { font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Amiri", "Scheherazade New", serif; }
-.placement-preview { cursor: crosshair; touch-action: none; }
+.placement-preview { cursor: pointer; touch-action: manipulation; }
 .placement-preview:focus-visible { outline: 3px solid #0b7771; outline-offset: 3px; }
 .placement-target { fill: #c0392b; stroke: #fff; stroke-width: 10; pointer-events: none; }
 .placement-selection { fill: #d6ad4344; stroke: #ad7b16; stroke-width: 18; pointer-events: none; }
@@ -181,8 +190,8 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 PLACEMENT_EDITOR = """
 <aside class="placement-editor" aria-live="polite">
   <h2>Set a number centre</h2>
-  <p>Click a marker part to select it, then centre from its bounds. Clicking blank space places the number at that exact point.</p>
-  <pre class="placement-values">Click a preview to begin.</pre>
+  <p>Click a marker part to select it, then centre the number from its bounds. Clicking blank space clears the selection and moves nothing. Placements save themselves as you go.</p>
+  <pre class="placement-values">Click a marker part to begin.</pre>
   <label class="placement-scope"><input type="checkbox" data-apply-all-digits> Apply alignment to all 1–3 digit boxes</label>
   <div class="placement-actions">
     <button type="button" class="secondary" data-align-x disabled>Centre horizontal</button>
@@ -190,14 +199,39 @@ PLACEMENT_EDITOR = """
     <button type="button" class="secondary" data-align-both disabled>Centre both</button>
     <button type="button" data-copy-placement>Copy JSON patch</button>
     <button type="button" class="secondary" data-reset-placement>Reset selected</button>
+    <button type="button" class="secondary" data-clear-placement>Clear all saved</button>
   </div>
 </aside>
 <script>
 (() => {
+  const STORAGE_KEY = 'ayah-markers:number-placement';
   const edits = new Map();
+
+  function save() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(Object.fromEntries(edits)));
+    } catch (error) {
+      /* storage unavailable (private mode, blocked site data) - keep working in memory */
+    }
+  }
+
+  function restore() {
+    let stored = null;
+    try {
+      stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    } catch (error) {
+      return;
+    }
+    if (!stored || typeof stored !== 'object') return;
+    Object.entries(stored).forEach(([markerId, digitEdits]) => {
+      if (!digitEdits || typeof digitEdits !== 'object') return;
+      edits.set(markerId, digitEdits);
+    });
+  }
   const panel = document.querySelector('.placement-values');
   const copyButton = document.querySelector('[data-copy-placement]');
   const resetButton = document.querySelector('[data-reset-placement]');
+  const clearButton = document.querySelector('[data-clear-placement]');
   const alignXButton = document.querySelector('[data-align-x]');
   const alignYButton = document.querySelector('[data-align-y]');
   const alignBothButton = document.querySelector('[data-align-both]');
@@ -216,7 +250,7 @@ PLACEMENT_EDITOR = """
     const { markerId, digitCount, cx, cy, contour } = selected;
     const selection = contour
       ? `Selected contour ${contour.dataset.contourIndex}; choose an alignment action.\\n`
-      : 'No contour selected; the number was placed at the clicked point.\\n';
+      : 'No part selected; click a filled part of the marker to enable centring.\\n';
     panel.textContent = `Selected: ${markerId}, ${digitCount} digit${digitCount === '1' ? '' : 's'}\\n`
       + selection + `cx: ${cx}, cy: ${cy}\\n\\n`
       + JSON.stringify(patchFor(markerId), null, 2);
@@ -262,6 +296,7 @@ PLACEMENT_EDITOR = """
       if (preview !== svg) updateSelectionOutline(preview, null);
     });
     edits.set(markerId, markerEdits);
+    save();
     selected = { svg, markerId, digitCount: svg.dataset.digitCount, cx, cy, contour };
     updateSelectionOutline(svg, contour);
     renderPanel();
@@ -299,18 +334,37 @@ PLACEMENT_EDITOR = """
     setCentre(selected.svg, point, selected.contour, applyAllDigits.checked);
   }
 
+  function currentCentre(svg) {
+    const target = svg.querySelector('[data-placement-target]');
+    return {
+      cx: rounded(Number(target.getAttribute('cx'))),
+      cy: rounded(Number(target.getAttribute('cy'))),
+    };
+  }
+
+  function select(svg, contour) {
+    const { cx, cy } = currentCentre(svg);
+    if (selected && selected.svg !== svg) updateSelectionOutline(selected.svg, null);
+    selected = { svg, markerId: svg.dataset.markerId, digitCount: svg.dataset.digitCount, cx, cy, contour };
+    updateSelectionOutline(svg, contour);
+    renderPanel();
+  }
+
+  restore();
+
+  document.querySelectorAll('.placement-preview').forEach((svg) => {
+    const stored = edits.get(svg.dataset.markerId)?.[svg.dataset.digitCount];
+    if (stored) updatePreview(svg, stored.cx, stored.cy);
+  });
+
   document.querySelectorAll('.placement-preview').forEach((svg) => {
     svg.addEventListener('click', (event) => {
-      const point = sourcePoint(svg, event);
-      setCentre(svg, point, contourAt(svg, point));
+      select(svg, contourAt(svg, sourcePoint(svg, event)));
     });
     svg.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
-        setCentre(svg, {
-          x: Number(svg.dataset.sourceX) + Number(svg.dataset.sourceWidth) / 2,
-          y: Number(svg.dataset.sourceY) + Number(svg.dataset.sourceHeight) / 2,
-        });
+        select(svg, null);
       }
     });
   });
@@ -328,10 +382,25 @@ PLACEMENT_EDITOR = """
     delete markerEdits[digitCount];
     if (Object.keys(markerEdits).length) edits.set(markerId, markerEdits);
     else edits.delete(markerId);
+    save();
     selected = { svg, markerId, digitCount, cx, cy, contour: null };
     updatePreview(svg, cx, cy);
     updateSelectionOutline(svg, null);
     renderPanel();
+  });
+
+  clearButton.addEventListener('click', () => {
+    edits.clear();
+    save();
+    document.querySelectorAll('.placement-preview').forEach((svg) => {
+      updatePreview(svg, Number(svg.dataset.originalCx), Number(svg.dataset.originalCy));
+      updateSelectionOutline(svg, null);
+    });
+    selected = null;
+    panel.textContent = 'Cleared every saved placement. Click a marker part to begin.';
+    alignXButton.disabled = true;
+    alignYButton.disabled = true;
+    alignBothButton.disabled = true;
   });
 
   copyButton.addEventListener('click', async () => {
