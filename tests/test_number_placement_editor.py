@@ -71,3 +71,7 @@ def test_svg_contours_are_exposed_as_individually_selectable_paths():
 
 def test_placement_editor_can_apply_contour_alignment_to_every_digit_count():
     assert 'data-apply-all-digits' in module.PLACEMENT_EDITOR
+
+
+def test_placement_actions_use_a_two_column_grid():
+    assert ".placement-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));" in module.CARD_CSS

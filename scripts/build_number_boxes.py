@@ -169,7 +169,7 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 .placement-editor h2 { font-size: 14px; margin: 0 0 4px; }
 .placement-editor p { font-size: 12px; margin: 0 0 10px; color: #4c5f57; }
 .placement-values { margin: 0 0 10px; padding: 10px; overflow: auto; border-radius: 6px; background: #f1f4ee; color: #1d332b; font: 11px/1.45 ui-monospace, monospace; white-space: pre-wrap; }
-.placement-actions { display: flex; gap: 8px; }
+.placement-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .placement-scope { display: block; margin-block: 0 10px; color: #35564a; font-size: 12px; }
 .placement-actions button { border: 0; border-radius: 6px; background: #0b7771; color: white; cursor: pointer; font: 600 12px system-ui, sans-serif; padding: 8px 10px; }
 .placement-actions button.secondary { background: #dce7e1; color: #174238; }
