@@ -2,6 +2,7 @@
 """Build the Ayah Markers PUA TrueType font."""
 from __future__ import annotations
 import json
+import re
 from pathlib import Path
 from xml.etree import ElementTree as ET
 from fontTools.fontBuilder import FontBuilder
@@ -14,12 +15,34 @@ from fontTools.pens.t2CharStringPen import T2CharStringPen
 ROOT = Path(__file__).resolve().parents[1]
 UPEM = 1000
 
-def outline(path: Path, source_upem: int):
+def glyph_path(path: Path) -> str:
+    """The glyph's contours, each once, in their original order.
+
+    The markers are layered for CSS, so a contour that punches a hole in a
+    part it does not belong to is drawn in both parts. Feeding those duplicates
+    to a pen would double their winding and fill the counters in, so the
+    `data-contours` indices the layering records are used to take each contour
+    exactly once, back in the order the source font drew them.
+    """
     root = ET.fromstring(path.read_text(encoding="utf-8"))
+    contours: dict[int, str] = {}
+    order = 0
+    for element in root.iter("{http://www.w3.org/2000/svg}path"):
+        subpaths = re.findall(r"[Mm][^Mm]*", element.attrib.get("d", ""))
+        indices = element.attrib.get("data-contours")
+        if indices:
+            keys = [int(value) for value in indices.split()]
+        else:
+            keys = list(range(order, order + len(subpaths))); order += len(subpaths)
+        for key, subpath in zip(keys, subpaths):
+            contours.setdefault(key, subpath)
+    return " ".join(contours[key] for key in sorted(contours))
+
+
+def outline(path: Path, source_upem: int):
     pen = TTGlyphPen(None); scale = UPEM / source_upem
     target = TransformPen(Cu2QuPen(pen, max_err=1.0), (scale, 0, 0, scale, 0, 0))
-    for element in root.findall("{http://www.w3.org/2000/svg}path"):
-        parse_path(element.attrib.get("d", ""), target)
+    parse_path(glyph_path(path), target)
     return pen.glyph()
 
 def cff_outline(path: Path, source_upem: int, width: int):
@@ -27,9 +50,7 @@ def cff_outline(path: Path, source_upem: int, width: int):
     pen = T2CharStringPen(width, None)
     scale = UPEM / source_upem
     target = TransformPen(pen, (scale, 0, 0, scale, 0, 0))
-    root = ET.fromstring(path.read_text(encoding="utf-8"))
-    for element in root.findall("{http://www.w3.org/2000/svg}path"):
-        parse_path(element.attrib.get("d", ""), target)
+    parse_path(glyph_path(path), target)
     return pen.getCharString()
 
 def main() -> None:

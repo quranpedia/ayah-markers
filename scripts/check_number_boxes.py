@@ -34,22 +34,21 @@ def main():
         xs = np.arange(x0, x0 + w + step, step)
         ys = np.arange(y0, y0 + h + step, step)
         ink = nonzero_mask(contours, xs, ys)
-        for n in ("1", "2", "3"):
-            b = m["number"]["digits"][n]
-            cx, cy = m["number"]["cx"], m["number"]["cy"]
-            ix = (xs >= cx - b["width"] / 2) & (xs <= cx + b["width"] / 2)
-            iy = (ys >= cy - b["height"] / 2) & (ys <= cy + b["height"] / 2)
-            sub = ink[np.ix_(iy, ix)]
-            cov = float(sub.mean()) if sub.size else 1.0
-            if cov > 0.0:
-                worst.append((cov, m["id"], n, b["source"]))
-            if cov > 0.005:
-                bad += 1
+        b = m["number"]
+        ix = (xs >= b["cx"] - b["width"] / 2) & (xs <= b["cx"] + b["width"] / 2)
+        iy = (ys >= b["cy"] - b["height"] / 2) & (ys <= b["cy"] + b["height"] / 2)
+        sub = ink[np.ix_(iy, ix)]
+        cov = float(sub.mean()) if sub.size else 1.0
+        if cov > 0.0:
+            worst.append((cov, m["id"], b["source"]))
+        if cov > 0.005:
+            bad += 1
     worst.sort(reverse=True)
-    for cov, mid, n, src in worst[:20]:
+    for cov, mid, src in worst[:20]:
         mark = "FLAG" if cov > 0.005 else "ok  "
-        print(f"{mark} {mid:22s} digits={n} source={src:13s} ink coverage {cov * 100:.2f}%")
-    print(f"\n{len(worst)} of 141 boxes touch any ink at all; {bad} exceed 0.5%")
+        print(f"{mark} {mid:22s} source={src:13s} ink coverage {cov * 100:.2f}%")
+    print(f"\n{len(worst)} of {len(coll['markers'])} boxes touch any ink at all; "
+          f"{bad} exceed 0.5%")
     return 1 if bad else 0
 
 

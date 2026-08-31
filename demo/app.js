@@ -8,7 +8,6 @@ const weights = document.querySelector('#weights');
 const palettesContainer = document.querySelector('#palettes');
 
 let records = [], svgCache = [], families = [], selectedFamily = 0, selectedVariant = 0;
-let annotations = { markers: {} };
 let activeView = 'mushaf';
 let currentSurahKey = 'fatihah';
 let mushafFontSize = 28;
@@ -30,80 +29,16 @@ function applyPalette(paletteColors) {
   render();
 }
 
-function splitContours(path) {
-  return path.match(/M[^M]*/g) || [];
-}
-
-const measureSvg = (() => {
-  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  svg.setAttribute('style', 'position:absolute;width:0;height:0;overflow:hidden');
-  document.body.append(svg);
-  return svg;
-})();
-
-function measured(contour) {
-  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-  path.setAttribute('d', contour);
-  path.setAttribute('fill-rule', 'evenodd');
-  measureSvg.append(path);
-  return path;
-}
-
-function interiorPoint(path) {
-  const box = path.getBBox();
-  for (let row = 1; row < 8; row++) {
-    for (let column = 1; column < 8; column++) {
-      const point = { x: box.x + box.width * column / 8, y: box.y + box.height * row / 8 };
-      if (path.isPointInFill(point)) return point;
-    }
-  }
-  return { x: box.x + box.width / 2, y: box.y + box.height / 2 };
-}
-
-function hasAssignments(annotation) {
-  return annotation && ['parts', 'interiorFills', 'generatedFills'].some(bucket => Object.values(annotation[bucket] || {}).some(values => values.length));
-}
-
-function localAnnotations() {
-  try {
-    return JSON.parse(localStorage.getItem('ayah-marker-annotations-v1')) || { markers: {} };
-  } catch {
-    return { markers: {} };
-  }
-}
-
-function mergedAnnotations(fileAnnotations) {
-  const local = localAnnotations();
-  const ids = new Set([...Object.keys(fileAnnotations.markers || {}), ...Object.keys(local.markers || {})]);
-  const markers = Object.fromEntries([...ids].map(id => {
-    const fileMarker = fileAnnotations.markers?.[id] || {};
-    const localMarker = local.markers?.[id] || {};
-    return [id, {
-      ...fileMarker,
-      ...localMarker,
-      parts: { ...(fileMarker.parts || {}), ...(localMarker.parts || {}) },
-      interiorFills: { ...(fileMarker.interiorFills || {}), ...(localMarker.interiorFills || {}) },
-      generatedFills: { ...(fileMarker.generatedFills || {}), ...(localMarker.generatedFills || {}) }
-    }];
-  }));
-  return { ...fileAnnotations, markers };
-}
-
-function familyAnnotation(record) {
-  const own = annotations.markers[record.id];
-  if (hasAssignments(own)) return own;
-  const family = record.id.split('-')[0];
-  return Object.entries(annotations.markers).find(([id, annotation]) => id.split('-')[0] === family && hasAssignments(annotation))?.[1] || own;
-}
-
-function layerStyle(part) {
-  return `fill:var(--${part},currentColor)`;
+// The markers ship layered: each file carries one `<g data-part="...">` per
+// colour, filled with `var(--part, default)`. Colouring one is setting the
+// variables -- nothing is assembled here.
+function markerLayers(svgString) {
+  const found = [...svgString.matchAll(/data-part="([^"]+)"/g)].map(match => match[1]);
+  return parts.filter(part => found.includes(part));
 }
 
 function availableParts(record) {
-  const annotation = familyAnnotation(record);
-  const assigned = annotation ? ['parts', 'interiorFills', 'generatedFills'].flatMap(bucket => Object.entries(annotation[bucket] || {}).filter(([, values]) => values.length).map(([part]) => part)) : [];
-  return [...new Set(assigned.length ? assigned : parts.filter(part => record.parts?.[part]))];
+  return record.layers || [];
 }
 
 function renderColorControls(record) {
@@ -126,69 +61,13 @@ function markerCss(record) {
   return `/* ${record.id} */\n.ayah-marker {\n${variables}\n}`;
 }
 
-function annotatedSvg(raw, annotation) {
-  const source = new DOMParser().parseFromString(raw, 'image/svg+xml').documentElement;
-  const documentSvg = document.implementation.createDocument('http://www.w3.org/2000/svg', 'svg', null);
-  const svg = documentSvg.documentElement;
-  svg.setAttribute('viewBox', source.getAttribute('viewBox'));
-  svg.setAttribute('class', 'ayah-marker');
-  const contours = new Map();
-  let pathIndex = 0;
-  source.querySelectorAll('path').forEach(path => {
-    splitContours(path.getAttribute('d')).forEach((contour, contourIndex) => contours.set(`path-${pathIndex}-contour-${contourIndex}`, contour));
-    pathIndex++;
-  });
-
-  const addGroup = (part, generated = false) => {
-    const group = documentSvg.createElementNS(svg.namespaceURI, 'g');
-    group.setAttribute('data-part', part);
-    group.setAttribute('fill-rule', 'evenodd');
-    group.setAttribute('style', layerStyle(part));
-    if (generated) group.setAttribute('data-generated-fill', 'true');
-    svg.append(group);
-    return group;
-  };
-
-  const generatedGroups = Object.fromEntries(parts.map(part => [part, addGroup(part, true)]));
-  const appendShape = (part, shape) => {
-    if (!generatedGroups[part] || !shape?.type) return;
-    const element = documentSvg.createElementNS(svg.namespaceURI, shape.type);
-    Object.entries(shape).forEach(([name, value]) => {
-      if (name !== 'type') element.setAttribute(name, value);
-    });
-    generatedGroups[part].append(element);
-  };
-
-  Object.entries(annotation.generatedFills || {}).forEach(([part, shapes]) => shapes.forEach(shape => appendShape(part, shape)));
-  Object.entries(annotation.interiorFills || {}).forEach(([part, ids]) => ids.forEach(id => {
-    const contour = contours.get(id);
-    if (!contour) return;
-    const output = documentSvg.createElementNS(svg.namespaceURI, 'path');
-    output.setAttribute('d', contour);
-    generatedGroups[part].append(output);
-  }));
-
-  const groups = Object.fromEntries(renderOrder.map(part => [part, addGroup(part)]));
-  const assignments = new Map();
-  Object.entries(annotation.parts).forEach(([part, ids]) => ids.forEach(id => assignments.set(id, part)));
-  const placements = [];
-  contours.forEach((contour, id) => {
-    const part = assignments.get(id) || 'ink-base', path = measured(contour);
-    placements.push({ part, contour, path, point: interiorPoint(path) });
-  });
-
-  renderOrder.forEach(part => {
-    const own = placements.filter(placement => placement.part === part);
-    if (!own.length) return;
-    const contained = placements.filter(other => other.part !== part && renderOrder.indexOf(other.part) < renderOrder.indexOf(part) && own.some(placement => placement.path.isPointInFill(other.point)));
-    const holes = contained.filter(other => !contained.some(outer => outer !== other && outer.path.isPointInFill(other.point)));
-    const output = documentSvg.createElementNS(svg.namespaceURI, 'path');
-    output.setAttribute('d', [...own, ...holes].map(placement => placement.contour).join(' '));
-    groups[part].append(output);
-  });
-
-  placements.forEach(placement => placement.path.remove());
-  return new XMLSerializer().serializeToString(svg);
+// The published file leaves every colour as `var(--part, default)`. Baking the
+// chosen colours in gives a standalone file that needs no CSS at all.
+function colouredSvg(svgString, record) {
+  const colours = theme();
+  return availableParts(record).reduce(
+    (svg, part) => svg.replaceAll(new RegExp(`var\\(--${part},[^)]*\\)`, 'g'), colours[part]),
+    svgString);
 }
 
 const weightOrder = ['thin','extralight','light','regular','medium','semibold','bold','extrabold','black','regular-bold','regular-black'];
@@ -384,25 +263,21 @@ function toArabicDigits(num) {
 
 // The number does not sit in the middle of a marker. `collection.json` records
 // where it does sit -- one centre per marker, in the SVG's own space -- so the
-// numeral is drawn inside the artwork rather than centred over its box. Only
-// the size of the box changes with the digit count.
-function numberBox(record, numStr) {
-  const number = record?.number;
-  if (!number) return null;
-  const size = number.digits?.[String(numStr.length)] || number.digits?.['3'] || number;
-  return { ...size, cx: number.cx, cy: number.cy };
+// numeral is drawn inside the artwork rather than centred over its box. The
+// box is the widest the marker holds; the size below is this demo's choice.
+function numberBox(record) {
+  return record?.number || null;
 }
 
 function withAyahNumber(svgString, record, numStr) {
-  const box = numberBox(record, numStr);
-  const viewBox = /viewBox="([^"]+)"/.exec(svgString)?.[1];
-  if (!box || !viewBox) return svgString;
-  const [, , width, height] = viewBox.replace(/,/g, ' ').trim().split(/\s+/).map(Number);
-  // the size the placement sheet draws the numeral at, in the marker's units
-  const fontSize = 0.32 * Math.max(width, height);
+  const box = numberBox(record);
+  if (!box) return svgString;
+  // fit the numeral to the recorded box instead of stretching it to the width:
+  // the box holds three digits, so stretching would blow up a short number
+  // a digit's ink is roughly 0.72em tall, so this fills the recorded height
+  const fontSize = Math.min(box.height / 0.72, box.width / (0.62 * numStr.length));
   const text = `<text class="ayah-number" x="${box.cx}" y="${box.cy}" font-size="${fontSize.toFixed(1)}"`
-    + ` text-anchor="middle" dominant-baseline="central"`
-    + ` textLength="${box.width.toFixed(1)}" lengthAdjust="spacing">${numStr}</text>`;
+    + ` text-anchor="middle" dominant-baseline="central">${numStr}</text>`;
   return svgString.replace(/<\/svg>\s*$/, `${text}</svg>`);
 }
 
@@ -489,6 +364,7 @@ function render() {
   renderWeights();
   renderColorControls(variant.record);
   const layers = availableParts(variant.record);
+  document.querySelector('#css-preview').textContent = markerCss(variant.record);
   status.textContent = `${variant.record.id} · ${layers.length ? layers.join(', ') : 'no assigned layers'}`;
   document.querySelectorAll('.marker-card').forEach(card => card.setAttribute('aria-pressed', +card.dataset.family === selectedFamily));
   renderMushafContent();
@@ -511,16 +387,12 @@ function switchView(viewName) {
 // Initialization
 // ----------------------------------------------------
 
-Promise.all([
-  fetch('../collection.json?v=collection-47-2').then(r => r.json()),
-  fetch('../annotations.json?v=collection-47-2').then(r => r.json())
-]).then(async ([collection, fileAnnotations]) => {
-  annotations = mergedAnnotations(fileAnnotations);
+fetch('../collection.json?v=collection-47-3').then(r => r.json()).then(async collection => {
   records = collection.markers;
   svgCache = await Promise.all(records.map(async record => {
-    const raw = await fetch(`../${record.file}?v=source-safe-1`).then(r => r.text());
-    const annotation = familyAnnotation(record);
-    return hasAssignments(annotation) ? annotatedSvg(raw, annotation) : raw;
+    const svg = await fetch(`../${record.file}?v=layered-1`).then(r => r.text());
+    record.layers = markerLayers(svg);
+    return svg;
   }));
   families = buildFamilies();
   document.querySelector('#marker-count').textContent = `${families.length} designs · ${records.length} weights`;
@@ -609,6 +481,18 @@ document.querySelector('#copy-html').onclick = async () => {
   const originalText = button.textContent;
   button.textContent = 'Copied!';
   setTimeout(() => button.textContent = originalText, 1200);
+};
+
+// Download the marker with the chosen colours already in the file
+document.querySelector('#download-svg').onclick = () => {
+  const variant = currentVariant();
+  const svg = colouredSvg(svgCache[variant.index], variant.record);
+  const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
+  const link = Object.assign(document.createElement('a'), { href: url, download: `${variant.record.id}.svg` });
+  document.body.append(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
 };
 
 // Reset colors

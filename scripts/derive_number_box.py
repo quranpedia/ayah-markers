@@ -168,12 +168,29 @@ def parse_contours(d):
 
 
 def read_marker(path):
+    """The viewBox and the glyph's contours, each contour exactly once.
+
+    The markers are layered for CSS, so a contour that punches a hole in
+    another part is drawn twice; the `data-contours` indices recorded by the
+    layering put the glyph back in its original order, without duplicates that
+    would flip the winding this file rasterises with.
+    """
     src = open(path).read()
     vb = [float(x) for x in re.search(r'viewBox="([^"]+)"', src).group(1).replace(",", " ").split()]
-    ds = re.findall(r'\sd="([^"]+)"', src)
-    if len(ds) != 1:
-        raise ValueError(f"{path}: expected one path, found {len(ds)}")
-    return vb, parse_contours(ds[0])
+    contours, order = {}, 0
+    for tag in re.findall(r"<path\b[^>]*>", src):
+        d = re.search(r'\sd="([^"]+)"', tag)
+        if not d:
+            continue
+        subpaths = re.findall(r"[Mm][^Mm]*", d.group(1))
+        indices = re.search(r'\sdata-contours="([^"]*)"', tag)
+        keys = ([int(value) for value in indices.group(1).split()] if indices
+                else list(range(order, order + len(subpaths))))
+        if not indices:
+            order += len(subpaths)
+        for key, subpath in zip(keys, subpaths):
+            contours.setdefault(key, subpath)
+    return vb, parse_contours(" ".join(contours[key] for key in sorted(contours)))
 
 
 # ------------------------------------------------------------- rasterisation
