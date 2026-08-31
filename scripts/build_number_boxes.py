@@ -170,6 +170,7 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 .placement-editor p { font-size: 12px; margin: 0 0 10px; color: #4c5f57; }
 .placement-values { margin: 0 0 10px; padding: 10px; overflow: auto; border-radius: 6px; background: #f1f4ee; color: #1d332b; font: 11px/1.45 ui-monospace, monospace; white-space: pre-wrap; }
 .placement-actions { display: flex; gap: 8px; }
+.placement-scope { display: block; margin-block: 0 10px; color: #35564a; font-size: 12px; }
 .placement-actions button { border: 0; border-radius: 6px; background: #0b7771; color: white; cursor: pointer; font: 600 12px system-ui, sans-serif; padding: 8px 10px; }
 .placement-actions button.secondary { background: #dce7e1; color: #174238; }
 .placement-actions button:disabled { cursor: not-allowed; opacity: 0.45; }
@@ -182,6 +183,7 @@ PLACEMENT_EDITOR = """
   <h2>Set a number centre</h2>
   <p>Click a marker part to select it, then centre from its bounds. Clicking blank space places the number at that exact point.</p>
   <pre class="placement-values">Click a preview to begin.</pre>
+  <label class="placement-scope"><input type="checkbox" data-apply-all-digits> Apply alignment to all 1–3 digit boxes</label>
   <div class="placement-actions">
     <button type="button" class="secondary" data-align-x disabled>Centre horizontal</button>
     <button type="button" class="secondary" data-align-y disabled>Centre vertical</button>
@@ -199,6 +201,7 @@ PLACEMENT_EDITOR = """
   const alignXButton = document.querySelector('[data-align-x]');
   const alignYButton = document.querySelector('[data-align-y]');
   const alignBothButton = document.querySelector('[data-align-both]');
+  const applyAllDigits = document.querySelector('[data-apply-all-digits]');
   let selected = null;
 
   function rounded(value) { return Number(value.toFixed(1)); }
@@ -244,16 +247,22 @@ PLACEMENT_EDITOR = """
     target.setAttribute('r', 20 / Number(svg.dataset.normalizeScale));
   }
 
-  function setCentre(svg, point, contour = null) {
+  function setCentre(svg, point, contour = null, applyToAllDigits = false) {
     const markerId = svg.dataset.markerId;
-    const digitCount = svg.dataset.digitCount;
+    const targets = applyToAllDigits
+      ? [...document.querySelectorAll('.placement-preview')]
+        .filter((preview) => preview.dataset.markerId === markerId)
+      : [svg];
     const cx = rounded(point.x);
     const cy = rounded(point.y);
     const markerEdits = edits.get(markerId) || {};
-    markerEdits[digitCount] = { cx, cy };
+    targets.forEach((preview) => {
+      markerEdits[preview.dataset.digitCount] = { cx, cy };
+      updatePreview(preview, cx, cy);
+      if (preview !== svg) updateSelectionOutline(preview, null);
+    });
     edits.set(markerId, markerEdits);
-    selected = { svg, markerId, digitCount, cx, cy, contour };
-    updatePreview(svg, cx, cy);
+    selected = { svg, markerId, digitCount: svg.dataset.digitCount, cx, cy, contour };
     updateSelectionOutline(svg, contour);
     renderPanel();
   }
@@ -287,7 +296,7 @@ PLACEMENT_EDITOR = """
       x: axis === 'y' ? selected.cx : box.x + box.width / 2,
       y: axis === 'x' ? selected.cy : box.y + box.height / 2,
     };
-    setCentre(selected.svg, point, selected.contour);
+    setCentre(selected.svg, point, selected.contour, applyAllDigits.checked);
   }
 
   document.querySelectorAll('.placement-preview').forEach((svg) => {

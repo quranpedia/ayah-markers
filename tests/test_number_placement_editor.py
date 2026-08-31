@@ -67,3 +67,7 @@ def test_svg_contours_are_exposed_as_individually_selectable_paths():
     ]
     assert 'data-align-x' in module.PLACEMENT_EDITOR
     assert 'data-align-y' in module.PLACEMENT_EDITOR
+
+
+def test_placement_editor_can_apply_contour_alignment_to_every_digit_count():
+    assert 'data-apply-all-digits' in module.PLACEMENT_EDITOR
