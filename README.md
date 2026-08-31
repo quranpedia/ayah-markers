@@ -38,10 +38,29 @@ choose its weight, set the colours, then **Copy CSS** for exactly this block, or
 }
 ```
 
-Every available variable is listed in the [SVG guide](docs/USAGE.md), along with
-where to put the ayah number: `collection.json` gives each marker one centre and
-the box it holds, in the SVG's own coordinates, because a marker's number rarely
-sits at the middle of its bounding box.
+Every available variable is listed in the [SVG guide](docs/USAGE.md).
+
+### Where the number goes
+
+A marker holds the ayah number **inside** it, and the middle of its bounding box
+is rarely the right place — a design with a flourish hanging below the disc puts
+the number well above centre. So `collection.json` records where the number goes
+for each marker, in the same coordinates as that marker's SVG:
+
+```json
+"number": { "cx": 862.5, "cy": 601.5, "width": 730.0, "height": 305.0, "r": 483.8 }
+```
+
+- `cx`, `cy` — centre the numeral here. One centre per marker: the number sits in
+  the same place whether it is one digit or three.
+- `width`, `height` — the widest box this marker holds, which is the three-digit
+  case. **Size the numeral by `height`** and centre it; stretching a one-digit
+  number to `width` draws it about 2.7× too wide.
+- `r` — the largest circle that fits the marker's interior, if you would rather
+  place a round badge than a box.
+
+Every centre was placed by hand, and none of the 47 boxes touches the marker's
+own ink. How they were arrived at is in [METHOD.md](docs/METHOD.md).
 
 ## Use the font
 
