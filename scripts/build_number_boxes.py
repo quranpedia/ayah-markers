@@ -163,6 +163,8 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 .placement-preview { cursor: crosshair; touch-action: none; }
 .placement-preview:focus-visible { outline: 3px solid #0b7771; outline-offset: 3px; }
 .placement-target { fill: #c0392b; stroke: #fff; stroke-width: 10; pointer-events: none; }
+.placement-selection { fill: #d6ad4344; stroke: #ad7b16; stroke-width: 18; pointer-events: none; }
+.selection-source { fill: transparent; pointer-events: none; }
 .placement-editor { position: fixed; inset-block-end: 16px; inset-inline-end: 16px; width: min(360px, calc(100vw - 32px)); border: 1px solid #b9c9c3; border-radius: 12px; background: #fffdf8; box-shadow: 0 12px 40px #1a342622; padding: 16px; z-index: 2; }
 .placement-editor h2 { font-size: 14px; margin: 0 0 4px; }
 .placement-editor p { font-size: 12px; margin: 0 0 10px; color: #4c5f57; }
@@ -170,6 +172,7 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 .placement-actions { display: flex; gap: 8px; }
 .placement-actions button { border: 0; border-radius: 6px; background: #0b7771; color: white; cursor: pointer; font: 600 12px system-ui, sans-serif; padding: 8px 10px; }
 .placement-actions button.secondary { background: #dce7e1; color: #174238; }
+.placement-actions button:disabled { cursor: not-allowed; opacity: 0.45; }
 @media (max-width: 600px) { .placement-editor { inset-inline: 12px; width: auto; } }
 """
 
@@ -177,9 +180,12 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 PLACEMENT_EDITOR = """
 <aside class="placement-editor" aria-live="polite">
   <h2>Set a number centre</h2>
-  <p>Click inside a number preview. Its dashed box and number move to that exact SVG point.</p>
+  <p>Click a marker part to select it, then centre from its bounds. Clicking blank space places the number at that exact point.</p>
   <pre class="placement-values">Click a preview to begin.</pre>
   <div class="placement-actions">
+    <button type="button" class="secondary" data-align-x disabled>Centre horizontal</button>
+    <button type="button" class="secondary" data-align-y disabled>Centre vertical</button>
+    <button type="button" class="secondary" data-align-both disabled>Centre both</button>
     <button type="button" data-copy-placement>Copy JSON patch</button>
     <button type="button" class="secondary" data-reset-placement>Reset selected</button>
   </div>
@@ -190,6 +196,9 @@ PLACEMENT_EDITOR = """
   const panel = document.querySelector('.placement-values');
   const copyButton = document.querySelector('[data-copy-placement]');
   const resetButton = document.querySelector('[data-reset-placement]');
+  const alignXButton = document.querySelector('[data-align-x]');
+  const alignYButton = document.querySelector('[data-align-y]');
+  const alignBothButton = document.querySelector('[data-align-both]');
   let selected = null;
 
   function rounded(value) { return Number(value.toFixed(1)); }
@@ -201,10 +210,23 @@ PLACEMENT_EDITOR = """
 
   function renderPanel() {
     if (!selected) return;
-    const { markerId, digitCount, cx, cy } = selected;
+    const { markerId, digitCount, cx, cy, contour } = selected;
+    const selection = contour
+      ? `Selected contour ${contour.dataset.contourIndex}; choose an alignment action.\\n`
+      : 'No contour selected; the number was placed at the clicked point.\\n';
     panel.textContent = `Selected: ${markerId}, ${digitCount} digit${digitCount === '1' ? '' : 's'}\\n`
-      + `cx: ${cx}, cy: ${cy}\\n\\n`
+      + selection + `cx: ${cx}, cy: ${cy}\\n\\n`
       + JSON.stringify(patchFor(markerId), null, 2);
+    const hasContour = Boolean(contour);
+    alignXButton.disabled = !hasContour;
+    alignYButton.disabled = !hasContour;
+    alignBothButton.disabled = !hasContour;
+  }
+
+  function updateSelectionOutline(svg, contour) {
+    const outline = svg.querySelector('[data-selection-outline]');
+    outline.setAttribute('d', contour ? contour.getAttribute('d') : '');
+    outline.setAttribute('display', contour ? '' : 'none');
   }
 
   function updatePreview(svg, cx, cy) {
@@ -222,7 +244,7 @@ PLACEMENT_EDITOR = """
     target.setAttribute('r', 20 / Number(svg.dataset.normalizeScale));
   }
 
-  function setCentre(svg, point) {
+  function setCentre(svg, point, contour = null) {
     const markerId = svg.dataset.markerId;
     const digitCount = svg.dataset.digitCount;
     const cx = rounded(point.x);
@@ -230,23 +252,48 @@ PLACEMENT_EDITOR = """
     const markerEdits = edits.get(markerId) || {};
     markerEdits[digitCount] = { cx, cy };
     edits.set(markerId, markerEdits);
-    selected = { svg, markerId, digitCount, cx, cy };
+    selected = { svg, markerId, digitCount, cx, cy, contour };
     updatePreview(svg, cx, cy);
+    updateSelectionOutline(svg, contour);
     renderPanel();
+  }
+
+  function sourcePoint(svg, event) {
+    const bounds = svg.getBoundingClientRect();
+    const scale = Number(svg.dataset.normalizeScale);
+    return {
+      x: (((event.clientX - bounds.left) / bounds.width) * 1000
+        - Number(svg.dataset.normalizeOffsetX)) / scale + Number(svg.dataset.sourceX),
+      y: (((event.clientY - bounds.top) / bounds.height) * 1000
+        - Number(svg.dataset.normalizeOffsetY)) / scale + Number(svg.dataset.sourceY),
+    };
+  }
+
+  function contourAt(svg, point) {
+    const probe = new DOMPoint(point.x, point.y);
+    const candidates = [...svg.querySelectorAll('[data-selectable-contour]')]
+      .filter((contour) => contour.isPointInFill(probe));
+    return candidates.sort((a, b) => {
+      const aBox = a.getBBox();
+      const bBox = b.getBBox();
+      return aBox.width * aBox.height - bBox.width * bBox.height;
+    })[0] || null;
+  }
+
+  function centreFromContour(axis) {
+    if (!selected?.contour) return;
+    const box = selected.contour.getBBox();
+    const point = {
+      x: axis === 'y' ? selected.cx : box.x + box.width / 2,
+      y: axis === 'x' ? selected.cy : box.y + box.height / 2,
+    };
+    setCentre(selected.svg, point, selected.contour);
   }
 
   document.querySelectorAll('.placement-preview').forEach((svg) => {
     svg.addEventListener('click', (event) => {
-      const bounds = svg.getBoundingClientRect();
-      const previewPoint = {
-        x: ((event.clientX - bounds.left) / bounds.width) * 1000,
-        y: ((event.clientY - bounds.top) / bounds.height) * 1000,
-      };
-      const scale = Number(svg.dataset.normalizeScale);
-      setCentre(svg, {
-        x: (previewPoint.x - Number(svg.dataset.normalizeOffsetX)) / scale + Number(svg.dataset.sourceX),
-        y: (previewPoint.y - Number(svg.dataset.normalizeOffsetY)) / scale + Number(svg.dataset.sourceY),
-      });
+      const point = sourcePoint(svg, event);
+      setCentre(svg, point, contourAt(svg, point));
     });
     svg.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
@@ -259,6 +306,10 @@ PLACEMENT_EDITOR = """
     });
   });
 
+  alignXButton.addEventListener('click', () => centreFromContour('x'));
+  alignYButton.addEventListener('click', () => centreFromContour('y'));
+  alignBothButton.addEventListener('click', () => centreFromContour('both'));
+
   resetButton.addEventListener('click', () => {
     if (!selected) return;
     const { svg, markerId, digitCount } = selected;
@@ -268,8 +319,9 @@ PLACEMENT_EDITOR = """
     delete markerEdits[digitCount];
     if (Object.keys(markerEdits).length) edits.set(markerId, markerEdits);
     else edits.delete(markerId);
-    selected = { svg, markerId, digitCount, cx, cy };
+    selected = { svg, markerId, digitCount, cx, cy, contour: null };
     updatePreview(svg, cx, cy);
+    updateSelectionOutline(svg, null);
     renderPanel();
   });
 
@@ -290,6 +342,11 @@ def marker_svg(path):
     vb = re.search(r'viewBox="([^"]+)"', src).group(1)
     d = re.search(r'\sd="([^"]+)"', src).group(1)
     return vb, d
+
+
+def svg_contours(path_data):
+    """Return each move-to contour as its own selectable SVG path."""
+    return re.findall(r"[Mm][^Mm]*", path_data)
 
 
 def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
@@ -325,6 +382,12 @@ def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
         f'<g transform="{transform}">',
     ]
     parts.append(f'<path d="{d}" fill="{colour}"/>')
+    if editor_attrs:
+        for contour_index, contour in enumerate(svg_contours(d)):
+            parts.append(
+                f'<path class="selection-source" d="{contour}" '
+                f'data-selectable-contour data-contour-index="{contour_index}"/>'
+            )
     if show_box:
         parts.append(
             f'<rect x="{box["cx"] - box["width"] / 2:.1f}" y="{box["cy"] - box["height"] / 2:.1f}" '
@@ -338,6 +401,7 @@ def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
     )
     if editor_attrs:
         parts.append(f'<circle class="placement-target" data-placement-target cx="{box["cx"]:.1f}" cy="{box["cy"]:.1f}" r="0"/>')
+        parts.append('<path class="placement-selection" data-selection-outline d="" display="none"/>')
     parts.append("</g></svg>")
     return "".join(parts)
 

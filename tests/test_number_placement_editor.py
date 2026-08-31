@@ -58,3 +58,12 @@ def test_sheet_renderer_can_use_the_existing_number_metadata_without_rebuilding_
 
 def test_placement_editor_maps_pointer_positions_from_rendered_preview_bounds():
     assert "getBoundingClientRect" in module.PLACEMENT_EDITOR
+
+
+def test_svg_contours_are_exposed_as_individually_selectable_paths():
+    assert module.svg_contours("M0 0L10 0ZM20 20L30 20Z") == [
+        "M0 0L10 0Z",
+        "M20 20L30 20Z",
+    ]
+    assert 'data-align-x' in module.PLACEMENT_EDITOR
+    assert 'data-align-y' in module.PLACEMENT_EDITOR
