@@ -67,12 +67,12 @@ same coordinate space as its outline:
 ```json
 "number": {
   "source": "font-shaping",
-  "cx": 869.0, "cy": 591.5, "width": 730.0, "height": 305.0,
+  "cx": 862.5, "cy": 601.5, "width": 730.0, "height": 305.0,
   "r": 483.8,
   "digits": {
-    "1": { "cx": 858.0, "cy": 592.0, "width": 226.0, "height": 304.0, "source": "font-shaping" },
-    "2": { "cx": 872.0, "cy": 596.5, "width": 478.0, "height": 313.0, "source": "font-shaping", "ring_alternate": true },
-    "3": { "cx": 869.0, "cy": 591.5, "width": 730.0, "height": 305.0, "source": "font-shaping", "ring_alternate": true }
+    "1": { "cx": 862.5, "cy": 601.5, "width": 226.0, "height": 304.0, "source": "font-shaping", "placement": "manual" },
+    "2": { "cx": 862.5, "cy": 601.5, "width": 478.0, "height": 313.0, "source": "font-shaping", "ring_alternate": true, "placement": "manual" },
+    "3": { "cx": 862.5, "cy": 601.5, "width": 730.0, "height": 305.0, "source": "font-shaping", "ring_alternate": true, "placement": "manual" }
   },
   "derived":  { "cx": 863.4, "cy": 601.4, "width": 691.3, "height": 685.5, "r": 483.8, "region": "fill-base" },
   "font": { "family": "Noto Nastaliq Urdu", "file": "NotoNastaliqUrdu[wght].ttf",
@@ -89,7 +89,11 @@ same coordinate space as its outline:
 - `derived` — the geometric answer, always present, plus the largest box that
   fits the interior at all.
 - `source` — **`font-shaping`** or **`derived`**, per marker and per digit
-  count, so a computed value is never mistaken for the designer's own.
+  count, so a computed value is never mistaken for the designer's own. It
+  describes where the box's **size** came from.
+- `placement` — **`manual`** when the centre was set by hand on the placement
+  sheet, which is the case for all 47 markers. Where it is absent the centre is
+  whatever `source` computed.
 
 ### `font-shaping`: the type designer already answered
 
@@ -155,8 +159,37 @@ digits, and that wider ring's number box covers 15% ink on the outline this
 repository ships. Its one-digit box is the font's; two and three digits fall back
 to the derived rule, and each records a `fallback_reason` saying so.
 
-No value is hand-edited. `scripts/number_exceptions.json`, if present, is merged
-in as `number.exception` and is the only place a hand correction may live.
+`scripts/number_exceptions.json`, if present, is merged in as
+`number.exception`.
+
+### Hand-placed centres
+
+The sizes above are computed and never touched. The **centres** are not: every
+one of the 47 markers was centred by eye on the placement sheet, and those
+centres are the product this repository ships.
+
+They live in `scripts/number_placement.json`, one entry per marker and digit
+count:
+
+```json
+"014-regular-bold": {
+  "1": { "cx": 862.5, "cy": 601.5 },
+  "2": { "cx": 862.5, "cy": 601.5 },
+  "3": { "cx": 862.5, "cy": 601.5 }
+}
+```
+
+`build_number_boxes.py` applies that file last. It moves a box and never
+resizes one, so the computed width, height and `source` survive intact and each
+box it moves is marked `"placement": "manual"`. Delete an entry and that box
+falls back to its computed centre; delete the file and the whole collection
+does.
+
+The centres are set in [docs/number-placement.html](docs/number-placement.html):
+click a part of a marker to select it, centre the number on that part's bounds
+horizontally, vertically or both, and the sheet saves each placement to the
+browser as you go. **Copy JSON patch** emits the entry for the selected marker
+in the shape above.
 
 ### Checking it
 
@@ -169,13 +202,14 @@ python3 scripts/check_number_boxes.py        # gate: no box may sit on ink
 ```
 
 `check_number_boxes.py` rasterises every marker and measures how much of each
-recorded box is covered by the marker's own ink. All 141 boxes pass; one grazes
-an outline at 0.04%, which is the rasteriser's own edge error.
+recorded box is covered by the marker's own ink. All 141 boxes pass, and since
+the centres were placed by hand none of them touches ink at all.
 
 Two contact sheets render the result:
 
 - [docs/number-placement.html](docs/number-placement.html) — all 47 markers with
-  one, two and three digits placed in the recorded box, labelled with the source.
+  one, two and three digits placed in the recorded box, labelled with the
+  source. This is also the editor the centres are set in.
 - [docs/number-placement-baseline.html](docs/number-placement-baseline.html) —
   the derived centre against the naive bounding-box centre. They agree on 32
   markers, as they should for a symmetric design, and disagree by up to 174 units
@@ -269,6 +303,8 @@ Each file is a plain SVG — open it, or use the [demo](https://quranpedia.githu
 markers/          source SVG outlines, one <path> each, unlayered
 annotations.json  contour-to-layer assignments per marker
 collection.json   order, sizes, number placement, source attribution and licences
+scripts/number_placement.json
+                  the hand-placed number centres the build applies
 LICENSES.md       the source families' terms, in full
 demo/             the customizer
 dist/             OTF, TTF, font map
