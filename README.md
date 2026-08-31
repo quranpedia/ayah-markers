@@ -1,7 +1,7 @@
 # Ayah Markers
 
 <p align="center">
-  <strong>Qur’anic end-of-ayah marks as layered SVGs and a font.</strong><br>
+  <strong>Qur’anic end-of-ayah marks as SVG outlines and a font.</strong><br>
   20 designs · 47 weights · recolour from CSS
 </p>
 
@@ -14,11 +14,50 @@
 
 ---
 
-Each marker is split into named layers — base fill, inner fills, ink outlines, ornament marks — so one SVG restyles itself from CSS variables.
+## How a marker is stored
+
+**The files in `markers/` are not layered.** Each one is a single `<path>` holding
+every contour of the glyph, on an `<svg>` with a hardcoded `fill="#0b7771"`. There
+are no groups, no classes, and no CSS variables in the file. Opened on its own it
+draws in that one colour, and nothing in it responds to styling.
+
+The layering lives in **`annotations.json`**, which assigns each contour of that
+path to a colour class by index:
+
+```json
+"014-regular-bold": {
+  "parts": {
+    "fill-base": ["path-0-contour-1"],
+    "ink-1":     ["path-0-contour-2"],
+    "ink-2":     ["path-0-contour-0"]
+  }
+}
+```
+
+`path-0-contour-N` is the Nth `M`-command subpath of the Nth `<path>` in the file.
+A consumer reads the outline and the annotation together and builds the layered
+SVG itself. The contract, including `interiorFills` and `generatedFills`, is in
+[docs/USAGE.md](docs/USAGE.md); `demo/app.js` is the reference implementation.
+
+**Splitting the path naively destroys the counters.** A hole and the shape it
+punches routinely sit in different layers by design, so when a layer is emitted as
+its own `<path>` every contour of an earlier layer that lies inside one of its own
+contours must be re-included, with `fill-rule="evenodd"`, to punch the hole again.
+Containment has to be decided by real point-in-path testing
+(`SVGGeometryElement.isPointInFill`), not by bounding boxes, which overlap for
+concentric ornaments. `demo/app.js` does this; copy it rather than reinventing it.
+
+Two further details worth knowing:
+
+- A contour listed in no part is drawn as `ink-base`.
+- A marker with no annotations of its own borrows them from another weight of the
+  same numeric family.
 
 ## Use the SVGs
 
-Pick a design in the demo, choose its weight, set the colours, then **Copy CSS**:
+Pick a design in the demo, choose its weight, set the colours, then **Copy CSS**.
+The demo builds the layered SVG for you; the CSS it copies styles that output, not
+the file in `markers/`:
 
 ```css
 /* 001-regular */
@@ -92,9 +131,10 @@ Each file is a plain SVG — open it, or use the [demo](https://quranpedia.githu
 ## Layout
 
 ```text
-markers/          source SVG outlines
-annotations.json  layer assignments per marker
-collection.json   order, sizes, and source attribution
+markers/          source SVG outlines, one <path> each, unlayered
+annotations.json  contour-to-layer assignments per marker
+collection.json   order, sizes, source attribution, and source licences
+LICENSES.md       the source families' terms, in full
 demo/             the customizer
 dist/             OTF, TTF, font map
 scripts/          collection and font build tools
@@ -102,4 +142,19 @@ scripts/          collection and font build tools
 
 ## Licensing
 
-The source outlines keep the licences, attribution requirements, and Reserved Font Name terms of their original families — see `collection.json` before redistributing. This repository does not grant a licence to those outlines.
+**See [LICENSES.md](LICENSES.md).** Fourteen of the twenty-six source families are
+under the SIL Open Font License 1.1, verified from `license: "OFL"` in each
+family's `METADATA.pb` in [google/fonts](https://github.com/google/fonts). The OFL
+permits redistribution provided the licence and copyright notice travel with the
+material, no Reserved Font Name is used for a modified version, and derivatives
+stay under the OFL.
+
+The remaining twelve families come from `fonts.quran.ws` and their terms are **not
+verified**. They are marked `unverified — pending confirmation` rather than
+guessed; do not redistribute those markers until their terms are confirmed.
+
+Every source's licence is recorded machine-readably in `collection.json` under
+`markers[].sources[].license`.
+
+This repository has no `LICENSE` file of its own, and `LICENSES.md` documents the
+sources' terms without granting anything on the repository's behalf.
