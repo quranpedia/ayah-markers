@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=workshop-4">
+  <link rel="stylesheet" href="style.css?v=layered-2">
   <link rel="stylesheet" href="gallery.css?v=workshop-2">
   <link rel="stylesheet" href="classes.css?v=quran-teal-gold-3">
 </head>
@@ -17,7 +17,7 @@
     <div>
       <p class="eyebrow">Quran marks · open SVG collection</p>
       <h1>Ayah Markers</h1>
-      <p class="intro">Pick a design, choose its weight, tune only the layers it actually contains, preview it directly in a real Mushaf page context, then copy ready-to-paste CSS or HTML.</p>
+      <p class="intro">Pick a design, choose its weight, tune only the layers it actually contains, preview it directly in a real Mushaf page context, then copy ready-to-paste CSS or HTML, or download the SVG with your colours already in it.</p>
     </div>
     <div class="meta">
       <span id="marker-count">Loading collection…</span>
@@ -45,8 +45,15 @@
       <div class="actions">
         <button id="copy" type="button" title="Copy active CSS custom properties">Copy CSS</button>
         <button id="copy-html" type="button" class="secondary" title="Copy inline HTML snippet with number">Copy HTML</button>
-        <button id="reset" type="button" class="secondary" title="Reset all layers to default">Reset</button>
+        <button id="download-svg" type="button" class="secondary" title="Download this marker as an SVG with your colours baked in">Download SVG</button>
+        <button id="reset" type="button" class="secondary quiet" title="Reset all layers to default">Reset</button>
       </div>
+
+      <div class="section-head">
+        <h2>CSS</h2>
+        <p>Set these on any ancestor</p>
+      </div>
+      <pre id="css-preview" aria-live="polite"></pre>
     </section>
 
     <!-- Preview Stage -->
@@ -197,6 +204,6 @@
   </section>
 </main>
 
-<script src="app.js?v=workshop-4"></script>
+<script src="app.js?v=layered-1"></script>
 </body>
 </html>

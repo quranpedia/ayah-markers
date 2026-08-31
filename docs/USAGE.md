@@ -1,6 +1,6 @@
 # SVG theming contract
 
-Each reviewed marker can expose only the classes it actually uses. This keeps a simple marker simple and allows ornate markers to have more detail without a different API.
+Every marker in `markers/` is layered: one `<g data-part="…">` per colour part, each filled with `var(--part, <default>)`. Colouring a marker is setting those variables on it or on any ancestor; unset variables fall back to the default palette baked into the file. A marker exposes only the parts it actually uses, which keeps a simple marker simple and lets an ornate one carry more detail without a different API.
 
 | Class | Intended use |
 | --- | --- |
@@ -13,13 +13,13 @@ The variables are `--fill-base`, `--fill-1`, `--fill-2`, `--fill-3`, `--ink-base
 
 ## Annotation data
 
-`annotations.json` identifies source contours in this stable form:
+`annotations.json` is the record of which contour was assigned to which part; `scripts/build_layered_markers.py` bakes it into the SVGs, so consumers never need to read it. It identifies source contours in this stable form:
 
 ```json
 "path-0-contour-3"
 ```
 
-`parts` assigns a source contour to a colour class. `interiorFills` reuses a closed contour behind the source ink. `generatedFills` is for a deliberate base shape where the original outline has no suitable interior contour; it currently supports standard SVG element names and attributes, for example:
+`path-0-contour-N` numbers the `M`-command subpaths of the glyph as the source font drew it; each layered path records the indices it draws in `data-contours`, so the original outline stays recoverable. `parts` assigns a source contour to a colour class. `interiorFills` reuses a closed contour behind the source ink. `generatedFills` is for a deliberate base shape where the original outline has no suitable interior contour; it currently supports standard SVG element names and attributes, for example:
 
 ```json
 {
@@ -31,6 +31,10 @@ The variables are `--fill-base`, `--fill-1`, `--fill-2`, `--fill-3`, `--ink-base
 }
 ```
 
+## Where the number goes
+
+`collection.json` records one `number` per marker: `cx`/`cy` is where to centre the numeral, `width`/`height` is the widest box that marker holds, and `r` is the largest circle inscribed in its interior. Centre the numeral at `cx`/`cy` and choose its size — sizing by `height` is safe at any digit count; stretching a short number to `width` is not, because `width` is the three-digit case.
+
 ## Weight families
 
-Markers sharing the numeric prefix are a design family, such as `012-regular-black`, `012-thin`, and `012-light`. The demo falls back to an annotated sibling when a weight has no explicit review record.
+Markers sharing the numeric prefix are a design family, such as `012-regular-black`, `012-thin`, and `012-light`. Where a weight has no review record of its own, it is layered from an annotated sibling of the same family.

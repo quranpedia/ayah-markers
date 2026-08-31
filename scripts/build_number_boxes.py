@@ -8,9 +8,10 @@ Precedence:
   2. `derived` -- the geometric rule in `derive_number_box.py`, used for the
      families that do not implement the enclosure.
 
-The box size is recorded per digit count and every entry says which source it
-came from, so a guess is never mistaken for the designer's answer. The centre is
-recorded once per marker: the number sits in the same place at any digit count.
+Each marker records one centre and one box, and says which source they came
+from, so a guess is never mistaken for the designer's answer. The box is the
+widest the marker holds; it exists so a placement can be checked against the
+marker's own ink, not to tell a consumer what font size to use.
 """
 
 import html
@@ -20,6 +21,9 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_layered_markers import source_contours  # noqa: E402
 
 # Latin digits: the sheet is an audit of where the box sits, and it has to be
 # legible on a machine with no Arabic font installed.
@@ -46,18 +50,15 @@ def calibrate(geo, fnt):
     """
     import statistics
 
-    ratios = {}
-    for n in (1, 2, 3):
-        w, h = [], []
-        for mid, f in fnt.items():
-            b = (f.get("boxes") or {}).get(str(n)) or {}
-            if not (b.get("enclosed") and b.get("svg")):
-                continue
-            hole = geo[mid]["_free_bbox"]
-            w.append(b["svg"]["width"] / (hole[2] - hole[0]))
-            h.append(b["svg"]["height"] / (hole[3] - hole[1]))
-        ratios[n] = (statistics.median(w), statistics.median(h), len(w))
-    return ratios
+    w, h = [], []
+    for mid, f in fnt.items():
+        b = (f.get("boxes") or {}).get("3") or {}
+        if not (b.get("enclosed") and b.get("svg")):
+            continue
+        hole = geo[mid]["_free_bbox"]
+        w.append(b["svg"]["width"] / (hole[2] - hole[0]))
+        h.append(b["svg"]["height"] / (hole[3] - hole[1]))
+    return statistics.median(w), statistics.median(h), len(w)
 
 
 def build():
@@ -74,7 +75,7 @@ def build():
     placement_path = os.path.join(ROOT, "scripts", "number_placement.json")
     placement = json.load(open(placement_path)) if os.path.exists(placement_path) else {}
 
-    stats = {"font": 0, "derived": 0, "mixed": 0}
+    stats = {"font": 0, "derived": 0}
     for m in coll["markers"]:
         mid = m["id"]
         g = geo[mid]
@@ -85,40 +86,32 @@ def build():
         }
         hole = g["_free_bbox"]
 
-        def derived_box(n):
+        def derived_box():
             """Sized the way the designers who answered size it."""
-            rw, rh, _ = ratios[n]
+            rw, rh, _ = ratios
             return {
                 # never larger than the box that actually fits inside the hole
                 "width": round(min(rw * (hole[2] - hole[0]), g["width"]), 1),
                 "height": round(min(rh * (hole[3] - hole[1]), g["height"]), 1),
             }
 
-        # One centre per marker: the number sits in the same place whether it is
-        # one digit or three, only the box around it grows.
-        digits = {}
-        used_font = 0
+        # One centre and one box per marker. The box is the widest the marker
+        # holds -- the three-digit case -- and it is there so the placement can
+        # be checked against the marker's ink, not to dictate a font size.
         centre = {"cx": g["cx"], "cy": g["cy"]}
-        for n in (1, 2, 3):
-            b = (f.get("boxes") or {}).get(str(n)) or (f.get("boxes") or {}).get(n) or {}
-            if b.get("enclosed") and b.get("svg"):
-                d = {"width": b["svg"]["width"], "height": b["svg"]["height"],
-                     "source": "font-shaping"}
-                if n == 3:
-                    # the widest box is the one the font places most deliberately
-                    centre = {"cx": b["svg"]["cx"], "cy": b["svg"]["cy"]}
-                if b.get("ring_alternate"):
-                    d["ring_alternate"] = True
-                used_font += 1
-            else:
-                d = derived_box(n)
-                d["source"] = "derived"
-                if b.get("reason") and f.get("boxes"):
-                    # the font DID answer for this marker but its answer was
-                    # rejected for this digit count -- say why, in the data
-                    if any(x.get("enclosed") for x in f["boxes"].values()):
-                        d["fallback_reason"] = b["reason"]
-            digits[str(n)] = d
+        b = (f.get("boxes") or {}).get("3") or (f.get("boxes") or {}).get(3) or {}
+        if b.get("enclosed") and b.get("svg"):
+            box = {"width": b["svg"]["width"], "height": b["svg"]["height"]}
+            centre = {"cx": b["svg"]["cx"], "cy": b["svg"]["cy"]}
+            source = "font-shaping"
+        else:
+            box = derived_box()
+            source = "derived"
+            if b.get("reason") and f.get("boxes") and any(
+                    x.get("enclosed") for x in f["boxes"].values()):
+                # the font DID answer for this marker but its answer was
+                # rejected -- say why, in the data
+                box["fallback_reason"] = b["reason"]
 
         hand = placement.get(mid)
         placed_by_hand = bool(hand)
@@ -126,17 +119,14 @@ def build():
             centre = {"cx": round(float(hand["cx"]), 1),
                       "cy": round(float(hand["cy"]), 1)}
 
-        source = "font-shaping" if used_font == 3 else ("derived" if used_font == 0 else "mixed")
-        stats[{"font-shaping": "font", "derived": "derived", "mixed": "mixed"}[source]] += 1
+        stats[{"font-shaping": "font", "derived": "derived"}[source]] += 1
 
         number = {
             "source": source,
             **centre,
             **({"placement": "manual"} if placed_by_hand else {}),
-            "width": digits["3"]["width"],
-            "height": digits["3"]["height"],
+            **box,
             "r": g["r"],
-            "digits": digits,
             "derived": {**gbox, "r": g["r"], "region": g["source"]},
         }
         if source != "derived":
@@ -161,7 +151,11 @@ def build():
 # ------------------------------------------------------------------ the sheets
 
 CARD_CSS = """
-:root { color-scheme: light dark; }
+:root {
+  color-scheme: light dark;
+  --fill-base: #fff8e7; --fill-1: #f4e9bc; --fill-2: #d6ad43; --fill-3: #fffdf5;
+  --ink-base: #083a3a; --ink-1: #0b7771; --ink-2: #48a39b;
+}
 body { font: 14px/1.4 system-ui, sans-serif; margin: 24px; background: #fbfaf7; color: #1a1a1a; }
 h1 { font-size: 20px; margin: 0 0 4px; }
 p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
@@ -425,10 +419,17 @@ PLACEMENT_EDITOR = """
 
 
 def marker_svg(path):
+    """The marker's viewBox and its whole outline.
+
+    The files are layered, so the glyph is spread over one path per colour part
+    and a contour that punches a hole in another part appears twice. The sheet
+    draws the ink, so it wants every contour exactly once, in the order the
+    source font drew them.
+    """
     src = open(os.path.join(ROOT, path)).read()
     vb = re.search(r'viewBox="([^"]+)"', src).group(1)
-    d = re.search(r'\sd="([^"]+)"', src).group(1)
-    return vb, d
+    markup = re.search(r"<svg[^>]*>(.*)</svg>", src, re.S).group(1)
+    return vb, " ".join(source_contours(src)), markup
 
 
 def svg_contours(path_data):
@@ -437,7 +438,7 @@ def svg_contours(path_data):
 
 
 def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
-             marker_id=None, digit_count=None):
+             marker_id=None, digit_count=None, markup=None):
     source_x, source_y, source_width, source_height = [
         float(value) for value in vb.replace(",", " ").split()
     ]
@@ -471,7 +472,9 @@ def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
         f'xmlns="http://www.w3.org/2000/svg"{editor_attrs}>',
         f'<g transform="{transform}">',
     ]
-    parts.append(f'<path d="{d}" fill="{colour}"/>')
+    # the marker as it ships, in its own layers, so the sheet shows the artwork
+    # a consumer sees rather than a flat silhouette of its ink
+    parts.append(markup if markup else f'<path d="{d}" fill="{colour}"/>')
     if editor_attrs:
         for contour_index, contour in enumerate(svg_contours(d)):
             parts.append(
@@ -499,18 +502,18 @@ def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
 def sheet(coll, path, title, lede, mode):
     cards = []
     for m in coll["markers"]:
-        vb, d = marker_svg(m["file"])
+        vb, d, markup = marker_svg(m["file"])
         num = m["number"]
         row = []
         if mode == "derived-vs-bbox":
             geo = num["derived"]
-            row.append(card_svg(vb, d, geo, "٢٥٥"))
+            row.append(card_svg(vb, d, geo, DIGIT_TEXT[3], markup=markup))
             vbx = [float(v) for v in vb.replace(",", " ").split()]
             bbox = {
                 "cx": vbx[0] + vbx[2] / 2, "cy": vbx[1] + vbx[3] / 2,
                 "width": geo["width"], "height": geo["height"],
             }
-            row.append(card_svg(vb, d, bbox, "٢٥٥", numfill="#c0392b"))
+            row.append(card_svg(vb, d, bbox, DIGIT_TEXT[3], numfill="#c0392b", markup=markup))
             dx = abs(geo["cx"] - bbox["cx"])
             dy = abs(geo["cy"] - bbox["cy"])
             extra = (f'<div class="meta">offset from bbox centre: '
@@ -519,13 +522,14 @@ def sheet(coll, path, title, lede, mode):
                 extra += '<div class="meta">agrees with bbox centre</div>'
         else:
             for n in (1, 2, 3):
-                box = {**num["digits"][str(n)], "cx": num["cx"], "cy": num["cy"]}
+                # one box, three counts drawn in it: the sheet is auditing the
+                # centre, and a longer number is the harder case for it
                 row.append(card_svg(
-                    vb, d, box, DIGIT_TEXT[n],
-                    marker_id=m["id"], digit_count=n,
+                    vb, d, num, DIGIT_TEXT[n],
+                    marker_id=m["id"], digit_count=n, markup=markup,
                 ))
             src = num["source"]
-            cls = {"font-shaping": "font", "derived": "derived", "mixed": "mixed"}[src]
+            cls = {"font-shaping": "font", "derived": "derived"}[src]
             extra = f'<span class="tag {cls}">{src}</span>'
             if num.get("font"):
                 extra += f' <span class="meta">{html.escape(num["font"]["family"] or "")}' \

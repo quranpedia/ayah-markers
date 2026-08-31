@@ -24,6 +24,16 @@ def test_number_preview_exposes_its_marker_and_digit_for_the_placement_editor():
     assert 'data-digit-count="1"' in markup
 
 
+def test_the_sheet_draws_every_digit_count_in_the_marker_s_one_box():
+    import json
+
+    collection = json.loads((ROOT / "collection.json").read_text())
+    number = collection["markers"][0]["number"]
+    markup = module.card_svg("0 0 100 100", "", number, "255")
+
+    assert f'x="{number["cx"]:.1f}"' in markup and f'y="{number["cy"]:.1f}"' in markup
+
+
 def test_number_preview_preserves_digit_shapes_when_fitting_its_box():
     narrow = module.card_svg("0 0 100 100", "", {"cx": 50, "cy": 50, "width": 20, "height": 40}, "255")
     wide = module.card_svg("0 0 100 100", "", {"cx": 50, "cy": 50, "width": 90, "height": 40}, "255")
@@ -108,13 +118,13 @@ def test_every_marker_carries_a_hand_placed_centre():
         assert (number["cx"], number["cy"]) == (placed["cx"], placed["cy"])
 
 
-def test_the_number_centre_is_recorded_once_and_not_per_digit_count():
+def test_a_marker_records_one_centre_and_one_box_not_a_set_per_digit_count():
     import json
 
     collection = json.loads((ROOT / "collection.json").read_text())
 
     for marker in collection["markers"]:
         number = marker["number"]
-        assert {"cx", "cy"} <= number.keys()
-        for digit in number["digits"].values():
-            assert "cx" not in digit and "cy" not in digit
+        # where the number goes, and the widest box the marker holds
+        assert {"cx", "cy", "width", "height", "r"} <= number.keys()
+        assert "digits" not in number

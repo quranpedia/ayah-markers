@@ -16,42 +16,63 @@
 
 ## How a marker is stored
 
-**The files in `markers/` are not layered.** Each one is a single `<path>` holding
-every contour of the glyph, on an `<svg>` with a hardcoded `fill="#0b7771"`. There
-are no groups, no classes, and no CSS variables in the file. Opened on its own it
-draws in that one colour, and nothing in it responds to styling.
+**The files in `markers/` are layered.** Each one carries one `<g>` per colour
+part, filled through a CSS variable with the default palette as its fallback, so
+a marker is coloured by setting variables and nothing has to be assembled at
+load time:
 
-The layering lives in **`annotations.json`**, which assigns each contour of that
-path to a colour class by index:
+```svg
+<svg class="ayah-marker" viewBox="151.44 -107.56 1421.12 1765.12">
+  <g data-part="fill-base" fill-rule="evenodd" style="fill:var(--fill-base,#fff8e7)">
+    <path data-contours="3" d="M862 111Q1066 111 …Z"/></g>
+  <g data-part="ink-1" fill-rule="evenodd" style="fill:var(--ink-1,#0b7771)">
+    <path data-contours="2 3" d="M863 …Z M862 111…Z"/></g>
+</svg>
+```
+
+```css
+.ayah-marker { --fill-base: #fdf6e3; --ink-1: #7b341e; }
+```
+
+Opened on its own the file already draws in the default palette; every part
+listed in [docs/USAGE.md](docs/USAGE.md) that a marker actually uses appears as a
+`data-part` group, and the ones it does not use simply are not there.
+
+The assignment behind the layering is recorded in **`annotations.json`**, which
+names each contour of the original glyph by index:
 
 ```json
 "011-regular-bold": {
   "parts": {
-    "fill-base": ["path-0-contour-1"],
+    "fill-base": ["path-0-contour-3"],
     "ink-1":     ["path-0-contour-2"],
     "ink-2":     ["path-0-contour-0"]
   }
 }
 ```
 
-`path-0-contour-N` is the Nth `M`-command subpath of the Nth `<path>` in the file.
-A consumer reads the outline and the annotation together and builds the layered
-SVG itself. The contract, including `interiorFills` and `generatedFills`, is in
-[docs/USAGE.md](docs/USAGE.md); `demo/app.js` is the reference implementation.
+`path-0-contour-N` is the Nth `M`-command subpath of the glyph as the source font
+drew it. That file is the editing record — where the colours were decided — and
+`scripts/build_layered_markers.py` bakes it into the SVGs. Change an assignment,
+re-run the script, and the markers are rewritten.
 
-**Splitting the path naively destroys the counters.** A hole and the shape it
-punches routinely sit in different layers by design, so when a layer is emitted as
-its own `<path>` every contour of an earlier layer that lies inside one of its own
-contours must be re-included, with `fill-rule="evenodd"`, to punch the hole again.
-Containment has to be decided by real point-in-path testing
-(`SVGGeometryElement.isPointInFill`), not by bounding boxes, which overlap for
-concentric ornaments. `demo/app.js` does this; copy it rather than reinventing it.
+**Splitting a path naively destroys the counters.** A hole and the shape it
+punches routinely sit in different parts by design, so every contour of an
+earlier part that lies inside one of a part's own contours is re-included in that
+part's path, with `fill-rule="evenodd"`, to punch the hole again. Containment is
+decided by real point-in-path testing, not by bounding boxes, which overlap for
+concentric ornaments. That is why a contour can appear in two groups, and why
+each path lists the original contour indices it draws in `data-contours`: the
+glyph's exact outline, each contour once and in its original order, can always be
+recovered from the layered file. `scripts/build_selected_font.py` builds the font
+that way, and the script is idempotent over its own output.
 
 Two further details worth knowing:
 
 - A contour listed in no part is drawn as `ink-base`.
-- A marker with no annotations of its own borrows them from another weight of the
-  same numeric family.
+- The demo (`demo/app.js`) just loads these files and sets variables. It also
+  offers **Download SVG**, which writes the marker out with the colours you chose
+  substituted for the variables, for a standalone file that needs no CSS.
 
 ## Where the ayah number goes
 
@@ -68,32 +89,31 @@ same coordinate space as its outline:
 "number": {
   "source": "font-shaping",
   "cx": 862.5, "cy": 601.5, "placement": "manual",
-  "width": 730.0, "height": 305.0,
+  "width": 730.0, "height": 305.0, "ring_alternate": true,
   "r": 483.8,
-  "digits": {
-    "1": { "width": 226.0, "height": 304.0, "source": "font-shaping" },
-    "2": { "width": 478.0, "height": 313.0, "source": "font-shaping", "ring_alternate": true },
-    "3": { "width": 730.0, "height": 305.0, "source": "font-shaping", "ring_alternate": true }
-  },
   "derived":  { "cx": 863.4, "cy": 601.4, "width": 691.3, "height": 685.5, "r": 483.8, "region": "fill-base" },
   "font": { "family": "Noto Nastaliq Urdu", "file": "NotoNastaliqUrdu[wght].ttf",
             "glyph": "AyahEnd", "mechanism": "positioned-digits" }
 }
 ```
 
-- `cx`, `cy` — where to centre the numeral. **One centre per marker**: the
-  number sits in the same place whether it is one digit or three, so the
-  `digits` entries carry size alone.
-- `width`, `height` — the box it may occupy. A one-digit number needs far less
-  width than a three-digit one, so **use `digits["1"|"2"|"3"]`** for the count
-  you are drawing; the top-level values are the three-digit box.
+**What this file answers is where the centre is.** How large to draw the numeral
+is yours to decide.
+
+- `cx`, `cy` — where to centre the numeral. One centre per marker: the number
+  sits in the same place whether it is one digit or three.
+- `width`, `height` — the widest box the marker holds, which is the three-digit
+  case. It is recorded so a placement can be checked against the marker's own
+  ink, not as an instruction about size. **Do not stretch a numeral to `width`**
+  — a one-digit number would come out around 2.7× too wide. Size it by `height`,
+  which barely varies with the digit count, and centre it.
 - `r` — radius of the largest circle inscribed in the marker's interior, for
   consumers that want a circular badge rather than a box.
 - `derived` — the geometric answer, always present, plus the largest box that
   fits the interior at all.
-- `source` — **`font-shaping`** or **`derived`**, per marker and per digit
-  count, so a computed value is never mistaken for the designer's own. It
-  describes where the box's **size** came from.
+- `source` — **`font-shaping`** or **`derived`**, so a computed value is never
+  mistaken for the designer's own. It describes where the box's **size** came
+  from.
 - `placement` — **`manual`** when the centre was set by hand on the placement
   sheet, which is the case for all 47 markers. Where it is absent the centre is
   whatever `source` computed.
@@ -116,12 +136,12 @@ A font counts as enclosing only when the digits carry essentially no advance of
 their own. Over the 26 families the two cases do not overlap: enclosing fonts
 spend 0–12% of the marker's advance on the digits, non-enclosing ones 100–130%.
 
-25 of the 47 markers get their box this way (24 for all three digit counts,
-`001-regular` for one — see the exception below).
+24 of the 47 markers get their box this way; `001-regular` is a 25th whose
+answer had to be refused — see the exception below.
 
 ### `derived`: the geometry, for the fonts that stay silent
 
-For the other 22 markers the box is computed from the outline:
+For the other 23 markers the box is computed from the outline:
 
 1. Rasterise the marker's path with the nonzero winding rule — the ink.
 2. Any non-ink area that does not reach the outside of the drawing is an
@@ -146,9 +166,9 @@ states the answer, not by taste:
   inside the ring — and there the designers never once agreed with the inscribed
   circle.
 - **Size.** A designer draws the number at a near-constant 0.39–0.41 of the
-  region's height whatever the digit count, and at 0.29 / 0.53 / 0.77 of its
-  width for one, two and three digits. Those medians size the derived boxes, and
-  a derived box is never allowed to exceed the largest rectangle that actually
+  region's height whatever the digit count, and at 0.77 of its width for the
+  three-digit case the box records. Those medians size a derived box, and a
+  derived box is never allowed to exceed the largest rectangle that actually
   fits the region.
 
 The derived centre then agrees with the designers to a median 0.5% of the region
@@ -159,34 +179,29 @@ horizontally and 2% vertically.
 `001-regular` (Alkalami) is the one marker whose font answer had to be refused.
 Alkalami swaps in a wider ring (`uni06DD.2`, `uni06DD.3`) for two and three
 digits, and that wider ring's number box covers 15% ink on the outline this
-repository ships. Its one-digit box is the font's; two and three digits fall back
-to the derived rule, and each records a `fallback_reason` saying so.
+repository ships. Its box falls back to the derived rule and records a
+`fallback_reason` saying so.
 
 `scripts/number_exceptions.json`, if present, is merged in as
 `number.exception`.
 
 ### Hand-placed centres
 
-The sizes above are computed and never touched. The **centres** are not: every
+The box above is computed and never touched. The **centres** are not: every
 one of the 47 markers was centred by eye on the placement sheet, and those
 centres are the product this repository ships.
 
-They live in `scripts/number_placement.json`, one entry per marker and digit
-count:
+They live in `scripts/number_placement.json`, one centre per marker — the number
+sits in the same place at any digit count, so there is one entry, not three:
 
 ```json
-"011-regular-bold": {
-  "1": { "cx": 862.5, "cy": 601.5 },
-  "2": { "cx": 862.5, "cy": 601.5 },
-  "3": { "cx": 862.5, "cy": 601.5 }
-}
+"011-regular-bold": { "cx": 862.5, "cy": 601.5 }
 ```
 
-`build_number_boxes.py` applies that file last. It moves a box and never
-resizes one, so the computed width, height and `source` survive intact and each
-box it moves is marked `"placement": "manual"`. Delete an entry and that box
-falls back to its computed centre; delete the file and the whole collection
-does.
+`build_number_boxes.py` applies that file last. It moves the centre and never
+resizes a box, so the computed width, height and `source` survive intact and the
+marker is marked `"placement": "manual"`. Delete an entry and that marker falls
+back to its computed centre; delete the file and the whole collection does.
 
 The centres are set in [docs/number-placement.html](docs/number-placement.html):
 click a part of a marker to select it, centre the number on that part's bounds
@@ -205,13 +220,13 @@ python3 scripts/check_number_boxes.py        # gate: no box may sit on ink
 ```
 
 `check_number_boxes.py` rasterises every marker and measures how much of each
-recorded box is covered by the marker's own ink. All 141 boxes pass, and since
+recorded box is covered by the marker's own ink. All 47 boxes pass, and since
 the centres were placed by hand none of them touches ink at all.
 
 Two contact sheets render the result:
 
 - [docs/number-placement.html](docs/number-placement.html) — all 47 markers with
-  one, two and three digits placed in the recorded box, labelled with the
+  one, two and three digits drawn in the one recorded box, labelled with the
   source. This is also the editor the centres are set in.
 - [docs/number-placement-baseline.html](docs/number-placement-baseline.html) —
   the derived centre against the naive bounding-box centre. They agree on 32
@@ -227,9 +242,10 @@ Two contact sheets render the result:
 
 ## Use the SVGs
 
-Pick a design in the demo, choose its weight, set the colours, then **Copy CSS**.
-The demo builds the layered SVG for you; the CSS it copies styles that output, not
-the file in `markers/`:
+Drop a file from `markers/` into your page and set the variables it uses — the
+file is already layered, so the CSS styles it directly. Pick a design in the demo,
+choose its weight, set the colours, then **Copy CSS** for exactly this block, or
+**Download SVG** for the same marker with those colours written into the file:
 
 ```css
 /* 001-regular */
@@ -270,7 +286,8 @@ python3 -m http.server 8000   # then open localhost:8000/demo/
 
 ```sh
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python scripts/build_selected_font.py   # OTF, TTF, font map
+.venv/bin/python scripts/build_layered_markers.py  # re-layer markers/ from annotations.json
+.venv/bin/python scripts/build_selected_font.py    # OTF, TTF, font map
 ```
 
 ## Markers
@@ -303,8 +320,8 @@ Each file is a plain SVG — open it, or use the [demo](https://quranpedia.githu
 ## Layout
 
 ```text
-markers/          source SVG outlines, one <path> each, unlayered
-annotations.json  contour-to-layer assignments per marker
+markers/          the markers, layered: one <g> per colour part, CSS variables
+annotations.json  which contour belongs to which part, the record the layering is built from
 collection.json   order, sizes, number placement, source attribution and licences
 scripts/number_placement.json
                   the hand-placed number centres the build applies
