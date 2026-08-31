@@ -158,6 +158,120 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 .flag { color: #c0392b; font-size: 11px; margin-top: 4px; }
 .legend { margin: 12px 0 18px; font-size: 12px; }
 .num { font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Amiri", "Scheherazade New", serif; }
+.placement-preview { cursor: crosshair; touch-action: none; }
+.placement-preview:focus-visible { outline: 3px solid #0b7771; outline-offset: 3px; }
+.placement-target { fill: #c0392b; stroke: #fff; stroke-width: 10; pointer-events: none; }
+.placement-editor { position: fixed; inset-block-end: 16px; inset-inline-end: 16px; width: min(360px, calc(100vw - 32px)); border: 1px solid #b9c9c3; border-radius: 12px; background: #fffdf8; box-shadow: 0 12px 40px #1a342622; padding: 16px; z-index: 2; }
+.placement-editor h2 { font-size: 14px; margin: 0 0 4px; }
+.placement-editor p { font-size: 12px; margin: 0 0 10px; color: #4c5f57; }
+.placement-values { margin: 0 0 10px; padding: 10px; overflow: auto; border-radius: 6px; background: #f1f4ee; color: #1d332b; font: 11px/1.45 ui-monospace, monospace; white-space: pre-wrap; }
+.placement-actions { display: flex; gap: 8px; }
+.placement-actions button { border: 0; border-radius: 6px; background: #0b7771; color: white; cursor: pointer; font: 600 12px system-ui, sans-serif; padding: 8px 10px; }
+.placement-actions button.secondary { background: #dce7e1; color: #174238; }
+@media (max-width: 600px) { .placement-editor { inset-inline: 12px; width: auto; } }
+"""
+
+
+PLACEMENT_EDITOR = """
+<aside class="placement-editor" aria-live="polite">
+  <h2>Set a number centre</h2>
+  <p>Click inside a number preview. Its dashed box and number move to that exact SVG point.</p>
+  <pre class="placement-values">Click a preview to begin.</pre>
+  <div class="placement-actions">
+    <button type="button" data-copy-placement>Copy JSON patch</button>
+    <button type="button" class="secondary" data-reset-placement>Reset selected</button>
+  </div>
+</aside>
+<script>
+(() => {
+  const edits = new Map();
+  const panel = document.querySelector('.placement-values');
+  const copyButton = document.querySelector('[data-copy-placement]');
+  const resetButton = document.querySelector('[data-reset-placement]');
+  let selected = null;
+
+  function rounded(value) { return Number(value.toFixed(1)); }
+
+  function patchFor(markerId) {
+    const digitEdits = edits.get(markerId) || {};
+    return { marker: markerId, number: { digits: digitEdits } };
+  }
+
+  function renderPanel() {
+    if (!selected) return;
+    const { markerId, digitCount, cx, cy } = selected;
+    panel.textContent = `Selected: ${markerId}, ${digitCount} digit${digitCount === '1' ? '' : 's'}\\n`
+      + `cx: ${cx}, cy: ${cy}\\n\\n`
+      + JSON.stringify(patchFor(markerId), null, 2);
+  }
+
+  function updatePreview(svg, cx, cy) {
+    const box = svg.querySelector('[data-number-box]');
+    const number = svg.querySelector('[data-number-label]');
+    const width = Number(svg.dataset.numberWidth);
+    const height = Number(svg.dataset.numberHeight);
+    box.setAttribute('x', cx - width / 2);
+    box.setAttribute('y', cy - height / 2);
+    number.setAttribute('x', cx);
+    number.setAttribute('y', cy);
+    const target = svg.querySelector('[data-placement-target]');
+    target.setAttribute('cx', cx);
+    target.setAttribute('cy', cy);
+    target.setAttribute('r', Math.max(12, height * 0.04));
+  }
+
+  function setCentre(svg, point) {
+    const markerId = svg.dataset.markerId;
+    const digitCount = svg.dataset.digitCount;
+    const cx = rounded(point.x);
+    const cy = rounded(point.y);
+    const markerEdits = edits.get(markerId) || {};
+    markerEdits[digitCount] = { cx, cy };
+    edits.set(markerId, markerEdits);
+    selected = { svg, markerId, digitCount, cx, cy };
+    updatePreview(svg, cx, cy);
+    renderPanel();
+  }
+
+  document.querySelectorAll('.placement-preview').forEach((svg) => {
+    svg.addEventListener('click', (event) => {
+      const point = svg.createSVGPoint();
+      point.x = event.clientX;
+      point.y = event.clientY;
+      setCentre(svg, point.matrixTransform(svg.getScreenCTM().inverse()));
+    });
+    svg.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        const viewBox = svg.viewBox.baseVal;
+        setCentre(svg, { x: viewBox.x + viewBox.width / 2, y: viewBox.y + viewBox.height / 2 });
+      }
+    });
+  });
+
+  resetButton.addEventListener('click', () => {
+    if (!selected) return;
+    const { svg, markerId, digitCount } = selected;
+    const cx = Number(svg.dataset.originalCx);
+    const cy = Number(svg.dataset.originalCy);
+    const markerEdits = edits.get(markerId) || {};
+    delete markerEdits[digitCount];
+    if (Object.keys(markerEdits).length) edits.set(markerId, markerEdits);
+    else edits.delete(markerId);
+    selected = { svg, markerId, digitCount, cx, cy };
+    updatePreview(svg, cx, cy);
+    renderPanel();
+  });
+
+  copyButton.addEventListener('click', async () => {
+    if (!selected) return;
+    const text = JSON.stringify(patchFor(selected.markerId), null, 2);
+    await navigator.clipboard.writeText(text);
+    copyButton.textContent = 'Copied';
+    setTimeout(() => { copyButton.textContent = 'Copy JSON patch'; }, 1200);
+  });
+})();
+</script>
 """
 
 
@@ -168,22 +282,34 @@ def marker_svg(path):
     return vb, d
 
 
-def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True):
+def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
+             marker_id=None, digit_count=None):
     fs = box["height"]
     sw = max(2.0, float(vb.replace(",", " ").split()[2]) / 110)
-    parts = [f'<svg viewBox="{vb}" xmlns="http://www.w3.org/2000/svg">']
+    editor_attrs = ""
+    if marker_id is not None and digit_count is not None:
+        editor_attrs = (
+            f' class="placement-preview" tabindex="0" role="button" '
+            f'aria-label="Set the {digit_count}-digit number centre for {html.escape(marker_id, quote=True)}" '
+            f'data-marker-id="{html.escape(marker_id, quote=True)}" data-digit-count="{digit_count}" '
+            f'data-number-width="{box["width"]:.1f}" data-number-height="{box["height"]:.1f}" '
+            f'data-original-cx="{box["cx"]:.1f}" data-original-cy="{box["cy"]:.1f}"'
+        )
+    parts = [f'<svg viewBox="{vb}" xmlns="http://www.w3.org/2000/svg"{editor_attrs}>']
     parts.append(f'<path d="{d}" fill="{colour}"/>')
     if show_box:
         parts.append(
             f'<rect x="{box["cx"] - box["width"] / 2:.1f}" y="{box["cy"] - box["height"] / 2:.1f}" '
             f'width="{box["width"]:.1f}" height="{box["height"]:.1f}" fill="none" '
-            f'stroke="#c0392b" stroke-width="{sw:.1f}" stroke-dasharray="{sw * 2.4:.0f} {sw * 1.6:.0f}" opacity="0.6"/>'
+            f'stroke="#c0392b" stroke-width="{sw:.1f}" stroke-dasharray="{sw * 2.4:.0f} {sw * 1.6:.0f}" opacity="0.6" data-number-box/>'
         )
     parts.append(
         f'<text class="num" x="{box["cx"]:.1f}" y="{box["cy"]:.1f}" font-size="{fs:.1f}" '
         f'fill="{numfill}" text-anchor="middle" dominant-baseline="central" '
-        f'textLength="{box["width"]:.1f}" lengthAdjust="spacingAndGlyphs">{text}</text>'
+        f'textLength="{box["width"]:.1f}" lengthAdjust="spacing" data-number-label>{text}</text>'
     )
+    if editor_attrs:
+        parts.append(f'<circle class="placement-target" data-placement-target cx="{box["cx"]:.1f}" cy="{box["cy"]:.1f}" r="0"/>')
     parts.append("</svg>")
     return "".join(parts)
 
@@ -211,7 +337,10 @@ def sheet(coll, path, title, lede, mode):
                 extra += '<div class="meta">agrees with bbox centre</div>'
         else:
             for n in (1, 2, 3):
-                row.append(card_svg(vb, d, num["digits"][str(n)], DIGIT_TEXT[n]))
+                row.append(card_svg(
+                    vb, d, num["digits"][str(n)], DIGIT_TEXT[n],
+                    marker_id=m["id"], digit_count=n,
+                ))
             src = num["source"]
             cls = {"font-shaping": "font", "derived": "derived", "mixed": "mixed"}[src]
             extra = f'<span class="tag {cls}">{src}</span>'
@@ -233,6 +362,7 @@ def sheet(coll, path, title, lede, mode):
         f"<style>{CARD_CSS}</style><h1>{html.escape(title)}</h1>"
         f'<p class="lede">{lede}</p>'
         f'<div class="grid">{"".join(cards)}</div>'
+        f'{PLACEMENT_EDITOR if mode == "digits" else ""}'
     )
     out = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(out), exist_ok=True)
@@ -240,8 +370,8 @@ def sheet(coll, path, title, lede, mode):
     return out
 
 
-def main():
-    coll, stats, ratios = build()
+def render_sheets(coll):
+    """Render the audit sheets from collection metadata already on disk."""
     a = sheet(
         coll, "docs/number-placement.html",
         "Ayah marker number placement",
@@ -261,11 +391,21 @@ def main():
         "the two agree; where the design hangs a flourish off the body they do not.",
         "derived-vs-bbox",
     )
+    print(a, file=sys.stderr)
+    print(b, file=sys.stderr)
+
+
+def main():
+    if "--render-only" in sys.argv:
+        coll = json.load(open(os.path.join(ROOT, "collection.json")))
+        render_sheets(coll)
+        return
+
+    coll, stats, ratios = build()
+    render_sheets(coll)
     print(json.dumps(stats), file=sys.stderr)
     print("size ratios (width, height, n): " + json.dumps(
         {k: [round(v[0], 3), round(v[1], 3), v[2]] for k, v in ratios.items()}), file=sys.stderr)
-    print(a, file=sys.stderr)
-    print(b, file=sys.stderr)
 
 
 if __name__ == "__main__":
