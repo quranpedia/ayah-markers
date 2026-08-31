@@ -4,3 +4,5 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.venv-hb/
+scripts/_number_*.json
