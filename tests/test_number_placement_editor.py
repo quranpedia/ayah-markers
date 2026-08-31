@@ -25,15 +25,13 @@ def test_number_preview_exposes_its_marker_and_digit_for_the_placement_editor():
 
 
 def test_number_preview_preserves_digit_shapes_when_fitting_its_box():
-    markup = module.card_svg(
-        "0 0 100 100",
-        "",
-        {"cx": 50, "cy": 50, "width": 40, "height": 40},
-        "٤٨",
-    )
+    narrow = module.card_svg("0 0 100 100", "", {"cx": 50, "cy": 50, "width": 20, "height": 40}, "255")
+    wide = module.card_svg("0 0 100 100", "", {"cx": 50, "cy": 50, "width": 90, "height": 40}, "255")
 
-    assert 'lengthAdjust="spacing"' in markup
-    assert "spacingAndGlyphs" not in markup
+    # the numeral shrinks to fit; it is never stretched or squeezed to the width
+    assert "textLength" not in narrow and "lengthAdjust" not in narrow
+    assert 'font-size="10.8"' in narrow
+    assert float(wide.split('font-size="')[1].split('"')[0]) > 10.8
 
 
 def test_number_preview_normalizes_all_marker_artwork_to_a_shared_viewbox():
@@ -69,8 +67,9 @@ def test_svg_contours_are_exposed_as_individually_selectable_paths():
     assert 'data-align-y' in module.PLACEMENT_EDITOR
 
 
-def test_placement_editor_can_apply_contour_alignment_to_every_digit_count():
-    assert 'data-apply-all-digits' in module.PLACEMENT_EDITOR
+def test_placement_editor_moves_every_digit_count_from_one_shared_centre():
+    assert "previewsFor(markerId).forEach" in module.PLACEMENT_EDITOR
+    assert "data-apply-all-digits" not in module.PLACEMENT_EDITOR
 
 
 def test_marker_contact_sheet_fits_as_many_large_cards_as_the_width_allows():
@@ -104,6 +103,18 @@ def test_every_marker_carries_a_hand_placed_centre():
 
     for marker in collection["markers"]:
         placed = placement[marker["id"]]
-        for count, digit in marker["number"]["digits"].items():
-            assert digit["placement"] == "manual"
-            assert (digit["cx"], digit["cy"]) == (placed[count]["cx"], placed[count]["cy"])
+        number = marker["number"]
+        assert number["placement"] == "manual"
+        assert (number["cx"], number["cy"]) == (placed["cx"], placed["cy"])
+
+
+def test_the_number_centre_is_recorded_once_and_not_per_digit_count():
+    import json
+
+    collection = json.loads((ROOT / "collection.json").read_text())
+
+    for marker in collection["markers"]:
+        number = marker["number"]
+        assert {"cx", "cy"} <= number.keys()
+        for digit in number["digits"].values():
+            assert "cx" not in digit and "cy" not in digit

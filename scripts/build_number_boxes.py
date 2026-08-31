@@ -8,8 +8,9 @@ Precedence:
   2. `derived` -- the geometric rule in `derive_number_box.py`, used for the
      families that do not implement the enclosure.
 
-Both are recorded per digit count, and every entry says which source it came
-from so a guess is never mistaken for the designer's answer.
+The box size is recorded per digit count and every entry says which source it
+came from, so a guess is never mistaken for the designer's answer. The centre is
+recorded once per marker: the number sits in the same place at any digit count.
 """
 
 import html
@@ -20,7 +21,9 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DIGIT_TEXT = {1: "٧", 2: "٤٨", 3: "٢٥٥"}
+# Latin digits: the sheet is an audit of where the box sits, and it has to be
+# legible on a machine with no Arabic font installed.
+DIGIT_TEXT = {1: "7", 2: "48", 3: "255"}
 PREVIEW_VIEWBOX_SIZE = 1000
 PREVIEW_FONT_SIZE = 320
 
@@ -83,22 +86,27 @@ def build():
         hole = g["_free_bbox"]
 
         def derived_box(n):
-            """Geometric centre, sized the way the designers who answered size it."""
+            """Sized the way the designers who answered size it."""
             rw, rh, _ = ratios[n]
             return {
-                "cx": g["cx"], "cy": g["cy"],
                 # never larger than the box that actually fits inside the hole
                 "width": round(min(rw * (hole[2] - hole[0]), g["width"]), 1),
                 "height": round(min(rh * (hole[3] - hole[1]), g["height"]), 1),
             }
 
+        # One centre per marker: the number sits in the same place whether it is
+        # one digit or three, only the box around it grows.
         digits = {}
         used_font = 0
+        centre = {"cx": g["cx"], "cy": g["cy"]}
         for n in (1, 2, 3):
             b = (f.get("boxes") or {}).get(str(n)) or (f.get("boxes") or {}).get(n) or {}
             if b.get("enclosed") and b.get("svg"):
-                d = dict(b["svg"])
-                d["source"] = "font-shaping"
+                d = {"width": b["svg"]["width"], "height": b["svg"]["height"],
+                     "source": "font-shaping"}
+                if n == 3:
+                    # the widest box is the one the font places most deliberately
+                    centre = {"cx": b["svg"]["cx"], "cy": b["svg"]["cy"]}
                 if b.get("ring_alternate"):
                     d["ring_alternate"] = True
                 used_font += 1
@@ -110,19 +118,21 @@ def build():
                     # rejected for this digit count -- say why, in the data
                     if any(x.get("enclosed") for x in f["boxes"].values()):
                         d["fallback_reason"] = b["reason"]
-            hand = (placement.get(mid) or {}).get(str(n))
-            if hand:
-                d = {**d, "cx": round(float(hand["cx"]), 1),
-                     "cy": round(float(hand["cy"]), 1), "placement": "manual"}
             digits[str(n)] = d
+
+        hand = placement.get(mid)
+        placed_by_hand = bool(hand)
+        if hand:
+            centre = {"cx": round(float(hand["cx"]), 1),
+                      "cy": round(float(hand["cy"]), 1)}
 
         source = "font-shaping" if used_font == 3 else ("derived" if used_font == 0 else "mixed")
         stats[{"font-shaping": "font", "derived": "derived", "mixed": "mixed"}[source]] += 1
 
         number = {
             "source": source,
-            "cx": digits["3"]["cx"],
-            "cy": digits["3"]["cy"],
+            **centre,
+            **({"placement": "manual"} if placed_by_hand else {}),
             "width": digits["3"]["width"],
             "height": digits["3"]["height"],
             "r": g["r"],
@@ -168,7 +178,7 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 .tag.mixed { background: #dbeafe; color: #1e3a8a; }
 .flag { color: #c0392b; font-size: 11px; margin-top: 4px; }
 .legend { margin: 12px 0 18px; font-size: 12px; }
-.num { font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Amiri", "Scheherazade New", serif; }
+.num { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-weight: 600; }
 .placement-preview { cursor: pointer; touch-action: manipulation; }
 .placement-preview:focus-visible { outline: 3px solid #0b7771; outline-offset: 3px; }
 .placement-target { fill: #c0392b; stroke: #fff; stroke-width: 10; pointer-events: none; }
@@ -190,9 +200,9 @@ p.lede { margin: 0 0 20px; max-width: 70ch; color: #555; }
 PLACEMENT_EDITOR = """
 <aside class="placement-editor" aria-live="polite">
   <h2>Set a number centre</h2>
-  <p>Click a marker part to select it, then centre the number from its bounds. Clicking blank space clears the selection and moves nothing. Placements save themselves as you go.</p>
+  <p>Click a marker part to select it, then centre the number from its bounds. Clicking blank space clears the selection and moves nothing. One centre serves every digit count, so all three boxes move together. Placements save themselves as you go.</p>
   <pre class="placement-values">Click a marker part to begin.</pre>
-  <label class="placement-scope"><input type="checkbox" data-apply-all-digits> Apply alignment to all 1–3 digit boxes</label>
+  <p class="placement-scope">The centre is shared by the 1–3 digit boxes.</p>
   <div class="placement-actions">
     <button type="button" class="secondary" data-align-x disabled>Centre horizontal</button>
     <button type="button" class="secondary" data-align-y disabled>Centre vertical</button>
@@ -223,9 +233,11 @@ PLACEMENT_EDITOR = """
       return;
     }
     if (!stored || typeof stored !== 'object') return;
-    Object.entries(stored).forEach(([markerId, digitEdits]) => {
-      if (!digitEdits || typeof digitEdits !== 'object') return;
-      edits.set(markerId, digitEdits);
+    Object.entries(stored).forEach(([markerId, value]) => {
+      if (!value || typeof value !== 'object') return;
+      // sheets saved before the centre was shared kept one entry per digit count
+      const centre = Number.isFinite(value.cx) ? value : value['3'];
+      if (centre && Number.isFinite(centre.cx)) edits.set(markerId, { cx: centre.cx, cy: centre.cy });
     });
   }
   const panel = document.querySelector('.placement-values');
@@ -235,14 +247,12 @@ PLACEMENT_EDITOR = """
   const alignXButton = document.querySelector('[data-align-x]');
   const alignYButton = document.querySelector('[data-align-y]');
   const alignBothButton = document.querySelector('[data-align-both]');
-  const applyAllDigits = document.querySelector('[data-apply-all-digits]');
   let selected = null;
 
   function rounded(value) { return Number(value.toFixed(1)); }
 
   function patchFor(markerId) {
-    const digitEdits = edits.get(markerId) || {};
-    return { marker: markerId, number: { digits: digitEdits } };
+    return { marker: markerId, number: edits.get(markerId) || {} };
   }
 
   function renderPanel() {
@@ -281,21 +291,21 @@ PLACEMENT_EDITOR = """
     target.setAttribute('r', 20 / Number(svg.dataset.normalizeScale));
   }
 
-  function setCentre(svg, point, contour = null, applyToAllDigits = false) {
+  function previewsFor(markerId) {
+    return [...document.querySelectorAll('.placement-preview')]
+      .filter((preview) => preview.dataset.markerId === markerId);
+  }
+
+  function setCentre(svg, point, contour = null) {
     const markerId = svg.dataset.markerId;
-    const targets = applyToAllDigits
-      ? [...document.querySelectorAll('.placement-preview')]
-        .filter((preview) => preview.dataset.markerId === markerId)
-      : [svg];
     const cx = rounded(point.x);
     const cy = rounded(point.y);
-    const markerEdits = edits.get(markerId) || {};
-    targets.forEach((preview) => {
-      markerEdits[preview.dataset.digitCount] = { cx, cy };
+    // the marker has one centre, so every digit count moves with it
+    previewsFor(markerId).forEach((preview) => {
       updatePreview(preview, cx, cy);
       if (preview !== svg) updateSelectionOutline(preview, null);
     });
-    edits.set(markerId, markerEdits);
+    edits.set(markerId, { cx, cy });
     save();
     selected = { svg, markerId, digitCount: svg.dataset.digitCount, cx, cy, contour };
     updateSelectionOutline(svg, contour);
@@ -331,7 +341,7 @@ PLACEMENT_EDITOR = """
       x: axis === 'y' ? selected.cx : box.x + box.width / 2,
       y: axis === 'x' ? selected.cy : box.y + box.height / 2,
     };
-    setCentre(selected.svg, point, selected.contour, applyAllDigits.checked);
+    setCentre(selected.svg, point, selected.contour);
   }
 
   function currentCentre(svg) {
@@ -353,7 +363,7 @@ PLACEMENT_EDITOR = """
   restore();
 
   document.querySelectorAll('.placement-preview').forEach((svg) => {
-    const stored = edits.get(svg.dataset.markerId)?.[svg.dataset.digitCount];
+    const stored = edits.get(svg.dataset.markerId);
     if (stored) updatePreview(svg, stored.cx, stored.cy);
   });
 
@@ -378,14 +388,13 @@ PLACEMENT_EDITOR = """
     const { svg, markerId, digitCount } = selected;
     const cx = Number(svg.dataset.originalCx);
     const cy = Number(svg.dataset.originalCy);
-    const markerEdits = edits.get(markerId) || {};
-    delete markerEdits[digitCount];
-    if (Object.keys(markerEdits).length) edits.set(markerId, markerEdits);
-    else edits.delete(markerId);
+    edits.delete(markerId);
     save();
     selected = { svg, markerId, digitCount, cx, cy, contour: null };
-    updatePreview(svg, cx, cy);
-    updateSelectionOutline(svg, null);
+    previewsFor(markerId).forEach((preview) => {
+      updatePreview(preview, cx, cy);
+      updateSelectionOutline(preview, null);
+    });
     renderPanel();
   });
 
@@ -439,7 +448,10 @@ def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
         f'translate({offset_x:.1f} {offset_y:.1f}) scale({scale:.6f}) '
         f'translate({-source_x:.1f} {-source_y:.1f})'
     )
-    fs = PREVIEW_FONT_SIZE / scale
+    # Fit the numeral to the box it is being audited against, rather than
+    # stretching it to the box's width -- squeezed spacing overlapped the
+    # glyphs and hid the very thing the sheet is there to show.
+    fs = min(PREVIEW_FONT_SIZE / scale, box["height"], box["width"] / (0.62 * len(text)))
     sw = 10 / scale
     editor_attrs = ""
     if marker_id is not None and digit_count is not None:
@@ -475,7 +487,7 @@ def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
     parts.append(
         f'<text class="num" x="{box["cx"]:.1f}" y="{box["cy"]:.1f}" font-size="{fs:.1f}" '
         f'fill="{numfill}" text-anchor="middle" dominant-baseline="central" '
-        f'textLength="{box["width"]:.1f}" lengthAdjust="spacing" data-number-label>{text}</text>'
+        f'data-number-label>{text}</text>'
     )
     if editor_attrs:
         parts.append(f'<circle class="placement-target" data-placement-target cx="{box["cx"]:.1f}" cy="{box["cy"]:.1f}" r="0"/>')
@@ -507,8 +519,9 @@ def sheet(coll, path, title, lede, mode):
                 extra += '<div class="meta">agrees with bbox centre</div>'
         else:
             for n in (1, 2, 3):
+                box = {**num["digits"][str(n)], "cx": num["cx"], "cy": num["cy"]}
                 row.append(card_svg(
-                    vb, d, num["digits"][str(n)], DIGIT_TEXT[n],
+                    vb, d, box, DIGIT_TEXT[n],
                     marker_id=m["id"], digit_count=n,
                 ))
             src = num["source"]

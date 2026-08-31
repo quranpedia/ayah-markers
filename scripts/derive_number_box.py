@@ -23,7 +23,7 @@ THE RULE, derived from the geometry rather than measured by hand:
 
 FALLBACKS, in order:
 
-  a. `fill-base` lists no contour (the 015 family) -> use the `generatedFills`
+  a. `fill-base` lists no contour (the 012 family) -> use the `generatedFills`
      ellipse the annotation records for `fill-base` as the region to match.
   b. No enclosed empty region overlaps the chosen region (a design whose base is
      a synthetic shape over solid ink) -> intersect the region itself with the
@@ -323,7 +323,7 @@ def derive(marker_id, ann, vb, contours):
 
     # WHERE the number goes: the CENTRE OF THE HOLE, not the centre of the
     # largest circle that fits in it. The two differ whenever an ornament
-    # intrudes on one side (the 005/008/010 families draw dots inside the ring),
+    # intrudes on one side (the 004/007/008 families draw dots inside the ring),
     # and the intruded side pushes the inscribed circle off to the other side.
     #
     # This was decided by measurement, not taste. Against the 24 markers whose

@@ -383,12 +383,14 @@ function toArabicDigits(num) {
 }
 
 // The number does not sit in the middle of a marker. `collection.json` records
-// where it does sit, per marker and per digit count, in the SVG's own space --
-// so the numeral is drawn inside the artwork rather than centred over its box.
+// where it does sit -- one centre per marker, in the SVG's own space -- so the
+// numeral is drawn inside the artwork rather than centred over its box. Only
+// the size of the box changes with the digit count.
 function numberBox(record, numStr) {
   const number = record?.number;
   if (!number) return null;
-  return number.digits?.[String(numStr.length)] || number.digits?.['3'] || number;
+  const size = number.digits?.[String(numStr.length)] || number.digits?.['3'] || number;
+  return { ...size, cx: number.cx, cy: number.cy };
 }
 
 function withAyahNumber(svgString, record, numStr) {
