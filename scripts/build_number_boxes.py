@@ -110,37 +110,23 @@ def build():
             if b.get("reason") and f.get("boxes") and any(
                     x.get("enclosed") for x in f["boxes"].values()):
                 # the font DID answer for this marker but its answer was
-                # rejected -- say why, in the data
-                box["fallback_reason"] = b["reason"]
+                # refused -- say so while building, since the data no longer does
+                print(f"  {mid}: font answer refused -- {b['reason']}")
 
         hand = placement.get(mid)
-        placed_by_hand = bool(hand)
         if hand:
             centre = {"cx": round(float(hand["cx"]), 1),
                       "cy": round(float(hand["cy"]), 1)}
 
         stats[{"font-shaping": "font", "derived": "derived"}[source]] += 1
-
-        number = {
-            "source": source,
-            **centre,
-            **({"placement": "manual"} if placed_by_hand else {}),
-            **box,
-            "r": g["r"],
-            "derived": {**gbox, "r": g["r"], "region": g["source"]},
-        }
-        if source != "derived":
-            number["font"] = {
-                "family": f.get("family"),
-                "file": f.get("font"),
-                "glyph": f.get("marker_glyph"),
-                "mechanism": next(
-                    (b.get("mechanism") for b in (f.get("boxes") or {}).values()
-                     if b.get("mechanism")), None),
-            }
         if mid in exceptions:
-            number["exception"] = exceptions[mid]
-        m["number"] = number
+            print(f"  exception: {mid} -- {exceptions[mid].get('reason', '')}")
+
+        # Five numbers and nothing else. Where they came from is this script's
+        # business, and the README's; a consumer needs where the number goes and
+        # how much room there is for it, and a second centre would only invite
+        # picking the wrong one.
+        m["number"] = {**centre, **box, "r": g["r"]}
 
     with open(os.path.join(ROOT, "collection.json"), "w") as fh:
         json.dump(coll, fh, indent=2, ensure_ascii=False)
@@ -506,7 +492,7 @@ def sheet(coll, path, title, lede, mode):
         num = m["number"]
         row = []
         if mode == "derived-vs-bbox":
-            geo = num["derived"]
+            geo = num
             row.append(card_svg(vb, d, geo, DIGIT_TEXT[3], markup=markup))
             vbx = [float(v) for v in vb.replace(",", " ").split()]
             bbox = {
@@ -528,21 +514,14 @@ def sheet(coll, path, title, lede, mode):
                     vb, d, num, DIGIT_TEXT[n],
                     marker_id=m["id"], digit_count=n, markup=markup,
                 ))
-            src = num["source"]
-            cls = {"font-shaping": "font", "derived": "derived"}[src]
-            extra = f'<span class="tag {cls}">{src}</span>'
-            if num.get("font"):
-                extra += f' <span class="meta">{html.escape(num["font"]["family"] or "")}' \
-                         f' · {html.escape(num["font"]["mechanism"] or "")}</span>'
-            else:
-                extra += f' <span class="meta">region: {num["derived"]["region"]}</span>'
-        flag = ""
-        if num.get("exception"):
-            flag = f'<div class="flag">FLAGGED: {html.escape(num["exception"]["reason"])}</div>'
+            family = (m.get("sources") or [{}])[0].get("family") or ""
+            extra = (f'<span class="meta">{html.escape(family)} · centre '
+                     f'{num["cx"]:.1f}, {num["cy"]:.1f} · box '
+                     f'{num["width"]:.0f} × {num["height"]:.0f}</span>')
         cards.append(
-            f'<div class="card{" flagged" if flag else ""}">'
+            f'<div class="card">'
             f'<div class="row">{"".join(row)}</div>'
-            f'<div class="id">{html.escape(m["id"])}</div>{extra}{flag}</div>'
+            f'<div class="id">{html.escape(m["id"])}</div>{extra}</div>'
         )
     doc = (
         f"<!doctype html><meta charset=utf-8><title>{html.escape(title)}</title>"
@@ -562,12 +541,10 @@ def render_sheets(coll):
     a = sheet(
         coll, "docs/number-placement.html",
         "Ayah marker number placement",
-        "Each marker drawn with one, two and three Arabic-Indic digits placed in the "
-        "recorded <code>number</code> box (dashed outline). "
-        "<span class=\"tag font\">font-shaping</span> means the box was read out of the "
-        "source font's own U+06DD enclosure; "
-        "<span class=\"tag derived\">derived</span> means the font does not enclose and the "
-        "box comes from the geometry of the marker's interior.",
+        "Each marker drawn with one, two and three digits centred where "
+        "<code>collection.json</code> says the number goes, inside the box it "
+        "records (dashed outline). Click a marker part to select it, then centre "
+        "the number on that part.",
         "digits",
     )
     b = sheet(

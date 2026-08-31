@@ -39,6 +39,14 @@ DEFAULTS = {
 }
 UNASSIGNED = "ink-base"
 
+# README previews: no interior fills, and an ink colour that holds up on
+# GitHub's light and dark themes alike. A page's CSS cannot reach an SVG shown
+# in an <img>, so these carry their own colours, with a media query for the
+# viewers that honour one and a mid-tone default for the rest.
+PREVIEW_INK = "#0b7771"
+PREVIEW_INK_DARK = "#4fc0b2"
+PREVIEW_DIR = "docs/preview"
+
 
 def source_contours(svg):
     """Every contour of the marker, in the glyph's original order.
@@ -151,6 +159,22 @@ def render(view_box, contours, polygons, annotation):
             f'viewBox="{view_box}">{"".join(body)}</svg>\n')
 
 
+def preview(view_box, contours):
+    """The marker as one inked outline, for a README that has both themes.
+
+    A page's CSS cannot reach an SVG shown in an `<img>`, so this carries its
+    own colour: the whole glyph in one path, filled nonzero exactly as the
+    source font draws it, so the counters stay open and the marker reads on a
+    light or a dark background.
+    """
+    # the fill attribute carries the colour even where a host strips <style>;
+    # the media query only sharpens it for viewers in a dark theme
+    style = f"@media(prefers-color-scheme:dark){{.ink{{fill:{PREVIEW_INK_DARK}}}}}"
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{view_box}">'
+            f'<style>{style}</style>'
+            f'<path class="ink" fill="{PREVIEW_INK}" d="{" ".join(contours)}"/></svg>\n')
+
+
 def main():
     collection = json.load(open(os.path.join(ROOT, "collection.json")))
     annotations = json.load(open(os.path.join(ROOT, "annotations.json")))["markers"]
@@ -169,7 +193,11 @@ def main():
         if output != svg:
             open(path, "w").write(output)
             written += 1
-    print(f"Layered {len(collection['markers'])} markers ({written} changed).")
+        os.makedirs(os.path.join(ROOT, PREVIEW_DIR), exist_ok=True)
+        open(os.path.join(ROOT, PREVIEW_DIR, f"{marker['id']}.svg"), "w").write(
+            preview(view_box, contours))
+    print(f"Layered {len(collection['markers'])} markers ({written} changed); "
+          f"wrote {PREVIEW_DIR}/.")
 
 
 if __name__ == "__main__":
