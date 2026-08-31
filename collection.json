@@ -107,7 +107,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 693.5,
+        "cy": 257.5,
+        "width": 793.0,
+        "height": 352.0,
+        "r": 362.9,
+        "digits": {
+          "1": {
+            "cx": 693.5,
+            "cy": 257.5,
+            "width": 275.0,
+            "height": 357.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 693.5,
+            "cy": 257.5,
+            "width": 536.0,
+            "height": 357.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 693.5,
+            "cy": 257.5,
+            "width": 793.0,
+            "height": 352.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 687.7,
+          "cy": 254.3,
+          "width": 649.2,
+          "height": 644.8,
+          "r": 362.9,
+          "region": "generatedFill"
+        },
+        "font": {
+          "family": "Noto Sans Arabic",
+          "file": "NotoSansArabic[wdth,wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "020-regular",
@@ -148,7 +198,58 @@
             "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 344.9,
+        "cy": 220.1,
+        "width": 380.0,
+        "height": 240.0,
+        "r": 245.0,
+        "digits": {
+          "1": {
+            "cx": 344.9,
+            "cy": 220.1,
+            "width": 176.8,
+            "height": 240.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 344.9,
+            "cy": 220.1,
+            "width": 385.0,
+            "height": 240.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 344.9,
+            "cy": 220.1,
+            "width": 380.0,
+            "height": 240.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 344.9,
+          "cy": 220.1,
+          "width": 348.9,
+          "height": 346.4,
+          "r": 245.0,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "DigitalKhattIndoPak",
+          "file": "digital-khatt-indopak.otf",
+          "glyph": "endofaya",
+          "mechanism": "precomposed"
+        }
+      }
     },
     {
       "id": "003-thin",
@@ -173,7 +274,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "width": 750.0,
+        "height": 311.0,
+        "r": 439.9,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 262.0,
+            "height": 308.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 497.0,
+            "height": 315.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 750.0,
+            "height": 311.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 561.1,
+          "cy": 387.1,
+          "width": 682.1,
+          "height": 682.1,
+          "r": 439.9,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "015-thin",
@@ -198,7 +347,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 713.5,
+        "cy": 257.5,
+        "width": 769.0,
+        "height": 345.0,
+        "r": 380.3,
+        "digits": {
+          "1": {
+            "cx": 713.5,
+            "cy": 257.5,
+            "width": 244.0,
+            "height": 346.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 713.5,
+            "cy": 257.5,
+            "width": 509.0,
+            "height": 349.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 713.5,
+            "cy": 257.5,
+            "width": 769.0,
+            "height": 345.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 705.5,
+          "cy": 256.5,
+          "width": 653.6,
+          "height": 649.2,
+          "r": 380.3,
+          "region": "generatedFill"
+        },
+        "font": {
+          "family": "Noto Sans Arabic",
+          "file": "NotoSansArabic[wdth,wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "010-bold",
@@ -225,7 +424,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 646.0,
+        "cy": 169.0,
+        "width": 843.6,
+        "height": 250.6,
+        "r": 321.5,
+        "digits": {
+          "1": {
+            "cx": 646.0,
+            "cy": 169.0,
+            "width": 316.4,
+            "height": 262.3,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 646.0,
+            "cy": 169.0,
+            "width": 584.3,
+            "height": 263.0,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 646.0,
+            "cy": 169.0,
+            "width": 843.6,
+            "height": 250.6,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 646.0,
+          "cy": 169.5,
+          "width": 916.3,
+          "height": 459.3,
+          "r": 321.5,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "003-extrabold",
@@ -250,7 +491,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "width": 782.0,
+        "height": 324.0,
+        "r": 440.2,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 301.0,
+            "height": 325.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 523.0,
+            "height": 335.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 782.0,
+            "height": 324.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 561.1,
+          "cy": 386.2,
+          "width": 687.0,
+          "height": 682.5,
+          "r": 440.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "001-regular",
@@ -278,7 +567,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "mixed",
+        "cx": 622.0,
+        "cy": 219.0,
+        "width": 439.7,
+        "height": 245.9,
+        "r": 309.2,
+        "digits": {
+          "1": {
+            "cx": 622.0,
+            "cy": 219.0,
+            "width": 350.0,
+            "height": 479.2,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 622.0,
+            "cy": 219.0,
+            "width": 439.7,
+            "height": 258.0,
+            "source": "derived",
+            "fallback_reason": "the font's box for 2 digits belongs to a wider ring (uni06DD.2) and covers 15% ink on the outline we ship",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 622.0,
+            "cy": 219.0,
+            "width": 439.7,
+            "height": 245.9,
+            "source": "derived",
+            "fallback_reason": "the number does not land in the marker's hole",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 620.2,
+          "cy": 219.6,
+          "width": 439.7,
+          "height": 435.4,
+          "r": 309.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Alkalami",
+          "file": "Alkalami-Regular.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "003-medium",
@@ -303,7 +642,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 387.0,
+        "width": 769.0,
+        "height": 319.0,
+        "r": 440.5,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 387.0,
+            "width": 284.0,
+            "height": 318.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 387.0,
+            "width": 512.0,
+            "height": 327.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 387.0,
+            "width": 769.0,
+            "height": 319.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 560.4,
+          "cy": 386.3,
+          "width": 689.1,
+          "height": 680.7,
+          "r": 440.5,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "017-medium",
@@ -331,7 +718,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 1000.0,
+        "cy": 646.0,
+        "width": 1220.0,
+        "height": 618.0,
+        "r": 528.0,
+        "digits": {
+          "1": {
+            "cx": 1000.0,
+            "cy": 646.0,
+            "width": 524.0,
+            "height": 837.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 1000.0,
+            "cy": 646.0,
+            "width": 1082.0,
+            "height": 861.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 1000.0,
+            "cy": 646.0,
+            "width": 1220.0,
+            "height": 618.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 1000.1,
+          "cy": 646.0,
+          "width": 1347.3,
+          "height": 932.8,
+          "r": 528.0,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Scheherazade New",
+          "file": "ScheherazadeNew-Medium.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "006-regular",
@@ -356,7 +793,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 2037.5,
+        "cy": 608.5,
+        "width": 1779.4,
+        "height": 817.2,
+        "r": 1044.3,
+        "digits": {
+          "1": {
+            "cx": 2037.5,
+            "cy": 608.5,
+            "width": 610.2,
+            "height": 817.2,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 2037.5,
+            "cy": 608.5,
+            "width": 1194.3,
+            "height": 818.6,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 2037.5,
+            "cy": 608.5,
+            "width": 1779.4,
+            "height": 817.2,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 2030.0,
+          "cy": 607.0,
+          "width": 1979.5,
+          "height": 1963.2,
+          "r": 1044.3,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Jomhuria",
+          "file": "Jomhuria-Regular.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "025-regular",
@@ -381,7 +866,49 @@
             "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 778.2,
+        "cy": 468.0,
+        "width": 1023.5,
+        "height": 651.1,
+        "r": 561.1,
+        "digits": {
+          "1": {
+            "cx": 778.2,
+            "cy": 468.0,
+            "width": 383.9,
+            "height": 681.5,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 778.2,
+            "cy": 468.0,
+            "width": 708.9,
+            "height": 683.1,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 778.2,
+            "cy": 468.0,
+            "width": 1023.5,
+            "height": 651.1,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 778.5,
+          "cy": 468.0,
+          "width": 1023.8,
+          "height": 838.3,
+          "r": 561.1,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "014-regular-bold",
@@ -454,7 +981,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 862.5,
+        "cy": 601.5,
+        "width": 730.0,
+        "height": 305.0,
+        "r": 483.8,
+        "digits": {
+          "1": {
+            "cx": 862.5,
+            "cy": 601.5,
+            "width": 226.0,
+            "height": 304.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 862.5,
+            "cy": 601.5,
+            "width": 478.0,
+            "height": 313.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 862.5,
+            "cy": 601.5,
+            "width": 730.0,
+            "height": 305.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 863.4,
+          "cy": 601.4,
+          "width": 691.3,
+          "height": 685.5,
+          "r": 483.8,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Noto Nastaliq Urdu",
+          "file": "NotoNastaliqUrdu[wght].ttf",
+          "glyph": "AyahEnd",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "005-light",
@@ -481,7 +1058,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 574.0,
+        "cy": 270.0,
+        "width": 679.7,
+        "height": 352.0,
+        "r": 344.5,
+        "digits": {
+          "1": {
+            "cx": 574.0,
+            "cy": 270.0,
+            "width": 264.1,
+            "height": 368.4,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 574.0,
+            "cy": 270.0,
+            "width": 487.7,
+            "height": 369.3,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 574.0,
+            "cy": 270.0,
+            "width": 679.7,
+            "height": 352.0,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 574.0,
+          "cy": 270.0,
+          "width": 679.7,
+          "height": 656.9,
+          "r": 344.5,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "010-extralight",
@@ -508,7 +1127,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 629.0,
+        "cy": 169.0,
+        "width": 870.5,
+        "height": 263.3,
+        "r": 338.6,
+        "digits": {
+          "1": {
+            "cx": 629.0,
+            "cy": 169.0,
+            "width": 326.5,
+            "height": 275.5,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 629.0,
+            "cy": 169.0,
+            "width": 602.9,
+            "height": 276.2,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 629.0,
+            "cy": 169.0,
+            "width": 870.5,
+            "height": 263.3,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 629.0,
+          "cy": 168.6,
+          "width": 925.8,
+          "height": 499.2,
+          "r": 338.6,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "017-regular",
@@ -536,7 +1197,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 990.5,
+        "cy": 646.0,
+        "width": 1209.0,
+        "height": 606.0,
+        "r": 533.1,
+        "digits": {
+          "1": {
+            "cx": 990.5,
+            "cy": 646.0,
+            "width": 496.0,
+            "height": 822.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 990.5,
+            "cy": 646.0,
+            "width": 1056.0,
+            "height": 851.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 990.5,
+            "cy": 646.0,
+            "width": 1209.0,
+            "height": 606.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 991.1,
+          "cy": 646.0,
+          "width": 1356.3,
+          "height": 941.8,
+          "r": 533.1,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Scheherazade New",
+          "file": "ScheherazadeNew-Regular.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "003-extralight",
@@ -561,7 +1272,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "width": 755.0,
+        "height": 313.0,
+        "r": 440.2,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 268.0,
+            "height": 310.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 501.0,
+            "height": 318.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 755.0,
+            "height": 313.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 560.6,
+          "cy": 386.2,
+          "width": 683.2,
+          "height": 683.2,
+          "r": 440.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "003-black",
@@ -586,7 +1345,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "width": 787.0,
+        "height": 326.0,
+        "r": 440.2,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 307.0,
+            "height": 328.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 527.0,
+            "height": 338.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 787.0,
+            "height": 326.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 562.0,
+          "cy": 385.9,
+          "width": 694.0,
+          "height": 680.4,
+          "r": 440.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "011-medium",
@@ -611,7 +1418,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 464.0,
+        "cy": 285.5,
+        "width": 348.4,
+        "height": 240.6,
+        "r": 181.7,
+        "digits": {
+          "1": {
+            "cx": 464.0,
+            "cy": 285.5,
+            "width": 197.1,
+            "height": 251.8,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 464.0,
+            "cy": 285.5,
+            "width": 348.4,
+            "height": 252.4,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 464.0,
+            "cy": 285.5,
+            "width": 348.4,
+            "height": 240.6,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 462.8,
+          "cy": 285.5,
+          "width": 348.4,
+          "height": 448.4,
+          "r": 181.7,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "023-regular",
@@ -636,7 +1485,49 @@
             "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 699.5,
+        "cy": 422.5,
+        "width": 731.5,
+        "height": 403.0,
+        "r": 515.6,
+        "digits": {
+          "1": {
+            "cx": 699.5,
+            "cy": 422.5,
+            "width": 297.3,
+            "height": 421.8,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 699.5,
+            "cy": 422.5,
+            "width": 549.0,
+            "height": 422.8,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 699.5,
+            "cy": 422.5,
+            "width": 731.5,
+            "height": 403.0,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 699.0,
+          "cy": 422.0,
+          "width": 731.5,
+          "height": 726.8,
+          "r": 515.6,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "024-regular",
@@ -725,7 +1616,49 @@
             "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 775.7,
+        "cy": 495.0,
+        "width": 779.7,
+        "height": 683.9,
+        "r": 467.5,
+        "digits": {
+          "1": {
+            "cx": 775.7,
+            "cy": 495.0,
+            "width": 394.8,
+            "height": 715.8,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 775.7,
+            "cy": 495.0,
+            "width": 729.1,
+            "height": 717.5,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 775.7,
+            "cy": 495.0,
+            "width": 779.7,
+            "height": 683.9,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 772.9,
+          "cy": 494.0,
+          "width": 779.7,
+          "height": 779.7,
+          "r": 467.5,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "005-bold",
@@ -752,7 +1685,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 560.0,
+        "cy": 270.0,
+        "width": 642.7,
+        "height": 311.9,
+        "r": 261.4,
+        "digits": {
+          "1": {
+            "cx": 560.0,
+            "cy": 270.0,
+            "width": 241.1,
+            "height": 326.4,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 560.0,
+            "cy": 270.0,
+            "width": 445.2,
+            "height": 327.2,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 560.0,
+            "cy": 270.0,
+            "width": 642.7,
+            "height": 311.9,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 560.0,
+          "cy": 270.0,
+          "width": 733.0,
+          "height": 451.2,
+          "r": 261.4,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "003-light",
@@ -777,7 +1752,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 387.0,
+        "width": 759.0,
+        "height": 315.0,
+        "r": 439.7,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 387.0,
+            "width": 272.0,
+            "height": 313.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 387.0,
+            "width": 504.0,
+            "height": 321.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 387.0,
+            "width": 759.0,
+            "height": 315.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 559.9,
+          "cy": 385.5,
+          "width": 685.1,
+          "height": 681.0,
+          "r": 439.7,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "010-light",
@@ -804,7 +1827,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 631.5,
+        "cy": 169.0,
+        "width": 867.4,
+        "height": 261.9,
+        "r": 337.1,
+        "digits": {
+          "1": {
+            "cx": 631.5,
+            "cy": 169.0,
+            "width": 325.3,
+            "height": 274.1,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 631.5,
+            "cy": 169.0,
+            "width": 600.7,
+            "height": 274.7,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 631.5,
+            "cy": 169.0,
+            "width": 867.4,
+            "height": 261.9,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 631.5,
+          "cy": 169.0,
+          "width": 920.8,
+          "height": 496.9,
+          "r": 337.1,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "017-semibold",
@@ -832,7 +1897,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 1011.0,
+        "cy": 646.0,
+        "width": 1237.0,
+        "height": 631.0,
+        "r": 523.1,
+        "digits": {
+          "1": {
+            "cx": 1011.0,
+            "cy": 646.0,
+            "width": 552.0,
+            "height": 851.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 1011.0,
+            "cy": 646.0,
+            "width": 1109.0,
+            "height": 872.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 1011.0,
+            "cy": 646.0,
+            "width": 1237.0,
+            "height": 631.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 1009.1,
+          "cy": 646.0,
+          "width": 1338.3,
+          "height": 923.8,
+          "r": 523.1,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Scheherazade New",
+          "file": "ScheherazadeNew-SemiBold.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "002-bold",
@@ -857,7 +1972,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 639.5,
+        "cy": 166.1,
+        "width": 811.9,
+        "height": 402.2,
+        "r": 273.0,
+        "digits": {
+          "1": {
+            "cx": 639.5,
+            "cy": 166.1,
+            "width": 275.9,
+            "height": 401.7,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 639.5,
+            "cy": 166.1,
+            "width": 523.5,
+            "height": 405.9,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 639.5,
+            "cy": 166.1,
+            "width": 811.9,
+            "height": 402.2,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 637.7,
+          "cy": 164.4,
+          "width": 922.3,
+          "height": 466.8,
+          "r": 273.0,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Amiri",
+          "file": "Amiri-Bold.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "005-medium",
@@ -884,7 +2047,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 565.5,
+        "cy": 270.0,
+        "width": 660.2,
+        "height": 325.3,
+        "r": 286.5,
+        "digits": {
+          "1": {
+            "cx": 565.5,
+            "cy": 270.0,
+            "width": 247.6,
+            "height": 340.4,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 565.5,
+            "cy": 270.0,
+            "width": 457.3,
+            "height": 341.3,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 565.5,
+            "cy": 270.0,
+            "width": 660.2,
+            "height": 325.3,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 566.0,
+          "cy": 270.0,
+          "width": 725.4,
+          "height": 516.0,
+          "r": 286.5,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "003-semibold",
@@ -909,7 +2114,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "width": 774.0,
+        "height": 320.0,
+        "r": 439.8,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 290.0,
+            "height": 320.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 516.0,
+            "height": 329.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 774.0,
+            "height": 320.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 561.9,
+          "cy": 385.3,
+          "width": 689.1,
+          "height": 680.5,
+          "r": 439.8,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "008-regular",
@@ -934,7 +2187,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 580.0,
+        "cy": 270.0,
+        "width": 639.8,
+        "height": 331.2,
+        "r": 275.9,
+        "digits": {
+          "1": {
+            "cx": 580.0,
+            "cy": 270.0,
+            "width": 240.0,
+            "height": 346.7,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 580.0,
+            "cy": 270.0,
+            "width": 443.1,
+            "height": 347.5,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 580.0,
+            "cy": 270.0,
+            "width": 639.8,
+            "height": 331.2,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 580.0,
+          "cy": 270.0,
+          "width": 714.0,
+          "height": 466.5,
+          "r": 275.9,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "013-regular-bold",
@@ -1007,7 +2302,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 630.0,
+        "cy": 390.0,
+        "width": 783.0,
+        "height": 365.0,
+        "r": 419.1,
+        "digits": {
+          "1": {
+            "cx": 630.0,
+            "cy": 390.0,
+            "width": 266.0,
+            "height": 364.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 630.0,
+            "cy": 390.0,
+            "width": 514.0,
+            "height": 387.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 630.0,
+            "cy": 390.0,
+            "width": 783.0,
+            "height": 365.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 630.5,
+          "cy": 390.0,
+          "width": 715.9,
+          "height": 636.6,
+          "r": 419.1,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Noto Naskh Arabic",
+          "file": "NotoNaskhArabic[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "017-bold",
@@ -1035,7 +2380,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 1020.5,
+        "cy": 646.0,
+        "width": 1252.0,
+        "height": 644.0,
+        "r": 518.9,
+        "digits": {
+          "1": {
+            "cx": 1020.5,
+            "cy": 646.0,
+            "width": 580.0,
+            "height": 866.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 1020.5,
+            "cy": 646.0,
+            "width": 1137.0,
+            "height": 882.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 1020.5,
+            "cy": 646.0,
+            "width": 1252.0,
+            "height": 644.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 1018.1,
+          "cy": 646.0,
+          "width": 1329.3,
+          "height": 914.7,
+          "r": 518.9,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Scheherazade New",
+          "file": "ScheherazadeNew-Bold.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "005-regular",
@@ -1062,7 +2457,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 570.0,
+        "cy": 270.0,
+        "width": 674.8,
+        "height": 334.2,
+        "r": 305.5,
+        "digits": {
+          "1": {
+            "cx": 570.0,
+            "cy": 270.0,
+            "width": 253.1,
+            "height": 349.8,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 570.0,
+            "cy": 270.0,
+            "width": 467.4,
+            "height": 350.6,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 570.0,
+            "cy": 270.0,
+            "width": 674.8,
+            "height": 334.2,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 570.0,
+          "cy": 270.0,
+          "width": 717.8,
+          "height": 565.5,
+          "r": 305.5,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "005-thin",
@@ -1089,7 +2526,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 580.0,
+        "cy": 270.0,
+        "width": 706.4,
+        "height": 380.2,
+        "r": 407.9,
+        "digits": {
+          "1": {
+            "cx": 580.0,
+            "cy": 270.0,
+            "width": 282.7,
+            "height": 397.9,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 580.0,
+            "cy": 270.0,
+            "width": 522.0,
+            "height": 398.9,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 580.0,
+            "cy": 270.0,
+            "width": 706.4,
+            "height": 380.2,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 580.0,
+          "cy": 270.0,
+          "width": 706.4,
+          "height": 702.6,
+          "r": 407.9,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "022-regular",
@@ -1114,7 +2593,49 @@
             "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 773.0,
+        "cy": 294.0,
+        "width": 857.1,
+        "height": 547.9,
+        "r": 439.9,
+        "digits": {
+          "1": {
+            "cx": 773.0,
+            "cy": 294.0,
+            "width": 397.9,
+            "height": 573.5,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 773.0,
+            "cy": 294.0,
+            "width": 734.8,
+            "height": 574.8,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 773.0,
+            "cy": 294.0,
+            "width": 857.1,
+            "height": 547.9,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 771.5,
+          "cy": 292.8,
+          "width": 857.1,
+          "height": 846.2,
+          "r": 439.9,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "010-black",
@@ -1141,7 +2662,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 649.0,
+        "cy": 169.0,
+        "width": 840.7,
+        "height": 247.4,
+        "r": 318.3,
+        "digits": {
+          "1": {
+            "cx": 649.0,
+            "cy": 169.0,
+            "width": 315.3,
+            "height": 259.0,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 649.0,
+            "cy": 169.0,
+            "width": 582.3,
+            "height": 259.6,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 649.0,
+            "cy": 169.0,
+            "width": 840.7,
+            "height": 247.4,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 649.0,
+          "cy": 168.2,
+          "width": 920.8,
+          "height": 447.9,
+          "r": 318.3,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "005-semibold",
@@ -1168,7 +2731,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 563.0,
+        "cy": 270.0,
+        "width": 651.5,
+        "height": 317.9,
+        "r": 274.3,
+        "digits": {
+          "1": {
+            "cx": 563.0,
+            "cy": 270.0,
+            "width": 244.3,
+            "height": 332.7,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 563.0,
+            "cy": 270.0,
+            "width": 451.2,
+            "height": 333.5,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 563.0,
+            "cy": 270.0,
+            "width": 651.5,
+            "height": 317.9,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 563.0,
+          "cy": 270.0,
+          "width": 729.2,
+          "height": 485.5,
+          "r": 274.3,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "007-regular",
@@ -1193,7 +2798,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 523.5,
+        "cy": 262.5,
+        "width": 576.5,
+        "height": 317.1,
+        "r": 311.5,
+        "digits": {
+          "1": {
+            "cx": 523.5,
+            "cy": 262.5,
+            "width": 235.1,
+            "height": 331.9,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 523.5,
+            "cy": 262.5,
+            "width": 434.1,
+            "height": 332.7,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 523.5,
+            "cy": 262.5,
+            "width": 576.5,
+            "height": 317.1,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 524.2,
+          "cy": 261.7,
+          "width": 576.5,
+          "height": 568.7,
+          "r": 311.5,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "005-extralight",
@@ -1220,7 +2867,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 577.5,
+        "cy": 270.0,
+        "width": 691.2,
+        "height": 368.4,
+        "r": 382.7,
+        "digits": {
+          "1": {
+            "cx": 577.5,
+            "cy": 270.0,
+            "width": 275.6,
+            "height": 385.5,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 577.5,
+            "cy": 270.0,
+            "width": 508.9,
+            "height": 386.4,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 577.5,
+            "cy": 270.0,
+            "width": 691.2,
+            "height": 368.4,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 576.1,
+          "cy": 270.0,
+          "width": 691.2,
+          "height": 687.3,
+          "r": 382.7,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "015-light",
@@ -1245,7 +2934,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 703.5,
+        "cy": 257.5,
+        "width": 782.0,
+        "height": 348.0,
+        "r": 371.6,
+        "digits": {
+          "1": {
+            "cx": 703.5,
+            "cy": 257.5,
+            "width": 259.0,
+            "height": 351.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 703.5,
+            "cy": 257.5,
+            "width": 523.0,
+            "height": 351.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 703.5,
+            "cy": 257.5,
+            "width": 782.0,
+            "height": 348.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 695.5,
+          "cy": 256.5,
+          "width": 649.2,
+          "height": 644.8,
+          "r": 371.6,
+          "region": "generatedFill"
+        },
+        "font": {
+          "family": "Noto Sans Arabic",
+          "file": "NotoSansArabic[wdth,wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "021-regular",
@@ -1270,7 +3009,58 @@
             "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 586.2,
+        "cy": 291.2,
+        "width": 522.7,
+        "height": 290.4,
+        "r": 398.7,
+        "digits": {
+          "1": {
+            "cx": 586.2,
+            "cy": 291.2,
+            "width": 201.6,
+            "height": 294.4,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 586.2,
+            "cy": 291.2,
+            "width": 407.5,
+            "height": 288.8,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 586.2,
+            "cy": 291.2,
+            "width": 522.7,
+            "height": 290.4,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 586.2,
+          "cy": 291.1,
+          "width": 566.8,
+          "height": 562.4,
+          "r": 398.7,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "DigitalKhattV1",
+          "file": "digital-khatt-v1.otf",
+          "glyph": "endofaya",
+          "mechanism": "precomposed"
+        }
+      }
     },
     {
       "id": "003-regular",
@@ -1295,7 +3085,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "width": 764.0,
+        "height": 317.0,
+        "r": 440.3,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 278.0,
+            "height": 315.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 508.0,
+            "height": 324.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 764.0,
+            "height": 317.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 561.2,
+          "cy": 386.9,
+          "width": 689.4,
+          "height": 681.1,
+          "r": 440.3,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "015-extralight",
@@ -1320,7 +3158,57 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 709.5,
+        "cy": 257.5,
+        "width": 773.0,
+        "height": 347.0,
+        "r": 378.2,
+        "digits": {
+          "1": {
+            "cx": 709.5,
+            "cy": 257.5,
+            "width": 250.0,
+            "height": 348.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 709.5,
+            "cy": 257.5,
+            "width": 514.0,
+            "height": 350.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 709.5,
+            "cy": 257.5,
+            "width": 773.0,
+            "height": 347.0,
+            "source": "font-shaping",
+            "ring_alternate": true,
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 701.5,
+          "cy": 256.5,
+          "width": 649.2,
+          "height": 649.2,
+          "r": 378.2,
+          "region": "generatedFill"
+        },
+        "font": {
+          "family": "Noto Sans Arabic",
+          "file": "NotoSansArabic[wdth,wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "003-bold",
@@ -1345,7 +3233,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "width": 777.0,
+        "height": 323.0,
+        "r": 440.2,
+        "digits": {
+          "1": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 295.0,
+            "height": 323.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 519.0,
+            "height": 333.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 561.5,
+            "cy": 386.5,
+            "width": 777.0,
+            "height": 323.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 562.0,
+          "cy": 387.0,
+          "width": 692.3,
+          "height": 679.2,
+          "r": 440.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "008-medium",
@@ -1370,7 +3306,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 578.5,
+        "cy": 270.0,
+        "width": 620.8,
+        "height": 319.4,
+        "r": 254.6,
+        "digits": {
+          "1": {
+            "cx": 578.5,
+            "cy": 270.0,
+            "width": 232.8,
+            "height": 334.2,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 578.5,
+            "cy": 270.0,
+            "width": 430.0,
+            "height": 335.1,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 578.5,
+            "cy": 270.0,
+            "width": 620.8,
+            "height": 319.4,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 578.5,
+          "cy": 268.8,
+          "width": 718.2,
+          "height": 412.3,
+          "r": 254.6,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "026-regular",
@@ -1395,7 +3373,49 @@
             "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 779.5,
+        "cy": 550.0,
+        "width": 587.9,
+        "height": 514.0,
+        "r": 440.8,
+        "digits": {
+          "1": {
+            "cx": 779.5,
+            "cy": 550.0,
+            "width": 376.8,
+            "height": 537.9,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 779.5,
+            "cy": 550.0,
+            "width": 587.9,
+            "height": 539.2,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 779.5,
+            "cy": 550.0,
+            "width": 587.9,
+            "height": 514.0,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 777.2,
+          "cy": 566.2,
+          "width": 587.9,
+          "height": 571.7,
+          "r": 440.8,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "008-bold",
@@ -1420,7 +3440,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 573.0,
+        "cy": 270.0,
+        "width": 565.1,
+        "height": 250.3,
+        "r": 193.3,
+        "digits": {
+          "1": {
+            "cx": 573.0,
+            "cy": 270.0,
+            "width": 211.9,
+            "height": 250.3,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 573.0,
+            "cy": 270.0,
+            "width": 391.4,
+            "height": 250.3,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 573.0,
+            "cy": 270.0,
+            "width": 565.1,
+            "height": 250.3,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 573.0,
+          "cy": 270.4,
+          "width": 710.1,
+          "height": 250.3,
+          "r": 193.3,
+          "region": "fill-base"
+        }
+      }
     },
     {
       "id": "002-regular",
@@ -1461,7 +3523,55 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 639.5,
+        "cy": 166.0,
+        "width": 796.7,
+        "height": 380.0,
+        "r": 281.2,
+        "digits": {
+          "1": {
+            "cx": 639.5,
+            "cy": 166.0,
+            "width": 258.1,
+            "height": 381.7,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 639.5,
+            "cy": 166.0,
+            "width": 507.1,
+            "height": 387.1,
+            "source": "font-shaping",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 639.5,
+            "cy": 166.0,
+            "width": 796.7,
+            "height": 380.0,
+            "source": "font-shaping",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 639.5,
+          "cy": 164.7,
+          "width": 931.5,
+          "height": 486.9,
+          "r": 281.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Amiri",
+          "file": "Amiri-Regular.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
     },
     {
       "id": "010-medium",
@@ -1488,7 +3598,49 @@
             "note": null
           }
         }
-      ]
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 640.0,
+        "cy": 169.0,
+        "width": 855.9,
+        "height": 255.1,
+        "r": 327.4,
+        "digits": {
+          "1": {
+            "cx": 640.0,
+            "cy": 169.0,
+            "width": 321.0,
+            "height": 267.0,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "2": {
+            "cx": 640.0,
+            "cy": 169.0,
+            "width": 592.8,
+            "height": 267.7,
+            "source": "derived",
+            "placement": "manual"
+          },
+          "3": {
+            "cx": 640.0,
+            "cy": 169.0,
+            "width": 855.9,
+            "height": 255.1,
+            "source": "derived",
+            "placement": "manual"
+          }
+        },
+        "derived": {
+          "cx": 640.0,
+          "cy": 169.6,
+          "width": 916.2,
+          "height": 472.6,
+          "r": 327.4,
+          "region": "fill-base"
+        }
+      }
     }
   ]
 }
