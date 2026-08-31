@@ -636,17 +636,10 @@ button.secondary {
 }
 
 .mushaf-ayah-marker .ayah-number {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: "Amiri", "Scheherazade New", serif;
-  font-size: 0.44em;
   font-weight: 700;
-  color: var(--ink-base, #083a3a);
+  fill: var(--ink-base, #083a3a);
   pointer-events: none;
-  transform: translateY(0.04em);
 }
 
 .mushaf-verses-flow.hide-numbers .ayah-number,

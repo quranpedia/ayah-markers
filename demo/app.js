@@ -382,9 +382,31 @@ function toArabicDigits(num) {
   return String(num).replace(/[0-9]/g, d => digits[+d]);
 }
 
-function buildMarkerHtml(svgString, ayahNumber) {
+// The number does not sit in the middle of a marker. `collection.json` records
+// where it does sit, per marker and per digit count, in the SVG's own space --
+// so the numeral is drawn inside the artwork rather than centred over its box.
+function numberBox(record, numStr) {
+  const number = record?.number;
+  if (!number) return null;
+  return number.digits?.[String(numStr.length)] || number.digits?.['3'] || number;
+}
+
+function withAyahNumber(svgString, record, numStr) {
+  const box = numberBox(record, numStr);
+  const viewBox = /viewBox="([^"]+)"/.exec(svgString)?.[1];
+  if (!box || !viewBox) return svgString;
+  const [, , width, height] = viewBox.replace(/,/g, ' ').trim().split(/\s+/).map(Number);
+  // the size the placement sheet draws the numeral at, in the marker's units
+  const fontSize = 0.32 * Math.max(width, height);
+  const text = `<text class="ayah-number" x="${box.cx}" y="${box.cy}" font-size="${fontSize.toFixed(1)}"`
+    + ` text-anchor="middle" dominant-baseline="central"`
+    + ` textLength="${box.width.toFixed(1)}" lengthAdjust="spacing">${numStr}</text>`;
+  return svgString.replace(/<\/svg>\s*$/, `${text}</svg>`);
+}
+
+function buildMarkerHtml(svgString, ayahNumber, record = currentVariant().record) {
   const numStr = toArabicDigits(ayahNumber);
-  return `<span class="mushaf-ayah-marker" title="آية ${numStr}"><span class="ayah-svg-wrap">${svgString}</span><span class="ayah-number">${numStr}</span></span>`;
+  return `<span class="mushaf-ayah-marker" title="آية ${numStr}"><span class="ayah-svg-wrap">${withAyahNumber(svgString, record, numStr)}</span></span>`;
 }
 
 function renderPalettes() {
@@ -455,7 +477,7 @@ function renderFlowView() {
   const activeSvg = svgCache[variant.index];
   document.querySelectorAll('.flow-marker-slot').forEach(slot => {
     const num = slot.dataset.num || '١';
-    slot.innerHTML = `<span class="mushaf-ayah-marker"><span class="ayah-svg-wrap">${activeSvg}</span><span class="ayah-number">${num}</span></span>`;
+    slot.innerHTML = `<span class="mushaf-ayah-marker"><span class="ayah-svg-wrap">${withAyahNumber(activeSvg, variant.record, num)}</span></span>`;
   });
 }
 
@@ -576,9 +598,9 @@ document.querySelector('#copy-html').onclick = async () => {
   const variant = currentVariant();
   const activeSvg = svgCache[variant.index];
   const snippet = `<!-- Ayah Marker: ${variant.record.id} -->
-<span class="mushaf-ayah-marker" style="display:inline-flex;position:relative;vertical-align:middle;width:1.35em;height:1.35em;">
-  ${activeSvg}
-  <span class="ayah-number" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:0.44em;font-weight:bold;color:var(--ink-base);">١</span>
+<!-- the number is placed at the centre collection.json records for this marker -->
+<span class="mushaf-ayah-marker" style="display:inline-flex;vertical-align:middle;width:1.35em;height:1.35em;">
+  ${withAyahNumber(activeSvg, variant.record, '١')}
 </span>`;
   await navigator.clipboard.writeText(snippet);
   const button = document.querySelector('#copy-html');
