@@ -73,5 +73,37 @@ def test_placement_editor_can_apply_contour_alignment_to_every_digit_count():
     assert 'data-apply-all-digits' in module.PLACEMENT_EDITOR
 
 
-def test_marker_contact_sheet_uses_two_cards_per_row():
-    assert ".grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));" in module.CARD_CSS
+def test_marker_contact_sheet_fits_as_many_large_cards_as_the_width_allows():
+    assert "grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));" in module.CARD_CSS
+    assert ".row svg { width: 100%; max-width: 150px;" in module.CARD_CSS
+
+
+def test_clicking_a_preview_only_selects_and_never_places_the_number():
+    assert "select(svg, contourAt(svg, sourcePoint(svg, event)));" in module.PLACEMENT_EDITOR
+    # the number moves through the centring actions alone
+    assert "setCentre(svg, point, contourAt(svg, point));" not in module.PLACEMENT_EDITOR
+
+
+def test_placements_save_themselves_and_come_back_on_reload():
+    assert "localStorage.setItem(STORAGE_KEY" in module.PLACEMENT_EDITOR
+    assert "localStorage.getItem(STORAGE_KEY" in module.PLACEMENT_EDITOR
+    assert "restore();" in module.PLACEMENT_EDITOR
+
+
+def test_the_build_applies_the_hand_placed_centres():
+    source = (ROOT / "scripts" / "build_number_boxes.py").read_text()
+    assert "number_placement.json" in source
+    assert '"placement": "manual"' in source
+
+
+def test_every_marker_carries_a_hand_placed_centre():
+    import json
+
+    placement = json.loads((ROOT / "scripts" / "number_placement.json").read_text())
+    collection = json.loads((ROOT / "collection.json").read_text())
+
+    for marker in collection["markers"]:
+        placed = placement[marker["id"]]
+        for count, digit in marker["number"]["digits"].items():
+            assert digit["placement"] == "manual"
+            assert (digit["cx"], digit["cy"]) == (placed[count]["cx"], placed[count]["cy"])
