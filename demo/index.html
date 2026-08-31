@@ -1,9 +1,202 @@
 <!doctype html>
 <html lang="en">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ayah Markers · SVG Customizer</title><link rel="stylesheet" href="style.css?v=workshop-3"><link rel="stylesheet" href="gallery.css?v=workshop-2"><link rel="stylesheet" href="classes.css?v=quran-teal-gold-3">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ayah Markers · SVG Customizer & Mushaf Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=workshop-4">
+  <link rel="stylesheet" href="gallery.css?v=workshop-2">
+  <link rel="stylesheet" href="classes.css?v=quran-teal-gold-3">
+</head>
+<body>
 <main>
-  <header class="hero"><p class="eyebrow">Quran marks · open SVG collection</p><h1>Ayah Markers</h1><p class="intro">Pick a design, choose its weight, tune only the layers it actually contains, then copy ready-to-paste CSS.</p><p class="meta"><span id="marker-count">Loading collection…</span><a href="https://github.com/quranpedia/ayah-markers">GitHub repository</a><a href="../dist/AyahMarkers.otf">Download OTF</a><a href="../dist/AyahMarkers.ttf">Download TTF</a></p></header>
-  <div class="layout workbench"><section class="controls"><div class="section-heading"><h2>Colors</h2><p>Available layers only</p></div><div id="colors"></div><div class="actions"><button id="copy">Copy CSS</button><button id="reset" class="secondary">Reset colors</button></div></section><section class="preview"><div id="canvas" aria-label="Marker preview"></div><div id="weights" class="weights" role="group" aria-label="Weight" hidden></div><code id="status">Loading…</code></section></div>
-  <section class="all-markers"><div class="gallery-heading"><div><p class="eyebrow">Collection</p><h2>All designs</h2></div><label class="search"><span class="sr-only">Find marker</span><input id="search" type="search" placeholder="Find a design…" autocomplete="off"></label></div><p id="gallery-count" class="gallery-count"></p><div id="gallery" aria-label="Marker designs"></div></section>
-</main><script src="app.js?v=sources-1"></script>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Quran marks · open SVG collection</p>
+      <h1>Ayah Markers</h1>
+      <p class="intro">Pick a design, choose its weight, tune only the layers it actually contains, preview it directly in a real Mushaf page context, then copy ready-to-paste CSS or HTML.</p>
+    </div>
+    <div class="meta">
+      <span id="marker-count">Loading collection…</span>
+      <a href="https://github.com/quranpedia/ayah-markers">GitHub repository</a>
+      <a href="../dist/AyahMarkers.otf">Download OTF</a>
+      <a href="../dist/AyahMarkers.ttf">Download TTF</a>
+    </div>
+  </header>
+
+  <div class="layout workbench">
+    <!-- Controls Sidebar -->
+    <section class="controls">
+      <div class="section-heading">
+        <h2>Palettes</h2>
+        <p>Quranic presets</p>
+      </div>
+      <div id="palettes" class="palettes-grid"></div>
+
+      <div class="section-heading" style="margin-top: var(--space-6);">
+        <h2>Colors</h2>
+        <p>Available layers only</p>
+      </div>
+      <div id="colors"></div>
+
+      <div class="actions">
+        <button id="copy" type="button" title="Copy active CSS custom properties">Copy CSS</button>
+        <button id="copy-html" type="button" class="secondary" title="Copy inline HTML snippet with number">Copy HTML</button>
+        <button id="reset" type="button" class="secondary" title="Reset all layers to default">Reset</button>
+      </div>
+    </section>
+
+    <!-- Preview Stage -->
+    <section class="preview-stage">
+      <!-- Mode Tabs -->
+      <div class="stage-toolbar">
+        <div class="view-tabs" role="tablist" aria-label="Preview View Modes">
+          <button type="button" class="tab-btn active" data-view="mushaf" role="tab" aria-selected="true" id="tab-mushaf">
+            <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Mushaf Page
+          </button>
+          <button type="button" class="tab-btn" data-view="single" role="tab" aria-selected="false" id="tab-single">
+            <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+            Single Glyph
+          </button>
+          <button type="button" class="tab-btn" data-view="flow" role="tab" aria-selected="false" id="tab-flow">
+            <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+            Size Comparison
+          </button>
+        </div>
+
+        <div id="weights" class="weights-bar" role="group" aria-label="Marker Weight"></div>
+      </div>
+
+      <!-- Views Container -->
+      <div class="stage-content">
+        <!-- View 1: Mushaf Page -->
+        <div id="view-mushaf" class="view-panel active">
+          <!-- Mushaf Toolbar -->
+          <div class="mushaf-toolbar">
+            <div class="toolbar-group">
+              <label for="mushaf-surah-select">Surah:</label>
+              <select id="mushaf-surah-select" class="styled-select">
+                <option value="fatihah">سورة الفاتحة (Al-Fatihah)</option>
+                <option value="muawwidhat">المعوذات والإخلاص (Short Surahs)</option>
+                <option value="kursi">آية الكرسي وخواتيم البقرة (Ayat Al-Kursi)</option>
+                <option value="naba">سورة النبأ (Surah An-Naba')</option>
+              </select>
+            </div>
+
+            <div class="toolbar-group">
+              <label for="mushaf-theme-select">Theme:</label>
+              <select id="mushaf-theme-select" class="styled-select">
+                <option value="classic">Classic Parchment</option>
+                <option value="gold-frame">Gilded Royal</option>
+                <option value="night">Night Mode</option>
+                <option value="minimal">Modern Clean</option>
+              </select>
+            </div>
+
+            <div class="toolbar-group">
+              <label class="toggle-chip">
+                <input type="checkbox" id="mushaf-numbers-toggle" checked>
+                <span>Ayah Numbers</span>
+              </label>
+            </div>
+
+            <div class="toolbar-group font-scaler">
+              <label>Text size:</label>
+              <button type="button" id="font-decrease" class="scale-btn" title="Decrease font size">A-</button>
+              <span id="font-size-label">28px</span>
+              <button type="button" id="font-increase" class="scale-btn" title="Increase font size">A+</button>
+            </div>
+          </div>
+
+          <!-- The Rendered Mushaf Page Layout -->
+          <div id="mushaf-container" class="mushaf-wrapper theme-classic">
+            <div class="mushaf-frame">
+              <div class="mushaf-inner-border">
+                <div id="mushaf-surah-header" class="surah-header-banner">
+                  <span class="surah-ornament-l">❖</span>
+                  <div class="surah-title-wrap">
+                    <span id="surah-name-ar" class="surah-name">سُورَةُ الفَاتِحَةِ</span>
+                    <span id="surah-meta-ar" class="surah-meta">مَكِّيَّةٌ · آيَاتُهَا ٧</span>
+                  </div>
+                  <span class="surah-ornament-r">❖</span>
+                </div>
+
+                <div id="mushaf-bismillah" class="bismillah-block">
+                  بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+                </div>
+
+                <div id="mushaf-verses-flow" class="mushaf-verses-flow">
+                  <!-- Verses rendered here with inline markers -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View 2: Single Isolated Glyph -->
+        <div id="view-single" class="view-panel">
+          <div class="single-preview-box">
+            <div id="canvas" aria-label="Marker preview"></div>
+          </div>
+        </div>
+
+        <!-- View 3: Size Comparison / Flow -->
+        <div id="view-flow" class="view-panel">
+          <div class="flow-scales-container">
+            <div class="flow-scale-row">
+              <span class="scale-badge">Small (22px)</span>
+              <p class="flow-sample flow-sm">
+                ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ <span class="flow-marker-slot" data-num="١"></span> ٱلرَّحْمَٰنِ ٱلرَّحِيمِ <span class="flow-marker-slot" data-num="٢"></span> مَٰلِكِ يَوْمِ ٱلدِّينِ <span class="flow-marker-slot" data-num="٣"></span>
+              </p>
+            </div>
+            <div class="flow-scale-row">
+              <span class="scale-badge">Medium (30px)</span>
+              <p class="flow-sample flow-md">
+                إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ <span class="flow-marker-slot" data-num="٤"></span> ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ <span class="flow-marker-slot" data-num="٥"></span>
+              </p>
+            </div>
+            <div class="flow-scale-row">
+              <span class="scale-badge">Large (40px)</span>
+              <p class="flow-sample flow-lg">
+                قُلْ هُوَ ٱللَّهُ أَحَدٌ <span class="flow-marker-slot" data-num="١"></span> ٱللَّهُ ٱلصَّمَدُ <span class="flow-marker-slot" data-num="٢"></span>
+              </p>
+            </div>
+            <div class="flow-scale-row">
+              <span class="scale-badge">Display (54px)</span>
+              <p class="flow-sample flow-xl">
+                وَٱللَّهُ غَفُورٌ رَّحِيمٌ <span class="flow-marker-slot" data-num="٧"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Status code footer -->
+      <code id="status">Loading…</code>
+    </section>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="all-markers">
+    <div class="gallery-heading">
+      <div>
+        <p class="eyebrow">Collection</p>
+        <h2>All designs</h2>
+      </div>
+      <label class="search">
+        <span class="sr-only">Find marker</span>
+        <input id="search" type="search" placeholder="Find a design…" autocomplete="off">
+      </label>
+    </div>
+    <p id="gallery-count" class="gallery-count"></p>
+    <div id="gallery" aria-label="Marker designs"></div>
+  </section>
+</main>
+
+<script src="app.js?v=workshop-4"></script>
+</body>
+</html>
