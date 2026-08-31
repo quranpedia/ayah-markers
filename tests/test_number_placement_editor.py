@@ -36,5 +36,21 @@ def test_number_preview_preserves_digit_shapes_when_fitting_its_box():
     assert "spacingAndGlyphs" not in markup
 
 
+def test_number_preview_normalizes_all_marker_artwork_to_a_shared_viewbox():
+    markup = module.card_svg(
+        "20 -40 200 400",
+        "",
+        {"cx": 120, "cy": 160, "width": 80, "height": 80},
+        "٧",
+    )
+
+    assert '<svg viewBox="0 0 1000 1000"' in markup
+    assert 'transform="translate(250.0 0.0) scale(2.500000) translate(-20.0 40.0)"' in markup
+
+
 def test_sheet_renderer_can_use_the_existing_number_metadata_without_rebuilding_it():
     assert callable(module.render_sheets)
+
+
+def test_placement_editor_maps_pointer_positions_from_rendered_preview_bounds():
+    assert "getBoundingClientRect" in module.PLACEMENT_EDITOR

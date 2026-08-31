@@ -21,6 +21,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DIGIT_TEXT = {1: "٧", 2: "٤٨", 3: "٢٥٥"}
+PREVIEW_VIEWBOX_SIZE = 1000
+PREVIEW_FONT_SIZE = 360
 
 
 def load(name):
@@ -217,7 +219,7 @@ PLACEMENT_EDITOR = """
     const target = svg.querySelector('[data-placement-target]');
     target.setAttribute('cx', cx);
     target.setAttribute('cy', cy);
-    target.setAttribute('r', Math.max(12, height * 0.04));
+    target.setAttribute('r', 20 / Number(svg.dataset.normalizeScale));
   }
 
   function setCentre(svg, point) {
@@ -235,16 +237,24 @@ PLACEMENT_EDITOR = """
 
   document.querySelectorAll('.placement-preview').forEach((svg) => {
     svg.addEventListener('click', (event) => {
-      const point = svg.createSVGPoint();
-      point.x = event.clientX;
-      point.y = event.clientY;
-      setCentre(svg, point.matrixTransform(svg.getScreenCTM().inverse()));
+      const bounds = svg.getBoundingClientRect();
+      const previewPoint = {
+        x: ((event.clientX - bounds.left) / bounds.width) * 1000,
+        y: ((event.clientY - bounds.top) / bounds.height) * 1000,
+      };
+      const scale = Number(svg.dataset.normalizeScale);
+      setCentre(svg, {
+        x: (previewPoint.x - Number(svg.dataset.normalizeOffsetX)) / scale + Number(svg.dataset.sourceX),
+        y: (previewPoint.y - Number(svg.dataset.normalizeOffsetY)) / scale + Number(svg.dataset.sourceY),
+      });
     });
     svg.addEventListener('keydown', (event) => {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
-        const viewBox = svg.viewBox.baseVal;
-        setCentre(svg, { x: viewBox.x + viewBox.width / 2, y: viewBox.y + viewBox.height / 2 });
+        setCentre(svg, {
+          x: Number(svg.dataset.sourceX) + Number(svg.dataset.sourceWidth) / 2,
+          y: Number(svg.dataset.sourceY) + Number(svg.dataset.sourceHeight) / 2,
+        });
       }
     });
   });
@@ -284,8 +294,18 @@ def marker_svg(path):
 
 def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
              marker_id=None, digit_count=None):
-    fs = box["height"]
-    sw = max(2.0, float(vb.replace(",", " ").split()[2]) / 110)
+    source_x, source_y, source_width, source_height = [
+        float(value) for value in vb.replace(",", " ").split()
+    ]
+    scale = PREVIEW_VIEWBOX_SIZE / max(source_width, source_height)
+    offset_x = (PREVIEW_VIEWBOX_SIZE - source_width * scale) / 2
+    offset_y = (PREVIEW_VIEWBOX_SIZE - source_height * scale) / 2
+    transform = (
+        f'translate({offset_x:.1f} {offset_y:.1f}) scale({scale:.6f}) '
+        f'translate({-source_x:.1f} {-source_y:.1f})'
+    )
+    fs = PREVIEW_FONT_SIZE / scale
+    sw = 10 / scale
     editor_attrs = ""
     if marker_id is not None and digit_count is not None:
         editor_attrs = (
@@ -293,9 +313,17 @@ def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
             f'aria-label="Set the {digit_count}-digit number centre for {html.escape(marker_id, quote=True)}" '
             f'data-marker-id="{html.escape(marker_id, quote=True)}" data-digit-count="{digit_count}" '
             f'data-number-width="{box["width"]:.1f}" data-number-height="{box["height"]:.1f}" '
-            f'data-original-cx="{box["cx"]:.1f}" data-original-cy="{box["cy"]:.1f}"'
+            f'data-original-cx="{box["cx"]:.1f}" data-original-cy="{box["cy"]:.1f}" '
+            f'data-source-x="{source_x:.1f}" data-source-y="{source_y:.1f}" '
+            f'data-source-width="{source_width:.1f}" data-source-height="{source_height:.1f}" '
+            f'data-normalize-scale="{scale:.6f}" '
+            f'data-normalize-offset-x="{offset_x:.1f}" data-normalize-offset-y="{offset_y:.1f}"'
         )
-    parts = [f'<svg viewBox="{vb}" xmlns="http://www.w3.org/2000/svg"{editor_attrs}>']
+    parts = [
+        f'<svg viewBox="0 0 {PREVIEW_VIEWBOX_SIZE} {PREVIEW_VIEWBOX_SIZE}" '
+        f'xmlns="http://www.w3.org/2000/svg"{editor_attrs}>',
+        f'<g transform="{transform}">',
+    ]
     parts.append(f'<path d="{d}" fill="{colour}"/>')
     if show_box:
         parts.append(
@@ -310,7 +338,7 @@ def card_svg(vb, d, box, text, colour="#0b7771", numfill="#111", show_box=True,
     )
     if editor_attrs:
         parts.append(f'<circle class="placement-target" data-placement-target cx="{box["cx"]:.1f}" cy="{box["cy"]:.1f}" r="0"/>')
-    parts.append("</svg>")
+    parts.append("</g></svg>")
     return "".join(parts)
 
 
