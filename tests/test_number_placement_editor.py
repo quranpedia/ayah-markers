@@ -102,7 +102,8 @@ def test_placements_save_themselves_and_come_back_on_reload():
 def test_the_build_applies_the_hand_placed_centres():
     source = (ROOT / "scripts" / "build_number_boxes.py").read_text()
     assert "number_placement.json" in source
-    assert '"placement": "manual"' in source
+    # the hand-placed centre replaces the computed one
+    assert 'centre = {"cx": round(float(hand["cx"]), 1),' in source
 
 
 def test_every_marker_carries_a_hand_placed_centre():
@@ -114,7 +115,6 @@ def test_every_marker_carries_a_hand_placed_centre():
     for marker in collection["markers"]:
         placed = placement[marker["id"]]
         number = marker["number"]
-        assert number["placement"] == "manual"
         assert (number["cx"], number["cy"]) == (placed["cx"], placed["cy"])
 
 
@@ -125,6 +125,6 @@ def test_a_marker_records_one_centre_and_one_box_not_a_set_per_digit_count():
 
     for marker in collection["markers"]:
         number = marker["number"]
-        # where the number goes, and the widest box the marker holds
-        assert {"cx", "cy", "width", "height", "r"} <= number.keys()
-        assert "digits" not in number
+        # where the number goes and the widest box the marker holds -- and
+        # nothing else: no second centre, no provenance, no per-count boxes
+        assert set(number) == {"cx", "cy", "width", "height", "r"}

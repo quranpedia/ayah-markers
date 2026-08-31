@@ -32,28 +32,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 622.0,
         "cy": 219.0,
-        "placement": "manual",
         "width": 439.7,
         "height": 245.9,
-        "r": 309.2,
-        "derived": {
-          "cx": 620.2,
-          "cy": 219.6,
-          "width": 439.7,
-          "height": 435.4,
-          "r": 309.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Alkalami",
-          "file": "Alkalami-Regular.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "fallback_reason": "the number does not land in the marker's hole"
+        "r": 309.2
       }
     },
     {
@@ -97,27 +80,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 639.5,
         "cy": 166.0,
-        "placement": "manual",
         "width": 796.7,
         "height": 380.0,
-        "r": 281.2,
-        "derived": {
-          "cx": 639.5,
-          "cy": 164.7,
-          "width": 931.5,
-          "height": 486.9,
-          "r": 281.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Amiri",
-          "file": "Amiri-Regular.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 281.2
       }
     },
     {
@@ -145,27 +112,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 639.5,
         "cy": 166.1,
-        "placement": "manual",
         "width": 811.9,
         "height": 402.2,
-        "r": 273.0,
-        "derived": {
-          "cx": 637.7,
-          "cy": 164.4,
-          "width": 922.3,
-          "height": 466.8,
-          "r": 273.0,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Amiri",
-          "file": "Amiri-Bold.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 273.0
       }
     },
     {
@@ -193,27 +144,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 386.5,
-        "placement": "manual",
         "width": 750.0,
         "height": 311.0,
-        "r": 439.9,
-        "derived": {
-          "cx": 561.1,
-          "cy": 387.1,
-          "width": 682.1,
-          "height": 682.1,
-          "r": 439.9,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 439.9
       }
     },
     {
@@ -241,27 +176,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 386.5,
-        "placement": "manual",
         "width": 755.0,
         "height": 313.0,
-        "r": 440.2,
-        "derived": {
-          "cx": 560.6,
-          "cy": 386.2,
-          "width": 683.2,
-          "height": 683.2,
-          "r": 440.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 440.2
       }
     },
     {
@@ -289,27 +208,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 387.0,
-        "placement": "manual",
         "width": 759.0,
         "height": 315.0,
-        "r": 439.7,
-        "derived": {
-          "cx": 559.9,
-          "cy": 385.5,
-          "width": 685.1,
-          "height": 681.0,
-          "r": 439.7,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 439.7
       }
     },
     {
@@ -337,27 +240,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 386.5,
-        "placement": "manual",
         "width": 764.0,
         "height": 317.0,
-        "r": 440.3,
-        "derived": {
-          "cx": 561.2,
-          "cy": 386.9,
-          "width": 689.4,
-          "height": 681.1,
-          "r": 440.3,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 440.3
       }
     },
     {
@@ -385,27 +272,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 387.0,
-        "placement": "manual",
         "width": 769.0,
         "height": 319.0,
-        "r": 440.5,
-        "derived": {
-          "cx": 560.4,
-          "cy": 386.3,
-          "width": 689.1,
-          "height": 680.7,
-          "r": 440.5,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 440.5
       }
     },
     {
@@ -433,27 +304,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 386.5,
-        "placement": "manual",
         "width": 774.0,
         "height": 320.0,
-        "r": 439.8,
-        "derived": {
-          "cx": 561.9,
-          "cy": 385.3,
-          "width": 689.1,
-          "height": 680.5,
-          "r": 439.8,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 439.8
       }
     },
     {
@@ -481,27 +336,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 386.5,
-        "placement": "manual",
         "width": 777.0,
         "height": 323.0,
-        "r": 440.2,
-        "derived": {
-          "cx": 562.0,
-          "cy": 387.0,
-          "width": 692.3,
-          "height": 679.2,
-          "r": 440.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 440.2
       }
     },
     {
@@ -529,27 +368,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 386.5,
-        "placement": "manual",
         "width": 782.0,
         "height": 324.0,
-        "r": 440.2,
-        "derived": {
-          "cx": 561.1,
-          "cy": 386.2,
-          "width": 687.0,
-          "height": 682.5,
-          "r": 440.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 440.2
       }
     },
     {
@@ -577,27 +400,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 561.5,
         "cy": 386.5,
-        "placement": "manual",
         "width": 787.0,
         "height": 326.0,
-        "r": 440.2,
-        "derived": {
-          "cx": 562.0,
-          "cy": 385.9,
-          "width": 694.0,
-          "height": 680.4,
-          "r": 440.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 440.2
       }
     },
     {
@@ -627,21 +434,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 580.0,
         "cy": 270.0,
-        "placement": "manual",
         "width": 706.4,
         "height": 380.2,
-        "r": 407.9,
-        "derived": {
-          "cx": 580.0,
-          "cy": 270.0,
-          "width": 706.4,
-          "height": 702.6,
-          "r": 407.9,
-          "region": "fill-base"
-        }
+        "r": 407.9
       }
     },
     {
@@ -671,21 +468,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 577.5,
         "cy": 270.0,
-        "placement": "manual",
         "width": 691.2,
         "height": 368.4,
-        "r": 382.7,
-        "derived": {
-          "cx": 576.1,
-          "cy": 270.0,
-          "width": 691.2,
-          "height": 687.3,
-          "r": 382.7,
-          "region": "fill-base"
-        }
+        "r": 382.7
       }
     },
     {
@@ -715,21 +502,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 574.0,
         "cy": 270.0,
-        "placement": "manual",
         "width": 679.7,
         "height": 352.0,
-        "r": 344.5,
-        "derived": {
-          "cx": 574.0,
-          "cy": 270.0,
-          "width": 679.7,
-          "height": 656.9,
-          "r": 344.5,
-          "region": "fill-base"
-        }
+        "r": 344.5
       }
     },
     {
@@ -759,21 +536,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 570.0,
         "cy": 270.0,
-        "placement": "manual",
         "width": 674.8,
         "height": 334.2,
-        "r": 305.5,
-        "derived": {
-          "cx": 570.0,
-          "cy": 270.0,
-          "width": 717.8,
-          "height": 565.5,
-          "r": 305.5,
-          "region": "fill-base"
-        }
+        "r": 305.5
       }
     },
     {
@@ -803,21 +570,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 565.5,
         "cy": 270.0,
-        "placement": "manual",
         "width": 660.2,
         "height": 325.3,
-        "r": 286.5,
-        "derived": {
-          "cx": 566.0,
-          "cy": 270.0,
-          "width": 725.4,
-          "height": 516.0,
-          "r": 286.5,
-          "region": "fill-base"
-        }
+        "r": 286.5
       }
     },
     {
@@ -847,21 +604,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 563.0,
         "cy": 270.0,
-        "placement": "manual",
         "width": 651.5,
         "height": 317.9,
-        "r": 274.3,
-        "derived": {
-          "cx": 563.0,
-          "cy": 270.0,
-          "width": 729.2,
-          "height": 485.5,
-          "r": 274.3,
-          "region": "fill-base"
-        }
+        "r": 274.3
       }
     },
     {
@@ -891,21 +638,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 560.0,
         "cy": 270.0,
-        "placement": "manual",
         "width": 642.7,
         "height": 311.9,
-        "r": 261.4,
-        "derived": {
-          "cx": 560.0,
-          "cy": 270.0,
-          "width": 733.0,
-          "height": 451.2,
-          "r": 261.4,
-          "region": "fill-base"
-        }
+        "r": 261.4
       }
     },
     {
@@ -933,27 +670,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 2037.5,
         "cy": 608.5,
-        "placement": "manual",
         "width": 1779.4,
         "height": 817.2,
-        "r": 1044.3,
-        "derived": {
-          "cx": 2030.0,
-          "cy": 607.0,
-          "width": 1979.5,
-          "height": 1963.2,
-          "r": 1044.3,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Jomhuria",
-          "file": "Jomhuria-Regular.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
+        "r": 1044.3
       }
     },
     {
@@ -981,21 +702,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 523.5,
         "cy": 262.5,
-        "placement": "manual",
         "width": 576.5,
         "height": 317.1,
-        "r": 311.5,
-        "derived": {
-          "cx": 524.2,
-          "cy": 261.7,
-          "width": 576.5,
-          "height": 568.7,
-          "r": 311.5,
-          "region": "fill-base"
-        }
+        "r": 311.5
       }
     },
     {
@@ -1023,21 +734,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 580.0,
         "cy": 270.0,
-        "placement": "manual",
         "width": 639.8,
         "height": 331.2,
-        "r": 275.9,
-        "derived": {
-          "cx": 580.0,
-          "cy": 270.0,
-          "width": 714.0,
-          "height": 466.5,
-          "r": 275.9,
-          "region": "fill-base"
-        }
+        "r": 275.9
       }
     },
     {
@@ -1065,21 +766,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 578.5,
         "cy": 270.0,
-        "placement": "manual",
         "width": 620.8,
         "height": 319.4,
-        "r": 254.6,
-        "derived": {
-          "cx": 578.5,
-          "cy": 268.8,
-          "width": 718.2,
-          "height": 412.3,
-          "r": 254.6,
-          "region": "fill-base"
-        }
+        "r": 254.6
       }
     },
     {
@@ -1107,21 +798,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 573.0,
         "cy": 270.0,
-        "placement": "manual",
         "width": 565.1,
         "height": 250.3,
-        "r": 193.3,
-        "derived": {
-          "cx": 573.0,
-          "cy": 270.4,
-          "width": 710.1,
-          "height": 250.3,
-          "r": 193.3,
-          "region": "fill-base"
-        }
+        "r": 193.3
       }
     },
     {
@@ -1151,21 +832,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 629.0,
         "cy": 169.0,
-        "placement": "manual",
         "width": 870.5,
         "height": 263.3,
-        "r": 338.6,
-        "derived": {
-          "cx": 629.0,
-          "cy": 168.6,
-          "width": 925.8,
-          "height": 499.2,
-          "r": 338.6,
-          "region": "fill-base"
-        }
+        "r": 338.6
       }
     },
     {
@@ -1195,21 +866,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 631.5,
         "cy": 169.0,
-        "placement": "manual",
         "width": 867.4,
         "height": 261.9,
-        "r": 337.1,
-        "derived": {
-          "cx": 631.5,
-          "cy": 169.0,
-          "width": 920.8,
-          "height": 496.9,
-          "r": 337.1,
-          "region": "fill-base"
-        }
+        "r": 337.1
       }
     },
     {
@@ -1239,21 +900,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 640.0,
         "cy": 169.0,
-        "placement": "manual",
         "width": 855.9,
         "height": 255.1,
-        "r": 327.4,
-        "derived": {
-          "cx": 640.0,
-          "cy": 169.6,
-          "width": 916.2,
-          "height": 472.6,
-          "r": 327.4,
-          "region": "fill-base"
-        }
+        "r": 327.4
       }
     },
     {
@@ -1283,21 +934,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 646.0,
         "cy": 169.0,
-        "placement": "manual",
         "width": 843.6,
         "height": 250.6,
-        "r": 321.5,
-        "derived": {
-          "cx": 646.0,
-          "cy": 169.5,
-          "width": 916.3,
-          "height": 459.3,
-          "r": 321.5,
-          "region": "fill-base"
-        }
+        "r": 321.5
       }
     },
     {
@@ -1327,21 +968,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 649.0,
         "cy": 169.0,
-        "placement": "manual",
         "width": 840.7,
         "height": 247.4,
-        "r": 318.3,
-        "derived": {
-          "cx": 649.0,
-          "cy": 168.2,
-          "width": 920.8,
-          "height": 447.9,
-          "r": 318.3,
-          "region": "fill-base"
-        }
+        "r": 318.3
       }
     },
     {
@@ -1369,21 +1000,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 464.0,
         "cy": 285.5,
-        "placement": "manual",
         "width": 348.4,
         "height": 240.6,
-        "r": 181.7,
-        "derived": {
-          "cx": 462.8,
-          "cy": 285.5,
-          "width": 348.4,
-          "height": 448.4,
-          "r": 181.7,
-          "region": "fill-base"
-        }
+        "r": 181.7
       }
     },
     {
@@ -1459,28 +1080,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 630.0,
         "cy": 390.0,
-        "placement": "manual",
         "width": 783.0,
         "height": 365.0,
-        "r": 419.1,
-        "derived": {
-          "cx": 630.5,
-          "cy": 390.0,
-          "width": 715.9,
-          "height": 636.6,
-          "r": 419.1,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Noto Naskh Arabic",
-          "file": "NotoNaskhArabic[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 419.1
       }
     },
     {
@@ -1556,28 +1160,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 862.5,
         "cy": 601.5,
-        "placement": "manual",
         "width": 730.0,
         "height": 305.0,
-        "r": 483.8,
-        "derived": {
-          "cx": 863.4,
-          "cy": 601.4,
-          "width": 691.3,
-          "height": 685.5,
-          "r": 483.8,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Noto Nastaliq Urdu",
-          "file": "NotoNastaliqUrdu[wght].ttf",
-          "glyph": "AyahEnd",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 483.8
       }
     },
     {
@@ -1605,28 +1192,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 713.5,
         "cy": 257.5,
-        "placement": "manual",
         "width": 769.0,
         "height": 345.0,
-        "r": 380.3,
-        "derived": {
-          "cx": 705.5,
-          "cy": 256.5,
-          "width": 653.6,
-          "height": 649.2,
-          "r": 380.3,
-          "region": "generatedFill"
-        },
-        "font": {
-          "family": "Noto Sans Arabic",
-          "file": "NotoSansArabic[wdth,wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 380.3
       }
     },
     {
@@ -1654,28 +1224,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 709.5,
         "cy": 257.5,
-        "placement": "manual",
         "width": 773.0,
         "height": 347.0,
-        "r": 378.2,
-        "derived": {
-          "cx": 701.5,
-          "cy": 256.5,
-          "width": 649.2,
-          "height": 649.2,
-          "r": 378.2,
-          "region": "generatedFill"
-        },
-        "font": {
-          "family": "Noto Sans Arabic",
-          "file": "NotoSansArabic[wdth,wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 378.2
       }
     },
     {
@@ -1703,28 +1256,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 703.5,
         "cy": 257.5,
-        "placement": "manual",
         "width": 782.0,
         "height": 348.0,
-        "r": 371.6,
-        "derived": {
-          "cx": 695.5,
-          "cy": 256.5,
-          "width": 649.2,
-          "height": 644.8,
-          "r": 371.6,
-          "region": "generatedFill"
-        },
-        "font": {
-          "family": "Noto Sans Arabic",
-          "file": "NotoSansArabic[wdth,wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 371.6
       }
     },
     {
@@ -1832,28 +1368,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 693.5,
         "cy": 257.5,
-        "placement": "manual",
         "width": 793.0,
         "height": 352.0,
-        "r": 362.9,
-        "derived": {
-          "cx": 687.7,
-          "cy": 254.3,
-          "width": 649.2,
-          "height": 644.8,
-          "r": 362.9,
-          "region": "generatedFill"
-        },
-        "font": {
-          "family": "Noto Sans Arabic",
-          "file": "NotoSansArabic[wdth,wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 362.9
       }
     },
     {
@@ -1884,28 +1403,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 990.5,
         "cy": 646.0,
-        "placement": "manual",
         "width": 1209.0,
         "height": 606.0,
-        "r": 533.1,
-        "derived": {
-          "cx": 991.1,
-          "cy": 646.0,
-          "width": 1356.3,
-          "height": 941.8,
-          "r": 533.1,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Scheherazade New",
-          "file": "ScheherazadeNew-Regular.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 533.1
       }
     },
     {
@@ -1936,28 +1438,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 1000.0,
         "cy": 646.0,
-        "placement": "manual",
         "width": 1220.0,
         "height": 618.0,
-        "r": 528.0,
-        "derived": {
-          "cx": 1000.1,
-          "cy": 646.0,
-          "width": 1347.3,
-          "height": 932.8,
-          "r": 528.0,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Scheherazade New",
-          "file": "ScheherazadeNew-Medium.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 528.0
       }
     },
     {
@@ -1988,28 +1473,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 1011.0,
         "cy": 646.0,
-        "placement": "manual",
         "width": 1237.0,
         "height": 631.0,
-        "r": 523.1,
-        "derived": {
-          "cx": 1009.1,
-          "cy": 646.0,
-          "width": 1338.3,
-          "height": 923.8,
-          "r": 523.1,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Scheherazade New",
-          "file": "ScheherazadeNew-SemiBold.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 523.1
       }
     },
     {
@@ -2040,28 +1508,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 1020.5,
         "cy": 646.0,
-        "placement": "manual",
         "width": 1252.0,
         "height": 644.0,
-        "r": 518.9,
-        "derived": {
-          "cx": 1018.1,
-          "cy": 646.0,
-          "width": 1329.3,
-          "height": 914.7,
-          "r": 518.9,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Scheherazade New",
-          "file": "ScheherazadeNew-Bold.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        },
-        "ring_alternate": true
+        "r": 518.9
       }
     },
     {
@@ -2105,28 +1556,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 344.9,
         "cy": 220.1,
-        "placement": "manual",
         "width": 380.0,
         "height": 240.0,
-        "r": 245.0,
-        "derived": {
-          "cx": 344.9,
-          "cy": 220.1,
-          "width": 348.9,
-          "height": 346.4,
-          "r": 245.0,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "DigitalKhattIndoPak",
-          "file": "digital-khatt-indopak.otf",
-          "glyph": "endofaya",
-          "mechanism": "precomposed"
-        },
-        "ring_alternate": true
+        "r": 245.0
       }
     },
     {
@@ -2154,28 +1588,11 @@
         }
       ],
       "number": {
-        "source": "font-shaping",
         "cx": 586.2,
         "cy": 291.2,
-        "placement": "manual",
         "width": 522.7,
         "height": 290.4,
-        "r": 398.7,
-        "derived": {
-          "cx": 586.2,
-          "cy": 291.1,
-          "width": 566.8,
-          "height": 562.4,
-          "r": 398.7,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "DigitalKhattV1",
-          "file": "digital-khatt-v1.otf",
-          "glyph": "endofaya",
-          "mechanism": "precomposed"
-        },
-        "ring_alternate": true
+        "r": 398.7
       }
     },
     {
@@ -2203,21 +1620,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 773.0,
         "cy": 294.0,
-        "placement": "manual",
         "width": 857.1,
         "height": 547.9,
-        "r": 439.9,
-        "derived": {
-          "cx": 771.5,
-          "cy": 292.8,
-          "width": 857.1,
-          "height": 846.2,
-          "r": 439.9,
-          "region": "fill-base"
-        }
+        "r": 439.9
       }
     },
     {
@@ -2245,21 +1652,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 699.5,
         "cy": 422.5,
-        "placement": "manual",
         "width": 731.5,
         "height": 403.0,
-        "r": 515.6,
-        "derived": {
-          "cx": 699.0,
-          "cy": 422.0,
-          "width": 731.5,
-          "height": 726.8,
-          "r": 515.6,
-          "region": "fill-base"
-        }
+        "r": 515.6
       }
     },
     {
@@ -2351,21 +1748,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 775.7,
         "cy": 495.0,
-        "placement": "manual",
         "width": 779.7,
         "height": 683.9,
-        "r": 467.5,
-        "derived": {
-          "cx": 772.9,
-          "cy": 494.0,
-          "width": 779.7,
-          "height": 779.7,
-          "r": 467.5,
-          "region": "fill-base"
-        }
+        "r": 467.5
       }
     },
     {
@@ -2393,21 +1780,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 778.2,
         "cy": 468.0,
-        "placement": "manual",
         "width": 1023.5,
         "height": 651.1,
-        "r": 561.1,
-        "derived": {
-          "cx": 778.5,
-          "cy": 468.0,
-          "width": 1023.8,
-          "height": 838.3,
-          "r": 561.1,
-          "region": "fill-base"
-        }
+        "r": 561.1
       }
     },
     {
@@ -2435,21 +1812,11 @@
         }
       ],
       "number": {
-        "source": "derived",
         "cx": 779.5,
         "cy": 450.0,
-        "placement": "manual",
         "width": 587.9,
         "height": 514.0,
-        "r": 440.8,
-        "derived": {
-          "cx": 777.2,
-          "cy": 566.2,
-          "width": 587.9,
-          "height": 571.7,
-          "r": 440.8,
-          "region": "fill-base"
-        }
+        "r": 440.8
       }
     }
   ]
