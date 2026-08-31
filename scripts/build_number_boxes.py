@@ -22,7 +22,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DIGIT_TEXT = {1: "٧", 2: "٤٨", 3: "٢٥٥"}
 PREVIEW_VIEWBOX_SIZE = 1000
-PREVIEW_FONT_SIZE = 360
+PREVIEW_FONT_SIZE = 320
 
 
 def load(name):

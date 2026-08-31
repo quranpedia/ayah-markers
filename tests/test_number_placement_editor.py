@@ -48,6 +48,10 @@ def test_number_preview_normalizes_all_marker_artwork_to_a_shared_viewbox():
     assert 'transform="translate(250.0 0.0) scale(2.500000) translate(-20.0 40.0)"' in markup
 
 
+def test_normalized_number_preview_uses_the_compact_shared_font_size():
+    assert module.PREVIEW_FONT_SIZE == 320
+
+
 def test_sheet_renderer_can_use_the_existing_number_metadata_without_rebuilding_it():
     assert callable(module.render_sheets)
 
