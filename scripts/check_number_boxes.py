@@ -36,8 +36,9 @@ def main():
         ink = nonzero_mask(contours, xs, ys)
         for n in ("1", "2", "3"):
             b = m["number"]["digits"][n]
-            ix = (xs >= b["cx"] - b["width"] / 2) & (xs <= b["cx"] + b["width"] / 2)
-            iy = (ys >= b["cy"] - b["height"] / 2) & (ys <= b["cy"] + b["height"] / 2)
+            cx, cy = m["number"]["cx"], m["number"]["cy"]
+            ix = (xs >= cx - b["width"] / 2) & (xs <= cx + b["width"] / 2)
+            iy = (ys >= cy - b["height"] / 2) & (ys <= cy + b["height"] / 2)
             sub = ink[np.ix_(iy, ix)]
             cov = float(sub.mean()) if sub.size else 1.0
             if cov > 0.0:

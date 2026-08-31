@@ -9,7 +9,7 @@ Every outline in `markers/` is traced from a glyph of one of the families below.
 Fourteen of the twenty-six source families are published under the [SIL Open Font License, Version 1.1](#sil-open-font-license-version-11), confirmed from `license: "OFL"` in each family's `METADATA.pb` in [google/fonts](https://github.com/google/fonts). The OFL permits redistribution of the outlines, including in modified form, on three conditions:
 
 1. **Carry the licence and the copyright notice with the material.** Ship this file, or the equivalent notice, alongside anything you redistribute.
-2. **Do not use a Reserved Font Name.** Where a family reserves a name (listed below), a modified version may not be published under it. The marker ids used here (`015-regular-black`, `003-thin`, …) carry no family name and are safe; naming a derivative after the family would not be.
+2. **Do not use a Reserved Font Name.** Where a family reserves a name (listed below), a modified version may not be published under it. The marker ids used here (`012-regular-black`, `003-thin`, …) carry no family name and are safe; naming a derivative after the family would not be.
 3. **Derivatives stay under the OFL.** Outlines taken from these families cannot be relicensed — not to MIT, not to anything else.
 
 ## Google Fonts families — SIL Open Font License 1.1
@@ -18,19 +18,19 @@ Copyright lines are quoted verbatim from each family's `OFL.txt`.
 
 | Family | Copyright | Reserved Font Names | Markers |
 | --- | --- | --- | --- |
-| [Noto Sans Arabic](https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt) | Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic) | — | 4 — `015-regular-black`, `015-thin`, `015-light`, `015-extralight` |
+| [Noto Sans Arabic](https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt) | Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic) | — | 4 — `012-regular-black`, `012-thin`, `012-light`, `012-extralight` |
 | [Estedad](https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt) | Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad) | — | 9 — `003-thin`, `003-extrabold`, `003-medium`, `003-extralight`, `003-black`, `003-light`, `003-semibold`, `003-regular`, `003-bold` |
-| [Mada](https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt) | Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name "Source". | `Source` | 5 — `010-bold`, `010-extralight`, `010-light`, `010-black`, `010-medium` |
+| [Mada](https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt) | Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name "Source". | `Source` | 5 — `008-bold`, `008-extralight`, `008-light`, `008-black`, `008-medium` |
 | [Alkalami](https://github.com/google/fonts/blob/main/ofl/alkalami/OFL.txt) | Copyright (c) 2015-2023, SIL International (http://www.sil.org/), with Reserved Font Names "Alkalami" and "SIL". | `Alkalami`, `SIL` | 1 — `001-regular` |
-| [Scheherazade New](https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt) | Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names "Scheherazade" and "SIL". | `Scheherazade`, `SIL` | 4 — `017-medium`, `017-regular`, `017-semibold`, `017-bold` |
-| [Jomhuria](https://github.com/google/fonts/blob/main/ofl/jomhuria/OFL.txt) | Copyright 2015 KB-Studio (www.k-b-studio.com\|tarobish@gmail.com). Copyright 2015 Lasse Fister (lasse@graphicore.de). Copyright 2015 Sorkin Type Co (www.sorkintype.com). Copyright 2010-2015 Khaled Hosny (khaledhosny@eglug.org). | — | 1 — `006-regular` |
-| [Noto Nastaliq Urdu](https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt) | Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq) | — | 1 — `014-regular-bold` |
-| [IBM Plex Sans Arabic](https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt) | Copyright © 2017 IBM Corp. with Reserved Font Name "Plex" | `Plex` | 7 — `005-light`, `005-bold`, `005-medium`, `005-regular`, `005-thin`, `005-semibold`, `005-extralight` |
-| [Mirza](https://github.com/google/fonts/blob/main/ofl/mirza/OFL.txt) | Copyright 2015 The Mirza Project Authors (https://github.com/Tarobish/Mirza) | — | 1 — `011-medium` |
+| [Scheherazade New](https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt) | Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names "Scheherazade" and "SIL". | `Scheherazade`, `SIL` | 4 — `013-medium`, `013-regular`, `013-semibold`, `013-bold` |
+| [Jomhuria](https://github.com/google/fonts/blob/main/ofl/jomhuria/OFL.txt) | Copyright 2015 KB-Studio (www.k-b-studio.com\|tarobish@gmail.com). Copyright 2015 Lasse Fister (lasse@graphicore.de). Copyright 2015 Sorkin Type Co (www.sorkintype.com). Copyright 2010-2015 Khaled Hosny (khaledhosny@eglug.org). | — | 1 — `005-regular` |
+| [Noto Nastaliq Urdu](https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt) | Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq) | — | 1 — `011-regular-bold` |
+| [IBM Plex Sans Arabic](https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt) | Copyright © 2017 IBM Corp. with Reserved Font Name "Plex" | `Plex` | 7 — `004-light`, `004-bold`, `004-medium`, `004-regular`, `004-thin`, `004-semibold`, `004-extralight` |
+| [Mirza](https://github.com/google/fonts/blob/main/ofl/mirza/OFL.txt) | Copyright 2015 The Mirza Project Authors (https://github.com/Tarobish/Mirza) | — | 1 — `009-medium` |
 | [Amiri](https://github.com/google/fonts/blob/main/ofl/amiri/OFL.txt) | Copyright 2010-2022 The Amiri Project Authors (https://github.com/aliftype/amiri). | — | 2 — `002-bold`, `002-regular` |
-| [Kufam](https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt) | Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam) | — | 3 — `008-regular`, `008-medium`, `008-bold` |
-| [Noto Naskh Arabic](https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt) | Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic) | — | 1 — `013-regular-bold` |
-| [Katibeh](https://github.com/google/fonts/blob/main/ofl/katibeh/OFL.txt) | Copyright 2015, 2016 KB-Studio (www.k-b-studio.com\|tarobish@gmail.com). Copyright 2015, 2016 Lasse Fister (lasse@graphicore.de). Copyright 2015, 2016 Eduardo Tunni(edu@tipo.net.ar). | — | 1 — `007-regular` |
+| [Kufam](https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt) | Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam) | — | 3 — `007-regular`, `007-medium`, `007-bold` |
+| [Noto Naskh Arabic](https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt) | Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic) | — | 1 — `010-regular-bold` |
+| [Katibeh](https://github.com/google/fonts/blob/main/ofl/katibeh/OFL.txt) | Copyright 2015, 2016 KB-Studio (www.k-b-studio.com\|tarobish@gmail.com). Copyright 2015, 2016 Lasse Fister (lasse@graphicore.de). Copyright 2015, 2016 Eduardo Tunni(edu@tipo.net.ar). | — | 1 — `006-regular` |
 | [Amiri Quran](https://github.com/google/fonts/blob/main/ofl/amiriquran/OFL.txt) | Copyright 2010-2022 The Amiri Quran Project Authors (https://github.com/aliftype/amiri). | — | 1 — `002-regular` |
 
 ## fonts.quran.ws families — terms not verified
@@ -41,18 +41,18 @@ This is deliberate. Asserting a licence we have not read would be worse than lea
 
 | Family | Status | Markers |
 | --- | --- | --- |
-| DigitalKhattIndoPak | unverified — pending confirmation | `020-regular` |
-| Indopak | unverified — pending confirmation | `020-regular` |
-| UthmanicQaloun | unverified — pending confirmation | `025-regular` |
-| IndopakNastaleeq | unverified — pending confirmation | `023-regular` |
-| UthmanicBazzi | unverified — pending confirmation | `024-regular` |
-| UthmanicDouri | unverified — pending confirmation | `024-regular` |
-| UthmanicQunbul | unverified — pending confirmation | `024-regular` |
-| UthmanicShuba | unverified — pending confirmation | `024-regular` |
-| UthmanicSousi | unverified — pending confirmation | `024-regular` |
-| HafsNastaleeq | unverified — pending confirmation | `022-regular` |
-| DigitalKhattV1 | unverified — pending confirmation | `021-regular` |
-| UthmanicWarsh | unverified — pending confirmation | `026-regular` |
+| DigitalKhattIndoPak | unverified — pending confirmation | `014-regular` |
+| Indopak | unverified — pending confirmation | `014-regular` |
+| UthmanicQaloun | unverified — pending confirmation | `019-regular` |
+| IndopakNastaleeq | unverified — pending confirmation | `017-regular` |
+| UthmanicBazzi | unverified — pending confirmation | `018-regular` |
+| UthmanicDouri | unverified — pending confirmation | `018-regular` |
+| UthmanicQunbul | unverified — pending confirmation | `018-regular` |
+| UthmanicShuba | unverified — pending confirmation | `018-regular` |
+| UthmanicSousi | unverified — pending confirmation | `018-regular` |
+| HafsNastaleeq | unverified — pending confirmation | `016-regular` |
+| DigitalKhattV1 | unverified — pending confirmation | `015-regular` |
+| UthmanicWarsh | unverified — pending confirmation | `020-regular` |
 
 ## SIL Open Font License, Version 1.1
 

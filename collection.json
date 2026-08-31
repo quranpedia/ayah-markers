@@ -5,9 +5,2333 @@
   "selection_count": 49,
   "markers": [
     {
-      "id": "015-regular-black",
+      "id": "001-regular",
       "codepoint": "U+E000",
-      "file": "markers/001-015-regular-black.svg",
+      "file": "markers/001-regular.svg",
+      "width": 1250,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Alkalami",
+          "variant": "400",
+          "width": 1250,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/alkalami/v8/zOL_4pfDmqRL95WXi6eJycF8ug.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 2015-2023, SIL International (http://www.sil.org/), with Reserved Font Names \"Alkalami\" and \"SIL\".",
+            "reserved_font_names": [
+              "Alkalami",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/alkalami/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "mixed",
+        "cx": 622.0,
+        "cy": 219.0,
+        "placement": "manual",
+        "width": 439.7,
+        "height": 245.9,
+        "r": 309.2,
+        "digits": {
+          "1": {
+            "width": 350.0,
+            "height": 479.2,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 439.7,
+            "height": 258.0,
+            "source": "derived",
+            "fallback_reason": "the font's box for 2 digits belongs to a wider ring (uni06DD.2) and covers 15% ink on the outline we ship"
+          },
+          "3": {
+            "width": 439.7,
+            "height": 245.9,
+            "source": "derived",
+            "fallback_reason": "the number does not land in the marker's hole"
+          }
+        },
+        "derived": {
+          "cx": 620.2,
+          "cy": 219.6,
+          "width": 439.7,
+          "height": 435.4,
+          "r": 309.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Alkalami",
+          "file": "Alkalami-Regular.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "002-regular",
+      "codepoint": "U+E001",
+      "file": "markers/002-regular.svg",
+      "width": 1279,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Amiri",
+          "variant": "400",
+          "width": 1279,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7aRnpd8CGxBHpUrtLMA7w.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2010-2022 The Amiri Project Authors (https://github.com/aliftype/amiri).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/amiri/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Amiri Quran",
+          "variant": "400",
+          "width": 1279,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/amiriquran/v19/_Xmo-Hk0rD6DbUL4_vH8Zp5v5i2ssg.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2010-2022 The Amiri Quran Project Authors (https://github.com/aliftype/amiri).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/amiriquran/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 639.5,
+        "cy": 166.0,
+        "placement": "manual",
+        "width": 796.7,
+        "height": 380.0,
+        "r": 281.2,
+        "digits": {
+          "1": {
+            "width": 258.1,
+            "height": 381.7,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 507.1,
+            "height": 387.1,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 796.7,
+            "height": 380.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 639.5,
+          "cy": 164.7,
+          "width": 931.5,
+          "height": 486.9,
+          "r": 281.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Amiri",
+          "file": "Amiri-Regular.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "002-bold",
+      "codepoint": "U+E002",
+      "file": "markers/002-bold.svg",
+      "width": 1279,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Amiri",
+          "variant": "700",
+          "width": 1279,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2010-2022 The Amiri Project Authors (https://github.com/aliftype/amiri).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/amiri/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 639.5,
+        "cy": 166.1,
+        "placement": "manual",
+        "width": 811.9,
+        "height": 402.2,
+        "r": 273.0,
+        "digits": {
+          "1": {
+            "width": 275.9,
+            "height": 401.7,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 523.5,
+            "height": 405.9,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 811.9,
+            "height": 402.2,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 637.7,
+          "cy": 164.4,
+          "width": 922.3,
+          "height": 466.8,
+          "r": 273.0,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Amiri",
+          "file": "Amiri-Bold.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-thin",
+      "codepoint": "U+E003",
+      "file": "markers/003-thin.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "100",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6J6ghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "placement": "manual",
+        "width": 750.0,
+        "height": 311.0,
+        "r": 439.9,
+        "digits": {
+          "1": {
+            "width": 262.0,
+            "height": 308.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 497.0,
+            "height": 315.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 750.0,
+            "height": 311.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 561.1,
+          "cy": 387.1,
+          "width": 682.1,
+          "height": 682.1,
+          "r": 439.9,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-extralight",
+      "codepoint": "U+E004",
+      "file": "markers/003-extralight.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "200",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX96JqghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "placement": "manual",
+        "width": 755.0,
+        "height": 313.0,
+        "r": 440.2,
+        "digits": {
+          "1": {
+            "width": 268.0,
+            "height": 310.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 501.0,
+            "height": 318.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 755.0,
+            "height": 313.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 560.6,
+          "cy": 386.2,
+          "width": 683.2,
+          "height": 683.2,
+          "r": 440.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-light",
+      "codepoint": "U+E005",
+      "file": "markers/003-light.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "300",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX-kJqghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 387.0,
+        "placement": "manual",
+        "width": 759.0,
+        "height": 315.0,
+        "r": 439.7,
+        "digits": {
+          "1": {
+            "width": 272.0,
+            "height": 313.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 504.0,
+            "height": 321.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 759.0,
+            "height": 315.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 559.9,
+          "cy": 385.5,
+          "width": 685.1,
+          "height": 681.0,
+          "r": 439.7,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-regular",
+      "codepoint": "U+E006",
+      "file": "markers/003-regular.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "400",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6JqghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "placement": "manual",
+        "width": 764.0,
+        "height": 317.0,
+        "r": 440.3,
+        "digits": {
+          "1": {
+            "width": 278.0,
+            "height": 315.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 508.0,
+            "height": 324.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 764.0,
+            "height": 317.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 561.2,
+          "cy": 386.9,
+          "width": 689.4,
+          "height": 681.1,
+          "r": 440.3,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-medium",
+      "codepoint": "U+E007",
+      "file": "markers/003-medium.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "500",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_IJqghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 387.0,
+        "placement": "manual",
+        "width": 769.0,
+        "height": 319.0,
+        "r": 440.5,
+        "digits": {
+          "1": {
+            "width": 284.0,
+            "height": 318.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 512.0,
+            "height": 327.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 769.0,
+            "height": 319.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 560.4,
+          "cy": 386.3,
+          "width": 689.1,
+          "height": 680.7,
+          "r": 440.5,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-semibold",
+      "codepoint": "U+E008",
+      "file": "markers/003-semibold.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "600",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX8kIaghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "placement": "manual",
+        "width": 774.0,
+        "height": 320.0,
+        "r": 439.8,
+        "digits": {
+          "1": {
+            "width": 290.0,
+            "height": 320.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 516.0,
+            "height": 329.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 774.0,
+            "height": 320.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 561.9,
+          "cy": 385.3,
+          "width": 689.1,
+          "height": 680.5,
+          "r": 439.8,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-bold",
+      "codepoint": "U+E009",
+      "file": "markers/003-bold.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "700",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX8dIaghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "placement": "manual",
+        "width": 777.0,
+        "height": 323.0,
+        "r": 440.2,
+        "digits": {
+          "1": {
+            "width": 295.0,
+            "height": 323.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 519.0,
+            "height": 333.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 777.0,
+            "height": 323.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 562.0,
+          "cy": 387.0,
+          "width": 692.3,
+          "height": 679.2,
+          "r": 440.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-extrabold",
+      "codepoint": "U+E00A",
+      "file": "markers/003-extrabold.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "800",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX96IaghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "placement": "manual",
+        "width": 782.0,
+        "height": 324.0,
+        "r": 440.2,
+        "digits": {
+          "1": {
+            "width": 301.0,
+            "height": 325.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 523.0,
+            "height": 335.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 782.0,
+            "height": 324.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 561.1,
+          "cy": 386.2,
+          "width": 687.0,
+          "height": 682.5,
+          "r": 440.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "003-black",
+      "codepoint": "U+E00B",
+      "file": "markers/003-black.svg",
+      "width": 1123,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Estedad",
+          "variant": "900",
+          "width": 1123,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX9TIaghUhuQaA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 561.5,
+        "cy": 386.5,
+        "placement": "manual",
+        "width": 787.0,
+        "height": 326.0,
+        "r": 440.2,
+        "digits": {
+          "1": {
+            "width": 307.0,
+            "height": 328.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 527.0,
+            "height": 338.0,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 787.0,
+            "height": 326.0,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 562.0,
+          "cy": 385.9,
+          "width": 694.0,
+          "height": 680.4,
+          "r": 440.2,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Estedad",
+          "file": "Estedad[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "004-thin",
+      "codepoint": "U+E00C",
+      "file": "markers/004-thin.svg",
+      "width": 1160,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "100",
+          "width": 1160,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 580.0,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 706.4,
+        "height": 380.2,
+        "r": 407.9,
+        "digits": {
+          "1": {
+            "width": 282.7,
+            "height": 397.9,
+            "source": "derived"
+          },
+          "2": {
+            "width": 522.0,
+            "height": 398.9,
+            "source": "derived"
+          },
+          "3": {
+            "width": 706.4,
+            "height": 380.2,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 580.0,
+          "cy": 270.0,
+          "width": 706.4,
+          "height": 702.6,
+          "r": 407.9,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "004-extralight",
+      "codepoint": "U+E00D",
+      "file": "markers/004-extralight.svg",
+      "width": 1155,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "200",
+          "width": 1155,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 577.5,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 691.2,
+        "height": 368.4,
+        "r": 382.7,
+        "digits": {
+          "1": {
+            "width": 275.6,
+            "height": 385.5,
+            "source": "derived"
+          },
+          "2": {
+            "width": 508.9,
+            "height": 386.4,
+            "source": "derived"
+          },
+          "3": {
+            "width": 691.2,
+            "height": 368.4,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 576.1,
+          "cy": 270.0,
+          "width": 691.2,
+          "height": 687.3,
+          "r": 382.7,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "004-light",
+      "codepoint": "U+E00E",
+      "file": "markers/004-light.svg",
+      "width": 1148,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "300",
+          "width": 1148,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOW_uCRXMR5Kw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 574.0,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 679.7,
+        "height": 352.0,
+        "r": 344.5,
+        "digits": {
+          "1": {
+            "width": 264.1,
+            "height": 368.4,
+            "source": "derived"
+          },
+          "2": {
+            "width": 487.7,
+            "height": 369.3,
+            "source": "derived"
+          },
+          "3": {
+            "width": 679.7,
+            "height": 352.0,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 574.0,
+          "cy": 270.0,
+          "width": 679.7,
+          "height": 656.9,
+          "r": 344.5,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "004-regular",
+      "codepoint": "U+E00F",
+      "file": "markers/004-regular.svg",
+      "width": 1140,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "400",
+          "width": 1140,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ys43PWrfQ.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 570.0,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 674.8,
+        "height": 334.2,
+        "r": 305.5,
+        "digits": {
+          "1": {
+            "width": 253.1,
+            "height": 349.8,
+            "source": "derived"
+          },
+          "2": {
+            "width": 467.4,
+            "height": 350.6,
+            "source": "derived"
+          },
+          "3": {
+            "width": 674.8,
+            "height": 334.2,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 570.0,
+          "cy": 270.0,
+          "width": 717.8,
+          "height": 565.5,
+          "r": 305.5,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "004-medium",
+      "codepoint": "U+E010",
+      "file": "markers/004-medium.svg",
+      "width": 1131,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "500",
+          "width": 1131,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPO_-CRXMR5Kw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 565.5,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 660.2,
+        "height": 325.3,
+        "r": 286.5,
+        "digits": {
+          "1": {
+            "width": 247.6,
+            "height": 340.4,
+            "source": "derived"
+          },
+          "2": {
+            "width": 457.3,
+            "height": 341.3,
+            "source": "derived"
+          },
+          "3": {
+            "width": 660.2,
+            "height": 325.3,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 566.0,
+          "cy": 270.0,
+          "width": 725.4,
+          "height": 516.0,
+          "r": 286.5,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "004-semibold",
+      "codepoint": "U+E011",
+      "file": "markers/004-semibold.svg",
+      "width": 1126,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "600",
+          "width": 1126,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPi-OCRXMR5Kw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 563.0,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 651.5,
+        "height": 317.9,
+        "r": 274.3,
+        "digits": {
+          "1": {
+            "width": 244.3,
+            "height": 332.7,
+            "source": "derived"
+          },
+          "2": {
+            "width": 451.2,
+            "height": 333.5,
+            "source": "derived"
+          },
+          "3": {
+            "width": 651.5,
+            "height": 317.9,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 563.0,
+          "cy": 270.0,
+          "width": 729.2,
+          "height": 485.5,
+          "r": 274.3,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "004-bold",
+      "codepoint": "U+E012",
+      "file": "markers/004-bold.svg",
+      "width": 1120,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "IBM Plex Sans Arabic",
+          "variant": "700",
+          "width": 1120,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOG-eCRXMR5Kw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
+            "reserved_font_names": [
+              "Plex"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 560.0,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 642.7,
+        "height": 311.9,
+        "r": 261.4,
+        "digits": {
+          "1": {
+            "width": 241.1,
+            "height": 326.4,
+            "source": "derived"
+          },
+          "2": {
+            "width": 445.2,
+            "height": 327.2,
+            "source": "derived"
+          },
+          "3": {
+            "width": 642.7,
+            "height": 311.9,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 560.0,
+          "cy": 270.0,
+          "width": 733.0,
+          "height": 451.2,
+          "r": 261.4,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "005-regular",
+      "codepoint": "U+E013",
+      "file": "markers/005-regular.svg",
+      "width": 4071,
+      "upem": 3000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Jomhuria",
+          "variant": "400",
+          "width": 4071,
+          "upem": 3000,
+          "source_url": "https://fonts.gstatic.com/s/jomhuria/v23/Dxxp8j-TMXf-llKur1b3OuCrCw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015 KB-Studio (www.k-b-studio.com|tarobish@gmail.com). Copyright 2015 Lasse Fister (lasse@graphicore.de). Copyright 2015 Sorkin Type Co (www.sorkintype.com). Copyright 2010-2015 Khaled Hosny (khaledhosny@eglug.org).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/jomhuria/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 2037.5,
+        "cy": 608.5,
+        "placement": "manual",
+        "width": 1779.4,
+        "height": 817.2,
+        "r": 1044.3,
+        "digits": {
+          "1": {
+            "width": 610.2,
+            "height": 817.2,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 1194.3,
+            "height": 818.6,
+            "source": "font-shaping"
+          },
+          "3": {
+            "width": 1779.4,
+            "height": 817.2,
+            "source": "font-shaping"
+          }
+        },
+        "derived": {
+          "cx": 2030.0,
+          "cy": 607.0,
+          "width": 1979.5,
+          "height": 1963.2,
+          "r": 1044.3,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Jomhuria",
+          "file": "Jomhuria-Regular.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "006-regular",
+      "codepoint": "U+E014",
+      "file": "markers/006-regular.svg",
+      "width": 1047,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Katibeh",
+          "variant": "400",
+          "width": 1047,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/katibeh/v22/ZGjXol5MQJog4bxDWC9bVQNd.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015, 2016 KB-Studio (www.k-b-studio.com|tarobish@gmail.com). Copyright 2015, 2016 Lasse Fister (lasse@graphicore.de). Copyright 2015, 2016 Eduardo Tunni(edu@tipo.net.ar).",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/katibeh/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 523.5,
+        "cy": 262.5,
+        "placement": "manual",
+        "width": 576.5,
+        "height": 317.1,
+        "r": 311.5,
+        "digits": {
+          "1": {
+            "width": 235.1,
+            "height": 331.9,
+            "source": "derived"
+          },
+          "2": {
+            "width": 434.1,
+            "height": 332.7,
+            "source": "derived"
+          },
+          "3": {
+            "width": 576.5,
+            "height": 317.1,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 524.2,
+          "cy": 261.7,
+          "width": 576.5,
+          "height": 568.7,
+          "r": 311.5,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "007-regular",
+      "codepoint": "U+E015",
+      "file": "markers/007-regular.svg",
+      "width": 1160,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "400",
+          "width": 1160,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3lqkLqwqILvI.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 580.0,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 639.8,
+        "height": 331.2,
+        "r": 275.9,
+        "digits": {
+          "1": {
+            "width": 240.0,
+            "height": 346.7,
+            "source": "derived"
+          },
+          "2": {
+            "width": 443.1,
+            "height": 347.5,
+            "source": "derived"
+          },
+          "3": {
+            "width": 639.8,
+            "height": 331.2,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 580.0,
+          "cy": 270.0,
+          "width": 714.0,
+          "height": 466.5,
+          "r": 275.9,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "007-medium",
+      "codepoint": "U+E016",
+      "file": "markers/007-medium.svg",
+      "width": 1157,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "500",
+          "width": 1157,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3pKkLqwqILvI.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 578.5,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 620.8,
+        "height": 319.4,
+        "r": 254.6,
+        "digits": {
+          "1": {
+            "width": 232.8,
+            "height": 334.2,
+            "source": "derived"
+          },
+          "2": {
+            "width": 430.0,
+            "height": 335.1,
+            "source": "derived"
+          },
+          "3": {
+            "width": 620.8,
+            "height": 319.4,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 578.5,
+          "cy": 268.8,
+          "width": 718.2,
+          "height": 412.3,
+          "r": 254.6,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "007-bold",
+      "codepoint": "U+E017",
+      "file": "markers/007-bold.svg",
+      "width": 1146,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Kufam",
+          "variant": "700",
+          "width": 1146,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3ca4LqwqILvI.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 573.0,
+        "cy": 270.0,
+        "placement": "manual",
+        "width": 565.1,
+        "height": 250.3,
+        "r": 193.3,
+        "digits": {
+          "1": {
+            "width": 211.9,
+            "height": 250.3,
+            "source": "derived"
+          },
+          "2": {
+            "width": 391.4,
+            "height": 250.3,
+            "source": "derived"
+          },
+          "3": {
+            "width": 565.1,
+            "height": 250.3,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 573.0,
+          "cy": 270.4,
+          "width": 710.1,
+          "height": 250.3,
+          "r": 193.3,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "008-extralight",
+      "codepoint": "U+E018",
+      "file": "markers/008-extralight.svg",
+      "width": 1258,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "200",
+          "width": 1258,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlOkEky0eiNxw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 629.0,
+        "cy": 169.0,
+        "placement": "manual",
+        "width": 870.5,
+        "height": 263.3,
+        "r": 338.6,
+        "digits": {
+          "1": {
+            "width": 326.5,
+            "height": 275.5,
+            "source": "derived"
+          },
+          "2": {
+            "width": 602.9,
+            "height": 276.2,
+            "source": "derived"
+          },
+          "3": {
+            "width": 870.5,
+            "height": 263.3,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 629.0,
+          "cy": 168.6,
+          "width": 925.8,
+          "height": 499.2,
+          "r": 338.6,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "008-light",
+      "codepoint": "U+E019",
+      "file": "markers/008-light.svg",
+      "width": 1263,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "300",
+          "width": 1263,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFmQkEky0eiNxw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 631.5,
+        "cy": 169.0,
+        "placement": "manual",
+        "width": 867.4,
+        "height": 261.9,
+        "r": 337.1,
+        "digits": {
+          "1": {
+            "width": 325.3,
+            "height": 274.1,
+            "source": "derived"
+          },
+          "2": {
+            "width": 600.7,
+            "height": 274.7,
+            "source": "derived"
+          },
+          "3": {
+            "width": 867.4,
+            "height": 261.9,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 631.5,
+          "cy": 169.0,
+          "width": 920.8,
+          "height": 496.9,
+          "r": 337.1,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "008-medium",
+      "codepoint": "U+E01A",
+      "file": "markers/008-medium.svg",
+      "width": 1280,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "500",
+          "width": 1280,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFn8kEky0eiNxw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 640.0,
+        "cy": 169.0,
+        "placement": "manual",
+        "width": 855.9,
+        "height": 255.1,
+        "r": 327.4,
+        "digits": {
+          "1": {
+            "width": 321.0,
+            "height": 267.0,
+            "source": "derived"
+          },
+          "2": {
+            "width": 592.8,
+            "height": 267.7,
+            "source": "derived"
+          },
+          "3": {
+            "width": 855.9,
+            "height": 255.1,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 640.0,
+          "cy": 169.6,
+          "width": 916.2,
+          "height": 472.6,
+          "r": 327.4,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "008-bold",
+      "codepoint": "U+E01B",
+      "file": "markers/008-bold.svg",
+      "width": 1292,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "700",
+          "width": 1292,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFkpl0ky0eiNxw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 646.0,
+        "cy": 169.0,
+        "placement": "manual",
+        "width": 843.6,
+        "height": 250.6,
+        "r": 321.5,
+        "digits": {
+          "1": {
+            "width": 316.4,
+            "height": 262.3,
+            "source": "derived"
+          },
+          "2": {
+            "width": 584.3,
+            "height": 263.0,
+            "source": "derived"
+          },
+          "3": {
+            "width": 843.6,
+            "height": 250.6,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 646.0,
+          "cy": 169.5,
+          "width": 916.3,
+          "height": 459.3,
+          "r": 321.5,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "008-black",
+      "codepoint": "U+E01C",
+      "file": "markers/008-black.svg",
+      "width": 1298,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mada",
+          "variant": "900",
+          "width": 1298,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlnl0ky0eiNxw.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
+            "reserved_font_names": [
+              "Source"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 649.0,
+        "cy": 169.0,
+        "placement": "manual",
+        "width": 840.7,
+        "height": 247.4,
+        "r": 318.3,
+        "digits": {
+          "1": {
+            "width": 315.3,
+            "height": 259.0,
+            "source": "derived"
+          },
+          "2": {
+            "width": 582.3,
+            "height": 259.6,
+            "source": "derived"
+          },
+          "3": {
+            "width": 840.7,
+            "height": 247.4,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 649.0,
+          "cy": 168.2,
+          "width": 920.8,
+          "height": 447.9,
+          "r": 318.3,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "009-medium",
+      "codepoint": "U+E01D",
+      "file": "markers/009-medium.svg",
+      "width": 929,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Mirza",
+          "variant": "500",
+          "width": 929,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/mirza/v19/co3FmWlikiN5EtIpAdO6k6bxog.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2015 The Mirza Project Authors (https://github.com/Tarobish/Mirza)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/mirza/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 464.0,
+        "cy": 285.5,
+        "placement": "manual",
+        "width": 348.4,
+        "height": 240.6,
+        "r": 181.7,
+        "digits": {
+          "1": {
+            "width": 197.1,
+            "height": 251.8,
+            "source": "derived"
+          },
+          "2": {
+            "width": 348.4,
+            "height": 252.4,
+            "source": "derived"
+          },
+          "3": {
+            "width": 348.4,
+            "height": 240.6,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 462.8,
+          "cy": 285.5,
+          "width": 348.4,
+          "height": 448.4,
+          "r": 181.7,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "010-regular-bold",
+      "codepoint": "U+E01E",
+      "file": "markers/010-regular-bold.svg",
+      "width": 1260,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "400",
+          "width": 1260,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc5Urqcyx_M.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "500",
+          "width": 1260,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwj85Urqcyx_M.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "600",
+          "width": 1260,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwY8lUrqcyx_M.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Naskh Arabic",
+          "variant": "700",
+          "width": 1260,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwWslUrqcyx_M.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 630.0,
+        "cy": 390.0,
+        "placement": "manual",
+        "width": 783.0,
+        "height": 365.0,
+        "r": 419.1,
+        "digits": {
+          "1": {
+            "width": 266.0,
+            "height": 364.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 514.0,
+            "height": 387.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 783.0,
+            "height": 365.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 630.5,
+          "cy": 390.0,
+          "width": 715.9,
+          "height": 636.6,
+          "r": 419.1,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Noto Naskh Arabic",
+          "file": "NotoNaskhArabic[wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "011-regular-bold",
+      "codepoint": "U+E01F",
+      "file": "markers/011-regular-bold.svg",
+      "width": 1724,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "400",
+          "width": 1724,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qt_-PK-V2t_8.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "500",
+          "width": 1724,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qu3-PK-V2t_8.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "600",
+          "width": 1724,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3QgH5PK-V2t_8.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
+            "note": null
+          }
+        },
+        {
+          "source": "Google Fonts",
+          "family": "Noto Nastaliq Urdu",
+          "variant": "700",
+          "width": 1724,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qjj5PK-V2t_8.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 862.5,
+        "cy": 601.5,
+        "placement": "manual",
+        "width": 730.0,
+        "height": 305.0,
+        "r": 483.8,
+        "digits": {
+          "1": {
+            "width": 226.0,
+            "height": 304.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 478.0,
+            "height": 313.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 730.0,
+            "height": 305.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 863.4,
+          "cy": 601.4,
+          "width": 691.3,
+          "height": 685.5,
+          "r": 483.8,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Noto Nastaliq Urdu",
+          "file": "NotoNastaliqUrdu[wght].ttf",
+          "glyph": "AyahEnd",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "012-thin",
+      "codepoint": "U+E020",
+      "file": "markers/012-thin.svg",
+      "width": 1410,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "100",
+          "width": 1410,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyG2fuXqAJQI.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 713.5,
+        "cy": 257.5,
+        "placement": "manual",
+        "width": 769.0,
+        "height": 345.0,
+        "r": 380.3,
+        "digits": {
+          "1": {
+            "width": 244.0,
+            "height": 346.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 509.0,
+            "height": 349.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 769.0,
+            "height": 345.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 705.5,
+          "cy": 256.5,
+          "width": 653.6,
+          "height": 649.2,
+          "r": 380.3,
+          "region": "generatedFill"
+        },
+        "font": {
+          "family": "Noto Sans Arabic",
+          "file": "NotoSansArabic[wdth,wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "012-extralight",
+      "codepoint": "U+E021",
+      "file": "markers/012-extralight.svg",
+      "width": 1402,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "200",
+          "width": 1402,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfSGyfuXqAJQI.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 709.5,
+        "cy": 257.5,
+        "placement": "manual",
+        "width": 773.0,
+        "height": 347.0,
+        "r": 378.2,
+        "digits": {
+          "1": {
+            "width": 250.0,
+            "height": 348.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 514.0,
+            "height": 350.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 773.0,
+            "height": 347.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 701.5,
+          "cy": 256.5,
+          "width": 649.2,
+          "height": 649.2,
+          "r": 378.2,
+          "region": "generatedFill"
+        },
+        "font": {
+          "family": "Noto Sans Arabic",
+          "file": "NotoSansArabic[wdth,wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "012-light",
+      "codepoint": "U+E022",
+      "file": "markers/012-light.svg",
+      "width": 1390,
+      "upem": 1000,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Noto Sans Arabic",
+          "variant": "300",
+          "width": 1390,
+          "upem": 1000,
+          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCflmyfuXqAJQI.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
+            "reserved_font_names": [],
+            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 703.5,
+        "cy": 257.5,
+        "placement": "manual",
+        "width": 782.0,
+        "height": 348.0,
+        "r": 371.6,
+        "digits": {
+          "1": {
+            "width": 259.0,
+            "height": 351.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 523.0,
+            "height": 351.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 782.0,
+            "height": 348.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 695.5,
+          "cy": 256.5,
+          "width": 649.2,
+          "height": 644.8,
+          "r": 371.6,
+          "region": "generatedFill"
+        },
+        "font": {
+          "family": "Noto Sans Arabic",
+          "file": "NotoSansArabic[wdth,wght].ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "012-regular-black",
+      "codepoint": "U+E023",
+      "file": "markers/012-regular-black.svg",
       "width": 1370,
       "upem": 1000,
       "sources": [
@@ -112,35 +2436,27 @@
         "source": "font-shaping",
         "cx": 693.5,
         "cy": 257.5,
+        "placement": "manual",
         "width": 793.0,
         "height": 352.0,
         "r": 362.9,
         "digits": {
           "1": {
-            "cx": 693.5,
-            "cy": 257.5,
             "width": 275.0,
             "height": 357.0,
-            "source": "font-shaping",
-            "placement": "manual"
+            "source": "font-shaping"
           },
           "2": {
-            "cx": 693.5,
-            "cy": 257.5,
             "width": 536.0,
             "height": 357.0,
             "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
+            "ring_alternate": true
           },
           "3": {
-            "cx": 693.5,
-            "cy": 257.5,
             "width": 793.0,
             "height": 352.0,
             "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
+            "ring_alternate": true
           }
         },
         "derived": {
@@ -160,9 +2476,289 @@
       }
     },
     {
-      "id": "020-regular",
-      "codepoint": "U+E001",
-      "file": "markers/002-020-regular.svg",
+      "id": "013-regular",
+      "codepoint": "U+E024",
+      "file": "markers/013-regular.svg",
+      "width": 1984,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "400",
+          "width": 1984,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaZrFhTvxVnHDvUkUiHg8jprP4DOwFmO24p.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+            "reserved_font_names": [
+              "Scheherazade",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 990.5,
+        "cy": 646.0,
+        "placement": "manual",
+        "width": 1209.0,
+        "height": 606.0,
+        "r": 533.1,
+        "digits": {
+          "1": {
+            "width": 496.0,
+            "height": 822.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 1056.0,
+            "height": 851.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 1209.0,
+            "height": 606.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 991.1,
+          "cy": 646.0,
+          "width": 1356.3,
+          "height": 941.8,
+          "r": 533.1,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Scheherazade New",
+          "file": "ScheherazadeNew-Regular.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "013-medium",
+      "codepoint": "U+E025",
+      "file": "markers/013-medium.svg",
+      "width": 2003,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "500",
+          "width": 2003,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM_dFLlQI-bKn.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+            "reserved_font_names": [
+              "Scheherazade",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 1000.0,
+        "cy": 646.0,
+        "placement": "manual",
+        "width": 1220.0,
+        "height": 618.0,
+        "r": 528.0,
+        "digits": {
+          "1": {
+            "width": 524.0,
+            "height": 837.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 1082.0,
+            "height": 861.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 1220.0,
+            "height": 618.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 1000.1,
+          "cy": 646.0,
+          "width": 1347.3,
+          "height": 932.8,
+          "r": 528.0,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Scheherazade New",
+          "file": "ScheherazadeNew-Medium.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "013-semibold",
+      "codepoint": "U+E026",
+      "file": "markers/013-semibold.svg",
+      "width": 2023,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "600",
+          "width": 2023,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM9tCLlQI-bKn.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+            "reserved_font_names": [
+              "Scheherazade",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 1011.0,
+        "cy": 646.0,
+        "placement": "manual",
+        "width": 1237.0,
+        "height": 631.0,
+        "r": 523.1,
+        "digits": {
+          "1": {
+            "width": 552.0,
+            "height": 851.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 1109.0,
+            "height": 872.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 1237.0,
+            "height": 631.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 1009.1,
+          "cy": 646.0,
+          "width": 1338.3,
+          "height": 923.8,
+          "r": 523.1,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Scheherazade New",
+          "file": "ScheherazadeNew-SemiBold.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "013-bold",
+      "codepoint": "U+E027",
+      "file": "markers/013-bold.svg",
+      "width": 2042,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "Google Fonts",
+          "family": "Scheherazade New",
+          "variant": "700",
+          "width": 2042,
+          "upem": 2048,
+          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM79DLlQI-bKn.woff2",
+          "license": {
+            "id": "OFL-1.1",
+            "name": "SIL Open Font License, Version 1.1",
+            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
+            "reserved_font_names": [
+              "Scheherazade",
+              "SIL"
+            ],
+            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
+            "note": null
+          }
+        }
+      ],
+      "number": {
+        "source": "font-shaping",
+        "cx": 1020.5,
+        "cy": 646.0,
+        "placement": "manual",
+        "width": 1252.0,
+        "height": 644.0,
+        "r": 518.9,
+        "digits": {
+          "1": {
+            "width": 580.0,
+            "height": 866.0,
+            "source": "font-shaping"
+          },
+          "2": {
+            "width": 1137.0,
+            "height": 882.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          },
+          "3": {
+            "width": 1252.0,
+            "height": 644.0,
+            "source": "font-shaping",
+            "ring_alternate": true
+          }
+        },
+        "derived": {
+          "cx": 1018.1,
+          "cy": 646.0,
+          "width": 1329.3,
+          "height": 914.7,
+          "r": 518.9,
+          "region": "fill-base"
+        },
+        "font": {
+          "family": "Scheherazade New",
+          "file": "ScheherazadeNew-Bold.ttf",
+          "glyph": "uni06DD",
+          "mechanism": "positioned-digits"
+        }
+      }
+    },
+    {
+      "id": "014-regular",
+      "codepoint": "U+E028",
+      "file": "markers/014-regular.svg",
       "width": 690,
       "upem": 1000,
       "sources": [
@@ -203,36 +2799,28 @@
         "source": "font-shaping",
         "cx": 344.9,
         "cy": 220.1,
+        "placement": "manual",
         "width": 380.0,
         "height": 240.0,
         "r": 245.0,
         "digits": {
           "1": {
-            "cx": 344.9,
-            "cy": 220.1,
             "width": 176.8,
             "height": 240.0,
             "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
+            "ring_alternate": true
           },
           "2": {
-            "cx": 344.9,
-            "cy": 220.1,
             "width": 385.0,
             "height": 240.0,
             "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
+            "ring_alternate": true
           },
           "3": {
-            "cx": 344.9,
-            "cy": 220.1,
             "width": 380.0,
             "height": 240.0,
             "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
+            "ring_alternate": true
           }
         },
         "derived": {
@@ -252,611 +2840,87 @@
       }
     },
     {
-      "id": "003-thin",
-      "codepoint": "U+E002",
-      "file": "markers/003-003-thin.svg",
-      "width": 1123,
+      "id": "015-regular",
+      "codepoint": "U+E029",
+      "file": "markers/015-regular.svg",
+      "width": 1173,
       "upem": 1000,
       "sources": [
         {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "100",
-          "width": 1123,
+          "source": "fonts.quran.ws",
+          "family": "DigitalKhattV1",
+          "variant": "regular",
+          "width": 1173,
           "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6J6ghUhuQaA.woff2",
+          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-v1.otf",
           "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
             "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
           }
         }
       ],
       "number": {
         "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 386.5,
-        "width": 750.0,
-        "height": 311.0,
-        "r": 439.9,
+        "cx": 586.2,
+        "cy": 291.2,
+        "placement": "manual",
+        "width": 522.7,
+        "height": 290.4,
+        "r": 398.7,
         "digits": {
           "1": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 262.0,
-            "height": 308.0,
+            "width": 201.6,
+            "height": 294.4,
             "source": "font-shaping",
-            "placement": "manual"
+            "ring_alternate": true
           },
           "2": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 497.0,
-            "height": 315.0,
+            "width": 407.5,
+            "height": 288.8,
             "source": "font-shaping",
-            "placement": "manual"
+            "ring_alternate": true
           },
           "3": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 750.0,
-            "height": 311.0,
+            "width": 522.7,
+            "height": 290.4,
             "source": "font-shaping",
-            "placement": "manual"
+            "ring_alternate": true
           }
         },
         "derived": {
-          "cx": 561.1,
-          "cy": 387.1,
-          "width": 682.1,
-          "height": 682.1,
-          "r": 439.9,
+          "cx": 586.2,
+          "cy": 291.1,
+          "width": 566.8,
+          "height": 562.4,
+          "r": 398.7,
           "region": "fill-base"
         },
         "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
+          "family": "DigitalKhattV1",
+          "file": "digital-khatt-v1.otf",
+          "glyph": "endofaya",
+          "mechanism": "precomposed"
         }
       }
     },
     {
-      "id": "015-thin",
-      "codepoint": "U+E003",
-      "file": "markers/004-015-thin.svg",
-      "width": 1410,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Noto Sans Arabic",
-          "variant": "100",
-          "width": 1410,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfyG2fuXqAJQI.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 713.5,
-        "cy": 257.5,
-        "width": 769.0,
-        "height": 345.0,
-        "r": 380.3,
-        "digits": {
-          "1": {
-            "cx": 713.5,
-            "cy": 257.5,
-            "width": 244.0,
-            "height": 346.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 713.5,
-            "cy": 257.5,
-            "width": 509.0,
-            "height": 349.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 713.5,
-            "cy": 257.5,
-            "width": 769.0,
-            "height": 345.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 705.5,
-          "cy": 256.5,
-          "width": 653.6,
-          "height": 649.2,
-          "r": 380.3,
-          "region": "generatedFill"
-        },
-        "font": {
-          "family": "Noto Sans Arabic",
-          "file": "NotoSansArabic[wdth,wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "010-bold",
-      "codepoint": "U+E004",
-      "file": "markers/005-010-bold.svg",
-      "width": 1292,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Mada",
-          "variant": "700",
-          "width": 1292,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFkpl0ky0eiNxw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
-            "reserved_font_names": [
-              "Source"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 646.0,
-        "cy": 169.0,
-        "width": 843.6,
-        "height": 250.6,
-        "r": 321.5,
-        "digits": {
-          "1": {
-            "cx": 646.0,
-            "cy": 169.0,
-            "width": 316.4,
-            "height": 262.3,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 646.0,
-            "cy": 169.0,
-            "width": 584.3,
-            "height": 263.0,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 646.0,
-            "cy": 169.0,
-            "width": 843.6,
-            "height": 250.6,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 646.0,
-          "cy": 169.5,
-          "width": 916.3,
-          "height": 459.3,
-          "r": 321.5,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "003-extrabold",
-      "codepoint": "U+E005",
-      "file": "markers/006-003-extrabold.svg",
-      "width": 1123,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "800",
-          "width": 1123,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX96IaghUhuQaA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 386.5,
-        "width": 782.0,
-        "height": 324.0,
-        "r": 440.2,
-        "digits": {
-          "1": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 301.0,
-            "height": 325.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 523.0,
-            "height": 335.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 782.0,
-            "height": 324.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 561.1,
-          "cy": 386.2,
-          "width": 687.0,
-          "height": 682.5,
-          "r": 440.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "001-regular",
-      "codepoint": "U+E007",
-      "file": "markers/008-001-regular.svg",
-      "width": 1250,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Alkalami",
-          "variant": "400",
-          "width": 1250,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/alkalami/v8/zOL_4pfDmqRL95WXi6eJycF8ug.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright (c) 2015-2023, SIL International (http://www.sil.org/), with Reserved Font Names \"Alkalami\" and \"SIL\".",
-            "reserved_font_names": [
-              "Alkalami",
-              "SIL"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/alkalami/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "mixed",
-        "cx": 622.0,
-        "cy": 219.0,
-        "width": 439.7,
-        "height": 245.9,
-        "r": 309.2,
-        "digits": {
-          "1": {
-            "cx": 622.0,
-            "cy": 219.0,
-            "width": 350.0,
-            "height": 479.2,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 622.0,
-            "cy": 219.0,
-            "width": 439.7,
-            "height": 258.0,
-            "source": "derived",
-            "fallback_reason": "the font's box for 2 digits belongs to a wider ring (uni06DD.2) and covers 15% ink on the outline we ship",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 622.0,
-            "cy": 219.0,
-            "width": 439.7,
-            "height": 245.9,
-            "source": "derived",
-            "fallback_reason": "the number does not land in the marker's hole",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 620.2,
-          "cy": 219.6,
-          "width": 439.7,
-          "height": 435.4,
-          "r": 309.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Alkalami",
-          "file": "Alkalami-Regular.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "003-medium",
-      "codepoint": "U+E008",
-      "file": "markers/009-003-medium.svg",
-      "width": 1123,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "500",
-          "width": 1123,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_IJqghUhuQaA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 387.0,
-        "width": 769.0,
-        "height": 319.0,
-        "r": 440.5,
-        "digits": {
-          "1": {
-            "cx": 561.5,
-            "cy": 387.0,
-            "width": 284.0,
-            "height": 318.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 561.5,
-            "cy": 387.0,
-            "width": 512.0,
-            "height": 327.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 561.5,
-            "cy": 387.0,
-            "width": 769.0,
-            "height": 319.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 560.4,
-          "cy": 386.3,
-          "width": 689.1,
-          "height": 680.7,
-          "r": 440.5,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "017-medium",
-      "codepoint": "U+E009",
-      "file": "markers/010-017-medium.svg",
-      "width": 2003,
-      "upem": 2048,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Scheherazade New",
-          "variant": "500",
-          "width": 2003,
-          "upem": 2048,
-          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM_dFLlQI-bKn.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
-            "reserved_font_names": [
-              "Scheherazade",
-              "SIL"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 1000.0,
-        "cy": 646.0,
-        "width": 1220.0,
-        "height": 618.0,
-        "r": 528.0,
-        "digits": {
-          "1": {
-            "cx": 1000.0,
-            "cy": 646.0,
-            "width": 524.0,
-            "height": 837.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 1000.0,
-            "cy": 646.0,
-            "width": 1082.0,
-            "height": 861.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 1000.0,
-            "cy": 646.0,
-            "width": 1220.0,
-            "height": 618.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 1000.1,
-          "cy": 646.0,
-          "width": 1347.3,
-          "height": 932.8,
-          "r": 528.0,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Scheherazade New",
-          "file": "ScheherazadeNew-Medium.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "006-regular",
-      "codepoint": "U+E00A",
-      "file": "markers/011-006-regular.svg",
-      "width": 4071,
-      "upem": 3000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Jomhuria",
-          "variant": "400",
-          "width": 4071,
-          "upem": 3000,
-          "source_url": "https://fonts.gstatic.com/s/jomhuria/v23/Dxxp8j-TMXf-llKur1b3OuCrCw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2015 KB-Studio (www.k-b-studio.com|tarobish@gmail.com). Copyright 2015 Lasse Fister (lasse@graphicore.de). Copyright 2015 Sorkin Type Co (www.sorkintype.com). Copyright 2010-2015 Khaled Hosny (khaledhosny@eglug.org).",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/jomhuria/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 2037.5,
-        "cy": 608.5,
-        "width": 1779.4,
-        "height": 817.2,
-        "r": 1044.3,
-        "digits": {
-          "1": {
-            "cx": 2037.5,
-            "cy": 608.5,
-            "width": 610.2,
-            "height": 817.2,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 2037.5,
-            "cy": 608.5,
-            "width": 1194.3,
-            "height": 818.6,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 2037.5,
-            "cy": 608.5,
-            "width": 1779.4,
-            "height": 817.2,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 2030.0,
-          "cy": 607.0,
-          "width": 1979.5,
-          "height": 1963.2,
-          "r": 1044.3,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Jomhuria",
-          "file": "Jomhuria-Regular.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "025-regular",
-      "codepoint": "U+E00B",
-      "file": "markers/012-025-regular.svg",
-      "width": 1595,
+      "id": "016-regular",
+      "codepoint": "U+E02A",
+      "file": "markers/016-regular.svg",
+      "width": 1552,
       "upem": 2048,
       "sources": [
         {
           "source": "fonts.quran.ws",
-          "family": "UthmanicQaloun",
+          "family": "HafsNastaleeq",
           "variant": "regular",
-          "width": 1595,
+          "width": 1552,
           "upem": 2048,
-          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-qaloun-v21.ttf",
+          "source_url": "https://fonts.quran.ws/assets/fonts/hafs-nastaleeq.otf",
           "license": {
             "id": "unverified",
             "name": "unverified — pending confirmation",
@@ -869,603 +2933,43 @@
       ],
       "number": {
         "source": "derived",
-        "cx": 778.2,
-        "cy": 468.0,
-        "width": 1023.5,
-        "height": 651.1,
-        "r": 561.1,
+        "cx": 773.0,
+        "cy": 294.0,
+        "placement": "manual",
+        "width": 857.1,
+        "height": 547.9,
+        "r": 439.9,
         "digits": {
           "1": {
-            "cx": 778.2,
-            "cy": 468.0,
-            "width": 383.9,
-            "height": 681.5,
-            "source": "derived",
-            "placement": "manual"
+            "width": 397.9,
+            "height": 573.5,
+            "source": "derived"
           },
           "2": {
-            "cx": 778.2,
-            "cy": 468.0,
-            "width": 708.9,
-            "height": 683.1,
-            "source": "derived",
-            "placement": "manual"
+            "width": 734.8,
+            "height": 574.8,
+            "source": "derived"
           },
           "3": {
-            "cx": 778.2,
-            "cy": 468.0,
-            "width": 1023.5,
-            "height": 651.1,
-            "source": "derived",
-            "placement": "manual"
+            "width": 857.1,
+            "height": 547.9,
+            "source": "derived"
           }
         },
         "derived": {
-          "cx": 778.5,
-          "cy": 468.0,
-          "width": 1023.8,
-          "height": 838.3,
-          "r": 561.1,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "014-regular-bold",
-      "codepoint": "U+E00C",
-      "file": "markers/013-014-regular-bold.svg",
-      "width": 1724,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Noto Nastaliq Urdu",
-          "variant": "400",
-          "width": 1724,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qt_-PK-V2t_8.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
-            "note": null
-          }
-        },
-        {
-          "source": "Google Fonts",
-          "family": "Noto Nastaliq Urdu",
-          "variant": "500",
-          "width": 1724,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qu3-PK-V2t_8.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
-            "note": null
-          }
-        },
-        {
-          "source": "Google Fonts",
-          "family": "Noto Nastaliq Urdu",
-          "variant": "600",
-          "width": 1724,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3QgH5PK-V2t_8.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
-            "note": null
-          }
-        },
-        {
-          "source": "Google Fonts",
-          "family": "Noto Nastaliq Urdu",
-          "variant": "700",
-          "width": 1724,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notonastaliqurdu/v23/LhWNMUPbN-oZdNFcBy1-DJYsEoTq5pudQ9L940pGPkB3Qjj5PK-V2t_8.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nastaliq)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notonastaliqurdu/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 862.5,
-        "cy": 601.5,
-        "width": 730.0,
-        "height": 305.0,
-        "r": 483.8,
-        "digits": {
-          "1": {
-            "cx": 862.5,
-            "cy": 601.5,
-            "width": 226.0,
-            "height": 304.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 862.5,
-            "cy": 601.5,
-            "width": 478.0,
-            "height": 313.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 862.5,
-            "cy": 601.5,
-            "width": 730.0,
-            "height": 305.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 863.4,
-          "cy": 601.4,
-          "width": 691.3,
-          "height": 685.5,
-          "r": 483.8,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Noto Nastaliq Urdu",
-          "file": "NotoNastaliqUrdu[wght].ttf",
-          "glyph": "AyahEnd",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "005-light",
-      "codepoint": "U+E00D",
-      "file": "markers/014-005-light.svg",
-      "width": 1148,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "IBM Plex Sans Arabic",
-          "variant": "300",
-          "width": 1148,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOW_uCRXMR5Kw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
-            "reserved_font_names": [
-              "Plex"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 574.0,
-        "cy": 270.0,
-        "width": 679.7,
-        "height": 352.0,
-        "r": 344.5,
-        "digits": {
-          "1": {
-            "cx": 574.0,
-            "cy": 270.0,
-            "width": 264.1,
-            "height": 368.4,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 574.0,
-            "cy": 270.0,
-            "width": 487.7,
-            "height": 369.3,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 574.0,
-            "cy": 270.0,
-            "width": 679.7,
-            "height": 352.0,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 574.0,
-          "cy": 270.0,
-          "width": 679.7,
-          "height": 656.9,
-          "r": 344.5,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "010-extralight",
-      "codepoint": "U+E00E",
-      "file": "markers/015-010-extralight.svg",
-      "width": 1258,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Mada",
-          "variant": "200",
-          "width": 1258,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlOkEky0eiNxw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
-            "reserved_font_names": [
-              "Source"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 629.0,
-        "cy": 169.0,
-        "width": 870.5,
-        "height": 263.3,
-        "r": 338.6,
-        "digits": {
-          "1": {
-            "cx": 629.0,
-            "cy": 169.0,
-            "width": 326.5,
-            "height": 275.5,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 629.0,
-            "cy": 169.0,
-            "width": 602.9,
-            "height": 276.2,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 629.0,
-            "cy": 169.0,
-            "width": 870.5,
-            "height": 263.3,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 629.0,
-          "cy": 168.6,
-          "width": 925.8,
-          "height": 499.2,
-          "r": 338.6,
+          "cx": 771.5,
+          "cy": 292.8,
+          "width": 857.1,
+          "height": 846.2,
+          "r": 439.9,
           "region": "fill-base"
         }
       }
     },
     {
       "id": "017-regular",
-      "codepoint": "U+E00F",
-      "file": "markers/016-017-regular.svg",
-      "width": 1984,
-      "upem": 2048,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Scheherazade New",
-          "variant": "400",
-          "width": 1984,
-          "upem": 2048,
-          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaZrFhTvxVnHDvUkUiHg8jprP4DOwFmO24p.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
-            "reserved_font_names": [
-              "Scheherazade",
-              "SIL"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 990.5,
-        "cy": 646.0,
-        "width": 1209.0,
-        "height": 606.0,
-        "r": 533.1,
-        "digits": {
-          "1": {
-            "cx": 990.5,
-            "cy": 646.0,
-            "width": 496.0,
-            "height": 822.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 990.5,
-            "cy": 646.0,
-            "width": 1056.0,
-            "height": 851.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 990.5,
-            "cy": 646.0,
-            "width": 1209.0,
-            "height": 606.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 991.1,
-          "cy": 646.0,
-          "width": 1356.3,
-          "height": 941.8,
-          "r": 533.1,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Scheherazade New",
-          "file": "ScheherazadeNew-Regular.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "003-extralight",
-      "codepoint": "U+E010",
-      "file": "markers/017-003-extralight.svg",
-      "width": 1123,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "200",
-          "width": 1123,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX96JqghUhuQaA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 386.5,
-        "width": 755.0,
-        "height": 313.0,
-        "r": 440.2,
-        "digits": {
-          "1": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 268.0,
-            "height": 310.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 501.0,
-            "height": 318.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 755.0,
-            "height": 313.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 560.6,
-          "cy": 386.2,
-          "width": 683.2,
-          "height": 683.2,
-          "r": 440.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "003-black",
-      "codepoint": "U+E011",
-      "file": "markers/018-003-black.svg",
-      "width": 1123,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "900",
-          "width": 1123,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX9TIaghUhuQaA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 386.5,
-        "width": 787.0,
-        "height": 326.0,
-        "r": 440.2,
-        "digits": {
-          "1": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 307.0,
-            "height": 328.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 527.0,
-            "height": 338.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 787.0,
-            "height": 326.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 562.0,
-          "cy": 385.9,
-          "width": 694.0,
-          "height": 680.4,
-          "r": 440.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "011-medium",
-      "codepoint": "U+E012",
-      "file": "markers/019-011-medium.svg",
-      "width": 929,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Mirza",
-          "variant": "500",
-          "width": 929,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/mirza/v19/co3FmWlikiN5EtIpAdO6k6bxog.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2015 The Mirza Project Authors (https://github.com/Tarobish/Mirza)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/mirza/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 464.0,
-        "cy": 285.5,
-        "width": 348.4,
-        "height": 240.6,
-        "r": 181.7,
-        "digits": {
-          "1": {
-            "cx": 464.0,
-            "cy": 285.5,
-            "width": 197.1,
-            "height": 251.8,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 464.0,
-            "cy": 285.5,
-            "width": 348.4,
-            "height": 252.4,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 464.0,
-            "cy": 285.5,
-            "width": 348.4,
-            "height": 240.6,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 462.8,
-          "cy": 285.5,
-          "width": 348.4,
-          "height": 448.4,
-          "r": 181.7,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "023-regular",
-      "codepoint": "U+E013",
-      "file": "markers/020-023-regular.svg",
+      "codepoint": "U+E02B",
+      "file": "markers/017-regular.svg",
       "width": 1399,
       "upem": 2048,
       "sources": [
@@ -1490,33 +2994,25 @@
         "source": "derived",
         "cx": 699.5,
         "cy": 422.5,
+        "placement": "manual",
         "width": 731.5,
         "height": 403.0,
         "r": 515.6,
         "digits": {
           "1": {
-            "cx": 699.5,
-            "cy": 422.5,
             "width": 297.3,
             "height": 421.8,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           },
           "2": {
-            "cx": 699.5,
-            "cy": 422.5,
             "width": 549.0,
             "height": 422.8,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           },
           "3": {
-            "cx": 699.5,
-            "cy": 422.5,
             "width": 731.5,
             "height": 403.0,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           }
         },
         "derived": {
@@ -1530,9 +3026,9 @@
       }
     },
     {
-      "id": "024-regular",
-      "codepoint": "U+E014",
-      "file": "markers/021-024-regular.svg",
+      "id": "018-regular",
+      "codepoint": "U+E02C",
+      "file": "markers/018-regular.svg",
       "width": 1595,
       "upem": 2048,
       "sources": [
@@ -1621,33 +3117,25 @@
         "source": "derived",
         "cx": 775.7,
         "cy": 495.0,
+        "placement": "manual",
         "width": 779.7,
         "height": 683.9,
         "r": 467.5,
         "digits": {
           "1": {
-            "cx": 775.7,
-            "cy": 495.0,
             "width": 394.8,
             "height": 715.8,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           },
           "2": {
-            "cx": 775.7,
-            "cy": 495.0,
             "width": 729.1,
             "height": 717.5,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           },
           "3": {
-            "cx": 775.7,
-            "cy": 495.0,
             "width": 779.7,
             "height": 683.9,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           }
         },
         "derived": {
@@ -1661,1699 +3149,68 @@
       }
     },
     {
-      "id": "005-bold",
-      "codepoint": "U+E015",
-      "file": "markers/022-005-bold.svg",
-      "width": 1120,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "IBM Plex Sans Arabic",
-          "variant": "700",
-          "width": 1120,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOG-eCRXMR5Kw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
-            "reserved_font_names": [
-              "Plex"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 560.0,
-        "cy": 270.0,
-        "width": 642.7,
-        "height": 311.9,
-        "r": 261.4,
-        "digits": {
-          "1": {
-            "cx": 560.0,
-            "cy": 270.0,
-            "width": 241.1,
-            "height": 326.4,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 560.0,
-            "cy": 270.0,
-            "width": 445.2,
-            "height": 327.2,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 560.0,
-            "cy": 270.0,
-            "width": 642.7,
-            "height": 311.9,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 560.0,
-          "cy": 270.0,
-          "width": 733.0,
-          "height": 451.2,
-          "r": 261.4,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "003-light",
-      "codepoint": "U+E016",
-      "file": "markers/023-003-light.svg",
-      "width": 1123,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "300",
-          "width": 1123,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX-kJqghUhuQaA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 387.0,
-        "width": 759.0,
-        "height": 315.0,
-        "r": 439.7,
-        "digits": {
-          "1": {
-            "cx": 561.5,
-            "cy": 387.0,
-            "width": 272.0,
-            "height": 313.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 561.5,
-            "cy": 387.0,
-            "width": 504.0,
-            "height": 321.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 561.5,
-            "cy": 387.0,
-            "width": 759.0,
-            "height": 315.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 559.9,
-          "cy": 385.5,
-          "width": 685.1,
-          "height": 681.0,
-          "r": 439.7,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "010-light",
-      "codepoint": "U+E017",
-      "file": "markers/024-010-light.svg",
-      "width": 1263,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Mada",
-          "variant": "300",
-          "width": 1263,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFmQkEky0eiNxw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
-            "reserved_font_names": [
-              "Source"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 631.5,
-        "cy": 169.0,
-        "width": 867.4,
-        "height": 261.9,
-        "r": 337.1,
-        "digits": {
-          "1": {
-            "cx": 631.5,
-            "cy": 169.0,
-            "width": 325.3,
-            "height": 274.1,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 631.5,
-            "cy": 169.0,
-            "width": 600.7,
-            "height": 274.7,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 631.5,
-            "cy": 169.0,
-            "width": 867.4,
-            "height": 261.9,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 631.5,
-          "cy": 169.0,
-          "width": 920.8,
-          "height": 496.9,
-          "r": 337.1,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "017-semibold",
-      "codepoint": "U+E018",
-      "file": "markers/025-017-semibold.svg",
-      "width": 2023,
-      "upem": 2048,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Scheherazade New",
-          "variant": "600",
-          "width": 2023,
-          "upem": 2048,
-          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM9tCLlQI-bKn.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
-            "reserved_font_names": [
-              "Scheherazade",
-              "SIL"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 1011.0,
-        "cy": 646.0,
-        "width": 1237.0,
-        "height": 631.0,
-        "r": 523.1,
-        "digits": {
-          "1": {
-            "cx": 1011.0,
-            "cy": 646.0,
-            "width": 552.0,
-            "height": 851.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 1011.0,
-            "cy": 646.0,
-            "width": 1109.0,
-            "height": 872.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 1011.0,
-            "cy": 646.0,
-            "width": 1237.0,
-            "height": 631.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 1009.1,
-          "cy": 646.0,
-          "width": 1338.3,
-          "height": 923.8,
-          "r": 523.1,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Scheherazade New",
-          "file": "ScheherazadeNew-SemiBold.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "002-bold",
-      "codepoint": "U+E019",
-      "file": "markers/026-002-bold.svg",
-      "width": 1279,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Amiri",
-          "variant": "700",
-          "width": 1279,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2010-2022 The Amiri Project Authors (https://github.com/aliftype/amiri).",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/amiri/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 639.5,
-        "cy": 166.1,
-        "width": 811.9,
-        "height": 402.2,
-        "r": 273.0,
-        "digits": {
-          "1": {
-            "cx": 639.5,
-            "cy": 166.1,
-            "width": 275.9,
-            "height": 401.7,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 639.5,
-            "cy": 166.1,
-            "width": 523.5,
-            "height": 405.9,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 639.5,
-            "cy": 166.1,
-            "width": 811.9,
-            "height": 402.2,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 637.7,
-          "cy": 164.4,
-          "width": 922.3,
-          "height": 466.8,
-          "r": 273.0,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Amiri",
-          "file": "Amiri-Bold.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "005-medium",
-      "codepoint": "U+E01A",
-      "file": "markers/027-005-medium.svg",
-      "width": 1131,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "IBM Plex Sans Arabic",
-          "variant": "500",
-          "width": 1131,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPO_-CRXMR5Kw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
-            "reserved_font_names": [
-              "Plex"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 565.5,
-        "cy": 270.0,
-        "width": 660.2,
-        "height": 325.3,
-        "r": 286.5,
-        "digits": {
-          "1": {
-            "cx": 565.5,
-            "cy": 270.0,
-            "width": 247.6,
-            "height": 340.4,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 565.5,
-            "cy": 270.0,
-            "width": 457.3,
-            "height": 341.3,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 565.5,
-            "cy": 270.0,
-            "width": 660.2,
-            "height": 325.3,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 566.0,
-          "cy": 270.0,
-          "width": 725.4,
-          "height": 516.0,
-          "r": 286.5,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "003-semibold",
-      "codepoint": "U+E01B",
-      "file": "markers/028-003-semibold.svg",
-      "width": 1123,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "600",
-          "width": 1123,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX8kIaghUhuQaA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 386.5,
-        "width": 774.0,
-        "height": 320.0,
-        "r": 439.8,
-        "digits": {
-          "1": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 290.0,
-            "height": 320.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 516.0,
-            "height": 329.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 774.0,
-            "height": 320.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 561.9,
-          "cy": 385.3,
-          "width": 689.1,
-          "height": 680.5,
-          "r": 439.8,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "008-regular",
-      "codepoint": "U+E01C",
-      "file": "markers/029-008-regular.svg",
-      "width": 1160,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Kufam",
-          "variant": "400",
-          "width": 1160,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3lqkLqwqILvI.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 580.0,
-        "cy": 270.0,
-        "width": 639.8,
-        "height": 331.2,
-        "r": 275.9,
-        "digits": {
-          "1": {
-            "cx": 580.0,
-            "cy": 270.0,
-            "width": 240.0,
-            "height": 346.7,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 580.0,
-            "cy": 270.0,
-            "width": 443.1,
-            "height": 347.5,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 580.0,
-            "cy": 270.0,
-            "width": 639.8,
-            "height": 331.2,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 580.0,
-          "cy": 270.0,
-          "width": 714.0,
-          "height": 466.5,
-          "r": 275.9,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "013-regular-bold",
-      "codepoint": "U+E01D",
-      "file": "markers/030-013-regular-bold.svg",
-      "width": 1260,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Noto Naskh Arabic",
-          "variant": "400",
-          "width": 1260,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwvc5Urqcyx_M.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
-            "note": null
-          }
-        },
-        {
-          "source": "Google Fonts",
-          "family": "Noto Naskh Arabic",
-          "variant": "500",
-          "width": 1260,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwj85Urqcyx_M.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
-            "note": null
-          }
-        },
-        {
-          "source": "Google Fonts",
-          "family": "Noto Naskh Arabic",
-          "variant": "600",
-          "width": 1260,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwY8lUrqcyx_M.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
-            "note": null
-          }
-        },
-        {
-          "source": "Google Fonts",
-          "family": "Noto Naskh Arabic",
-          "variant": "700",
-          "width": 1260,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notonaskharabic/v44/RrQ5bpV-9Dd1b1OAGA6M9PkyDuVBePeKNaxcsss0Y7bwWslUrqcyx_M.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notonaskharabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 630.0,
-        "cy": 390.0,
-        "width": 783.0,
-        "height": 365.0,
-        "r": 419.1,
-        "digits": {
-          "1": {
-            "cx": 630.0,
-            "cy": 390.0,
-            "width": 266.0,
-            "height": 364.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 630.0,
-            "cy": 390.0,
-            "width": 514.0,
-            "height": 387.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 630.0,
-            "cy": 390.0,
-            "width": 783.0,
-            "height": 365.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 630.5,
-          "cy": 390.0,
-          "width": 715.9,
-          "height": 636.6,
-          "r": 419.1,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Noto Naskh Arabic",
-          "file": "NotoNaskhArabic[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "017-bold",
-      "codepoint": "U+E01E",
-      "file": "markers/031-017-bold.svg",
-      "width": 2042,
-      "upem": 2048,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Scheherazade New",
-          "variant": "700",
-          "width": 2042,
-          "upem": 2048,
-          "source_url": "https://fonts.gstatic.com/s/scheherazadenew/v21/4UaerFhTvxVnHDvUkUiHg8jprP4DM79DLlQI-bKn.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".",
-            "reserved_font_names": [
-              "Scheherazade",
-              "SIL"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/scheherazadenew/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 1020.5,
-        "cy": 646.0,
-        "width": 1252.0,
-        "height": 644.0,
-        "r": 518.9,
-        "digits": {
-          "1": {
-            "cx": 1020.5,
-            "cy": 646.0,
-            "width": 580.0,
-            "height": 866.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 1020.5,
-            "cy": 646.0,
-            "width": 1137.0,
-            "height": 882.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 1020.5,
-            "cy": 646.0,
-            "width": 1252.0,
-            "height": 644.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 1018.1,
-          "cy": 646.0,
-          "width": 1329.3,
-          "height": 914.7,
-          "r": 518.9,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Scheherazade New",
-          "file": "ScheherazadeNew-Bold.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "005-regular",
-      "codepoint": "U+E01F",
-      "file": "markers/032-005-regular.svg",
-      "width": 1140,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "IBM Plex Sans Arabic",
-          "variant": "400",
-          "width": 1140,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ys43PWrfQ.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
-            "reserved_font_names": [
-              "Plex"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 570.0,
-        "cy": 270.0,
-        "width": 674.8,
-        "height": 334.2,
-        "r": 305.5,
-        "digits": {
-          "1": {
-            "cx": 570.0,
-            "cy": 270.0,
-            "width": 253.1,
-            "height": 349.8,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 570.0,
-            "cy": 270.0,
-            "width": 467.4,
-            "height": 350.6,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 570.0,
-            "cy": 270.0,
-            "width": 674.8,
-            "height": 334.2,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 570.0,
-          "cy": 270.0,
-          "width": 717.8,
-          "height": 565.5,
-          "r": 305.5,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "005-thin",
-      "codepoint": "U+E020",
-      "file": "markers/033-005-thin.svg",
-      "width": 1160,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "IBM Plex Sans Arabic",
-          "variant": "100",
-          "width": 1160,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
-            "reserved_font_names": [
-              "Plex"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 580.0,
-        "cy": 270.0,
-        "width": 706.4,
-        "height": 380.2,
-        "r": 407.9,
-        "digits": {
-          "1": {
-            "cx": 580.0,
-            "cy": 270.0,
-            "width": 282.7,
-            "height": 397.9,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 580.0,
-            "cy": 270.0,
-            "width": 522.0,
-            "height": 398.9,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 580.0,
-            "cy": 270.0,
-            "width": 706.4,
-            "height": 380.2,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 580.0,
-          "cy": 270.0,
-          "width": 706.4,
-          "height": 702.6,
-          "r": 407.9,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "022-regular",
-      "codepoint": "U+E021",
-      "file": "markers/034-022-regular.svg",
-      "width": 1552,
-      "upem": 2048,
-      "sources": [
-        {
-          "source": "fonts.quran.ws",
-          "family": "HafsNastaleeq",
-          "variant": "regular",
-          "width": 1552,
-          "upem": 2048,
-          "source_url": "https://fonts.quran.ws/assets/fonts/hafs-nastaleeq.otf",
-          "license": {
-            "id": "unverified",
-            "name": "unverified — pending confirmation",
-            "copyright": null,
-            "reserved_font_names": [],
-            "url": null,
-            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 773.0,
-        "cy": 294.0,
-        "width": 857.1,
-        "height": 547.9,
-        "r": 439.9,
-        "digits": {
-          "1": {
-            "cx": 773.0,
-            "cy": 294.0,
-            "width": 397.9,
-            "height": 573.5,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 773.0,
-            "cy": 294.0,
-            "width": 734.8,
-            "height": 574.8,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 773.0,
-            "cy": 294.0,
-            "width": 857.1,
-            "height": 547.9,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 771.5,
-          "cy": 292.8,
-          "width": 857.1,
-          "height": 846.2,
-          "r": 439.9,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "010-black",
-      "codepoint": "U+E023",
-      "file": "markers/036-010-black.svg",
-      "width": 1298,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Mada",
-          "variant": "900",
-          "width": 1298,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFlnl0ky0eiNxw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
-            "reserved_font_names": [
-              "Source"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 649.0,
-        "cy": 169.0,
-        "width": 840.7,
-        "height": 247.4,
-        "r": 318.3,
-        "digits": {
-          "1": {
-            "cx": 649.0,
-            "cy": 169.0,
-            "width": 315.3,
-            "height": 259.0,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 649.0,
-            "cy": 169.0,
-            "width": 582.3,
-            "height": 259.6,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 649.0,
-            "cy": 169.0,
-            "width": 840.7,
-            "height": 247.4,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 649.0,
-          "cy": 168.2,
-          "width": 920.8,
-          "height": 447.9,
-          "r": 318.3,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "005-semibold",
-      "codepoint": "U+E024",
-      "file": "markers/037-005-semibold.svg",
-      "width": 1126,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "IBM Plex Sans Arabic",
-          "variant": "600",
-          "width": 1126,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPi-OCRXMR5Kw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
-            "reserved_font_names": [
-              "Plex"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 563.0,
-        "cy": 270.0,
-        "width": 651.5,
-        "height": 317.9,
-        "r": 274.3,
-        "digits": {
-          "1": {
-            "cx": 563.0,
-            "cy": 270.0,
-            "width": 244.3,
-            "height": 332.7,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 563.0,
-            "cy": 270.0,
-            "width": 451.2,
-            "height": 333.5,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 563.0,
-            "cy": 270.0,
-            "width": 651.5,
-            "height": 317.9,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 563.0,
-          "cy": 270.0,
-          "width": 729.2,
-          "height": 485.5,
-          "r": 274.3,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "007-regular",
-      "codepoint": "U+E025",
-      "file": "markers/038-007-regular.svg",
-      "width": 1047,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Katibeh",
-          "variant": "400",
-          "width": 1047,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/katibeh/v22/ZGjXol5MQJog4bxDWC9bVQNd.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2015, 2016 KB-Studio (www.k-b-studio.com|tarobish@gmail.com). Copyright 2015, 2016 Lasse Fister (lasse@graphicore.de). Copyright 2015, 2016 Eduardo Tunni(edu@tipo.net.ar).",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/katibeh/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 523.5,
-        "cy": 262.5,
-        "width": 576.5,
-        "height": 317.1,
-        "r": 311.5,
-        "digits": {
-          "1": {
-            "cx": 523.5,
-            "cy": 262.5,
-            "width": 235.1,
-            "height": 331.9,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 523.5,
-            "cy": 262.5,
-            "width": 434.1,
-            "height": 332.7,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 523.5,
-            "cy": 262.5,
-            "width": 576.5,
-            "height": 317.1,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 524.2,
-          "cy": 261.7,
-          "width": 576.5,
-          "height": 568.7,
-          "r": 311.5,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "005-extralight",
-      "codepoint": "U+E026",
-      "file": "markers/039-005-extralight.svg",
-      "width": 1155,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "IBM Plex Sans Arabic",
-          "variant": "200",
-          "width": 1155,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright © 2017 IBM Corp. with Reserved Font Name \"Plex\"",
-            "reserved_font_names": [
-              "Plex"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/ibmplexsansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 577.5,
-        "cy": 270.0,
-        "width": 691.2,
-        "height": 368.4,
-        "r": 382.7,
-        "digits": {
-          "1": {
-            "cx": 577.5,
-            "cy": 270.0,
-            "width": 275.6,
-            "height": 385.5,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 577.5,
-            "cy": 270.0,
-            "width": 508.9,
-            "height": 386.4,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 577.5,
-            "cy": 270.0,
-            "width": 691.2,
-            "height": 368.4,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 576.1,
-          "cy": 270.0,
-          "width": 691.2,
-          "height": 687.3,
-          "r": 382.7,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "015-light",
-      "codepoint": "U+E027",
-      "file": "markers/040-015-light.svg",
-      "width": 1390,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Noto Sans Arabic",
-          "variant": "300",
-          "width": 1390,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCflmyfuXqAJQI.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 703.5,
-        "cy": 257.5,
-        "width": 782.0,
-        "height": 348.0,
-        "r": 371.6,
-        "digits": {
-          "1": {
-            "cx": 703.5,
-            "cy": 257.5,
-            "width": 259.0,
-            "height": 351.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 703.5,
-            "cy": 257.5,
-            "width": 523.0,
-            "height": 351.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 703.5,
-            "cy": 257.5,
-            "width": 782.0,
-            "height": 348.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 695.5,
-          "cy": 256.5,
-          "width": 649.2,
-          "height": 644.8,
-          "r": 371.6,
-          "region": "generatedFill"
-        },
-        "font": {
-          "family": "Noto Sans Arabic",
-          "file": "NotoSansArabic[wdth,wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "021-regular",
-      "codepoint": "U+E028",
-      "file": "markers/041-021-regular.svg",
-      "width": 1173,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "fonts.quran.ws",
-          "family": "DigitalKhattV1",
-          "variant": "regular",
-          "width": 1173,
-          "upem": 1000,
-          "source_url": "https://fonts.quran.ws/assets/fonts/digital-khatt-v1.otf",
-          "license": {
-            "id": "unverified",
-            "name": "unverified — pending confirmation",
-            "copyright": null,
-            "reserved_font_names": [],
-            "url": null,
-            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 586.2,
-        "cy": 291.2,
-        "width": 522.7,
-        "height": 290.4,
-        "r": 398.7,
-        "digits": {
-          "1": {
-            "cx": 586.2,
-            "cy": 291.2,
-            "width": 201.6,
-            "height": 294.4,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 586.2,
-            "cy": 291.2,
-            "width": 407.5,
-            "height": 288.8,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 586.2,
-            "cy": 291.2,
-            "width": 522.7,
-            "height": 290.4,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 586.2,
-          "cy": 291.1,
-          "width": 566.8,
-          "height": 562.4,
-          "r": 398.7,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "DigitalKhattV1",
-          "file": "digital-khatt-v1.otf",
-          "glyph": "endofaya",
-          "mechanism": "precomposed"
-        }
-      }
-    },
-    {
-      "id": "003-regular",
-      "codepoint": "U+E029",
-      "file": "markers/042-003-regular.svg",
-      "width": 1123,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "400",
-          "width": 1123,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX_6JqghUhuQaA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 386.5,
-        "width": 764.0,
-        "height": 317.0,
-        "r": 440.3,
-        "digits": {
-          "1": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 278.0,
-            "height": 315.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 508.0,
-            "height": 324.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 764.0,
-            "height": 317.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 561.2,
-          "cy": 386.9,
-          "width": 689.4,
-          "height": 681.1,
-          "r": 440.3,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "015-extralight",
-      "codepoint": "U+E02A",
-      "file": "markers/043-015-extralight.svg",
-      "width": 1402,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Noto Sans Arabic",
-          "variant": "200",
-          "width": 1402,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/notosansarabic/v33/nwpxtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlhQ5l3sQWIHPqzCfSGyfuXqAJQI.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/notosansarabic/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 709.5,
-        "cy": 257.5,
-        "width": 773.0,
-        "height": 347.0,
-        "r": 378.2,
-        "digits": {
-          "1": {
-            "cx": 709.5,
-            "cy": 257.5,
-            "width": 250.0,
-            "height": 348.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 709.5,
-            "cy": 257.5,
-            "width": 514.0,
-            "height": 350.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 709.5,
-            "cy": 257.5,
-            "width": 773.0,
-            "height": 347.0,
-            "source": "font-shaping",
-            "ring_alternate": true,
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 701.5,
-          "cy": 256.5,
-          "width": 649.2,
-          "height": 649.2,
-          "r": 378.2,
-          "region": "generatedFill"
-        },
-        "font": {
-          "family": "Noto Sans Arabic",
-          "file": "NotoSansArabic[wdth,wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "003-bold",
-      "codepoint": "U+E02B",
-      "file": "markers/044-003-bold.svg",
-      "width": 1123,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Estedad",
-          "variant": "700",
-          "width": 1123,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/estedad/v3/QdVJSTk1OgitjvYTDpnsTdH9KGslJX8dIaghUhuQaA.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2022 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/estedad/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 561.5,
-        "cy": 386.5,
-        "width": 777.0,
-        "height": 323.0,
-        "r": 440.2,
-        "digits": {
-          "1": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 295.0,
-            "height": 323.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 519.0,
-            "height": 333.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 561.5,
-            "cy": 386.5,
-            "width": 777.0,
-            "height": 323.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 562.0,
-          "cy": 387.0,
-          "width": 692.3,
-          "height": 679.2,
-          "r": 440.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Estedad",
-          "file": "Estedad[wght].ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "008-medium",
-      "codepoint": "U+E02C",
-      "file": "markers/045-008-medium.svg",
-      "width": 1157,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Kufam",
-          "variant": "500",
-          "width": 1157,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3pKkLqwqILvI.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 578.5,
-        "cy": 270.0,
-        "width": 620.8,
-        "height": 319.4,
-        "r": 254.6,
-        "digits": {
-          "1": {
-            "cx": 578.5,
-            "cy": 270.0,
-            "width": 232.8,
-            "height": 334.2,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 578.5,
-            "cy": 270.0,
-            "width": 430.0,
-            "height": 335.1,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 578.5,
-            "cy": 270.0,
-            "width": 620.8,
-            "height": 319.4,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 578.5,
-          "cy": 268.8,
-          "width": 718.2,
-          "height": 412.3,
-          "r": 254.6,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "026-regular",
+      "id": "019-regular",
       "codepoint": "U+E02D",
-      "file": "markers/046-026-regular.svg",
+      "file": "markers/019-regular.svg",
+      "width": 1595,
+      "upem": 2048,
+      "sources": [
+        {
+          "source": "fonts.quran.ws",
+          "family": "UthmanicQaloun",
+          "variant": "regular",
+          "width": 1595,
+          "upem": 2048,
+          "source_url": "https://fonts.quran.ws/assets/fonts/uthmanic-qaloun-v21.ttf",
+          "license": {
+            "id": "unverified",
+            "name": "unverified — pending confirmation",
+            "copyright": null,
+            "reserved_font_names": [],
+            "url": null,
+            "note": "Terms for this family are not recorded upstream and have not been confirmed. No licence is asserted for it here."
+          }
+        }
+      ],
+      "number": {
+        "source": "derived",
+        "cx": 778.2,
+        "cy": 468.0,
+        "placement": "manual",
+        "width": 1023.5,
+        "height": 651.1,
+        "r": 561.1,
+        "digits": {
+          "1": {
+            "width": 383.9,
+            "height": 681.5,
+            "source": "derived"
+          },
+          "2": {
+            "width": 708.9,
+            "height": 683.1,
+            "source": "derived"
+          },
+          "3": {
+            "width": 1023.5,
+            "height": 651.1,
+            "source": "derived"
+          }
+        },
+        "derived": {
+          "cx": 778.5,
+          "cy": 468.0,
+          "width": 1023.8,
+          "height": 838.3,
+          "r": 561.1,
+          "region": "fill-base"
+        }
+      }
+    },
+    {
+      "id": "020-regular",
+      "codepoint": "U+E02E",
+      "file": "markers/020-regular.svg",
       "width": 1595,
       "upem": 2048,
       "sources": [
@@ -3377,34 +3234,26 @@
       "number": {
         "source": "derived",
         "cx": 779.5,
-        "cy": 550.0,
+        "cy": 450.0,
+        "placement": "manual",
         "width": 587.9,
         "height": 514.0,
         "r": 440.8,
         "digits": {
           "1": {
-            "cx": 779.5,
-            "cy": 550.0,
             "width": 376.8,
             "height": 537.9,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           },
           "2": {
-            "cx": 779.5,
-            "cy": 550.0,
             "width": 587.9,
             "height": 539.2,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           },
           "3": {
-            "cx": 779.5,
-            "cy": 550.0,
             "width": 587.9,
             "height": 514.0,
-            "source": "derived",
-            "placement": "manual"
+            "source": "derived"
           }
         },
         "derived": {
@@ -3413,231 +3262,6 @@
           "width": 587.9,
           "height": 571.7,
           "r": 440.8,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "008-bold",
-      "codepoint": "U+E02E",
-      "file": "markers/047-008-bold.svg",
-      "width": 1146,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Kufam",
-          "variant": "700",
-          "width": 1146,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/kufam/v26/C8c-4cY7pG7w_oSJDszBXsKCcBH3ca4LqwqILvI.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2019 The Kufam Project Authors (https://github.com/originaltype/kufam)",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/kufam/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 573.0,
-        "cy": 270.0,
-        "width": 565.1,
-        "height": 250.3,
-        "r": 193.3,
-        "digits": {
-          "1": {
-            "cx": 573.0,
-            "cy": 270.0,
-            "width": 211.9,
-            "height": 250.3,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 573.0,
-            "cy": 270.0,
-            "width": 391.4,
-            "height": 250.3,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 573.0,
-            "cy": 270.0,
-            "width": 565.1,
-            "height": 250.3,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 573.0,
-          "cy": 270.4,
-          "width": 710.1,
-          "height": 250.3,
-          "r": 193.3,
-          "region": "fill-base"
-        }
-      }
-    },
-    {
-      "id": "002-regular",
-      "codepoint": "U+E02F",
-      "file": "markers/048-002-regular.svg",
-      "width": 1279,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Amiri",
-          "variant": "400",
-          "width": 1279,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/amiri/v30/J7aRnpd8CGxBHpUrtLMA7w.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2010-2022 The Amiri Project Authors (https://github.com/aliftype/amiri).",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/amiri/OFL.txt",
-            "note": null
-          }
-        },
-        {
-          "source": "Google Fonts",
-          "family": "Amiri Quran",
-          "variant": "400",
-          "width": 1279,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/amiriquran/v19/_Xmo-Hk0rD6DbUL4_vH8Zp5v5i2ssg.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2010-2022 The Amiri Quran Project Authors (https://github.com/aliftype/amiri).",
-            "reserved_font_names": [],
-            "url": "https://github.com/google/fonts/blob/main/ofl/amiriquran/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "font-shaping",
-        "cx": 639.5,
-        "cy": 166.0,
-        "width": 796.7,
-        "height": 380.0,
-        "r": 281.2,
-        "digits": {
-          "1": {
-            "cx": 639.5,
-            "cy": 166.0,
-            "width": 258.1,
-            "height": 381.7,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 639.5,
-            "cy": 166.0,
-            "width": 507.1,
-            "height": 387.1,
-            "source": "font-shaping",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 639.5,
-            "cy": 166.0,
-            "width": 796.7,
-            "height": 380.0,
-            "source": "font-shaping",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 639.5,
-          "cy": 164.7,
-          "width": 931.5,
-          "height": 486.9,
-          "r": 281.2,
-          "region": "fill-base"
-        },
-        "font": {
-          "family": "Amiri",
-          "file": "Amiri-Regular.ttf",
-          "glyph": "uni06DD",
-          "mechanism": "positioned-digits"
-        }
-      }
-    },
-    {
-      "id": "010-medium",
-      "codepoint": "U+E030",
-      "file": "markers/049-010-medium.svg",
-      "width": 1280,
-      "upem": 1000,
-      "sources": [
-        {
-          "source": "Google Fonts",
-          "family": "Mada",
-          "variant": "500",
-          "width": 1280,
-          "upem": 1000,
-          "source_url": "https://fonts.gstatic.com/s/mada/v21/7Aulp_0qnzeSVz7u3PJLcUMYOFn8kEky0eiNxw.woff2",
-          "license": {
-            "id": "OFL-1.1",
-            "name": "SIL Open Font License, Version 1.1",
-            "copyright": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".",
-            "reserved_font_names": [
-              "Source"
-            ],
-            "url": "https://github.com/google/fonts/blob/main/ofl/mada/OFL.txt",
-            "note": null
-          }
-        }
-      ],
-      "number": {
-        "source": "derived",
-        "cx": 640.0,
-        "cy": 169.0,
-        "width": 855.9,
-        "height": 255.1,
-        "r": 327.4,
-        "digits": {
-          "1": {
-            "cx": 640.0,
-            "cy": 169.0,
-            "width": 321.0,
-            "height": 267.0,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "2": {
-            "cx": 640.0,
-            "cy": 169.0,
-            "width": 592.8,
-            "height": 267.7,
-            "source": "derived",
-            "placement": "manual"
-          },
-          "3": {
-            "cx": 640.0,
-            "cy": 169.0,
-            "width": 855.9,
-            "height": 255.1,
-            "source": "derived",
-            "placement": "manual"
-          }
-        },
-        "derived": {
-          "cx": 640.0,
-          "cy": 169.6,
-          "width": 916.2,
-          "height": 472.6,
-          "r": 327.4,
           "region": "fill-base"
         }
       }

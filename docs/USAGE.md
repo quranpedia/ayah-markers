@@ -33,4 +33,4 @@ The variables are `--fill-base`, `--fill-1`, `--fill-2`, `--fill-3`, `--ink-base
 
 ## Weight families
 
-Markers sharing the numeric prefix are a design family, such as `015-regular-black`, `015-thin`, and `015-light`. The demo falls back to an annotated sibling when a weight has no explicit review record.
+Markers sharing the numeric prefix are a design family, such as `012-regular-black`, `012-thin`, and `012-light`. The demo falls back to an annotated sibling when a weight has no explicit review record.
